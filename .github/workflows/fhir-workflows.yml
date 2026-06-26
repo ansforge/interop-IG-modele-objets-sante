@@ -7,6 +7,8 @@ on:
 jobs:
   run-sushi-tests_gitHubPages:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/ansforge/fhir-ig-builder:latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -18,7 +20,7 @@ jobs:
       # soit présent lors du build.
       - name: Generate MOS.xlsx
         run: |
-          pip install openpyxl --quiet
+          pip install openpyxl --quiet --break-system-packages
           python3 igSource/script/generate_mos_xlsx.py
       - uses: ansforge/IG-workflows@main
         with:      
@@ -29,3 +31,4 @@ jobs:
           validator_cli: "false"
           generate_testscript: "false"
           generate_plantuml : "true"
+          container_mode: "true"
