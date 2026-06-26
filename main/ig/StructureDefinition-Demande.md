@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Demande | *Version*:0.1.0-ballot |
-| Draft as of 2026-04-20 | *Computable Name*:Demande |
+| Draft as of 2026-06-26 | *Computable Name*:Demande |
 
  
 Besoin(s) et/ou souhait(s) exprimés de manière officielle.Le contenu de la demande peut être un document : une lettre, un formulaire, etc. La demande peut également être accompagnée si besoin de pièces jointes. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Demande.csv), [Excel
   "name" : "Demande",
   "title" : "Demande",
   "status" : "draft",
-  "date" : "2026-04-20T14:56:39+00:00",
+  "date" : "2026-06-26T11:59:32+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
