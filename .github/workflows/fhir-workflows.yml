@@ -20,7 +20,7 @@ jobs:
       # soit présent lors du build.
       - name: Generate MOS.xlsx
         run: |
-          pip install openpyxl --quiet
+          pip install openpyxl --quiet --break-system-packages
           python3 igSource/script/generate_mos_xlsx.py
       - uses: ansforge/IG-workflows@main
         with:      
