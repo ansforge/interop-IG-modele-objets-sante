@@ -41,4 +41,4 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 * CI-SIS : Cadre d'Interopérabilité des Systèmes d'Information de Santé
 * RPPS : Répertoire Partagé des Professionnels de Santé
 * FINESS : Fichier National des Établissements Sanitaires et Sociaux
-* ROR : Répertoire Opérationnel des Ressources
+* ROR : Répertoire national de l'Offre et des Ressources en santé et accompagnement médico-social
