@@ -16,7 +16,7 @@ Ce guide d'implémentation s'inscrit dans une démarche de modernisation de la d
 
 ## Contexte technique du projet
 
-Les concepts du MOS sont publiés sous forme de **modèles logiques FHIR** (Logical Models), et non de profils de ressources FHIR classiques : chaque composant élémentaire du MOS (professionnel, structure, autorisation, ressource opérationnelle, accord, personne prise en charge, accompagnant, dispositif médical, etc.) est décrit indépendamment de toute implémentation technique particulière. Lors de la définition de chaque composant, une étude d'alignement est menée avec d'autres standards internationaux (FHIR, HL7 v2/v3, SEMIC).
+Les concepts du MOS sont publiés sous forme de **modèles logiques FHIR** (Logical Models), et non de profils de ressources FHIR classiques : chaque composant élémentaire du MOS (professionnel, structure, autorisation, ressource opérationnelle, accord, personne prise en charge, accompagnant, dispositif médical, etc.) est décrit indépendamment de toute implémentation technique particulière. Lors de la définition de chaque composant, une étude d'alignement est menée avec d'autres standards internationaux (FHIR, HL7 v2, ...).
 
 Ce repository dépend du package `ans.fr.terminologies` (référentiels et terminologies françaises de santé).
 
