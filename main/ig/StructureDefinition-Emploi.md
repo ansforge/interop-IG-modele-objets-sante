@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Emploi | *Version*:0.1.0-ballot |
-| Draft as of 2026-06-26 | *Computable Name*:Emploi |
+| Draft as of 2026-10-15 | *Computable Name*:Emploi |
 
  
 L’emploi définit l’exercice d’une profession dans le cadre d’une activité rémunérée. Il est alors régi par un contrat signé entre un employeur et un employé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Emploi.csv), [Excel]
   "name" : "Emploi",
   "title" : "Emploi",
   "status" : "draft",
-  "date" : "2026-06-26T11:59:32+00:00",
+  "date" : "2026-10-15T15:04:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

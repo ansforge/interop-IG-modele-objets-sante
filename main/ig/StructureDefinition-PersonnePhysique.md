@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique | *Version*:0.1.0-ballot |
-| Draft as of 2026-06-26 | *Computable Name*:PersonnePhysique |
+| Draft as of 2026-10-15 | *Computable Name*:PersonnePhysique |
 
  
 Préambule:Les informations de la personne physique telles que le nom de naissance, le prénom, etc. sont utilisées dans d’autres contextes que celui de l’INS. Elles sont donc délibérément disjointes des informations constituant l’identité INS.Une personne physique est un individu titulaire de droits et d’obligations caractérisé par une identité civile. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePhysique.csv
   "name" : "PersonnePhysique",
   "title" : "PersonnePhysique",
   "status" : "draft",
-  "date" : "2026-06-26T11:59:32+00:00",
+  "date" : "2026-10-15T15:04:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

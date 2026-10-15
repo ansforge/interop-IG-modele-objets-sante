@@ -1,131 +1,131 @@
 MOS : Validation Results
 =========================================
 
-err = 32, warn = 922, info = 95
-IG Publisher Version: 2.2.10
-Generated Fri Jun 26 12:04:43 UTC 2026. FHIR version 4.0.1 for ans.fr.mos#0.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/mos)
+err = 32, warn = 936, info = 93
+IG Publisher Version: 2.3.4 Out of date - current version is 3.0.0
+Generated Thu Oct 15 15:06:22 UTC 2026. FHIR version 4.0.1 for ans.fr.mos#0.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/mos)
  Build Errors : 1 / 31 / 0
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fr.mos : 32 / 1 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteEnseignement : 0 / 14 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteSociale : 0 / 24 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteSoinAutorisee : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteSoumiseReconnaissance : 0 / 8 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Adresse : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Agenda : 0 / 18 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-AidantDemarche : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ArretTravail : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Attestation : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-AutorisationExercice : 0 / 8 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-AutreActiviteSoumiseAutorisation : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-AutreDiplomeObtenu : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-BoiteLettreMSS : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteAccueil : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteActiviteExercee : 0 / 10 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteDiplome : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteHabitation : 0 / 8 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapacitePriseCharge : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteSavoirfaire : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CarteProfessionnel : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Certificat : 0 / 12 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CertificatEtudeSpeciale : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Competence : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CompetenceExclusive : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CompetenceMetier : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Contact : 0 / 18 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Convention : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CoordonneeGeographique : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Creneau : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DESC1 : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DESC2 : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DESCNonQualifiant : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Decision : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Demande : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Diplome : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeDivers : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeEEE : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeEES : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeEtat : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeEtudeSpecialisee : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeUniversitaire : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DispositifMedical : 0 / 24 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DivisionTerritoriale : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Document : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DossierPersonnePriseCharge : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DroitExerciceComplementaire : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Emploi : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EntiteGeographique : 0 / 68 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EntiteJuridique : 0 / 20 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EquipementMaterielLourd : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EquipementSpecifique : 0 / 16 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ExerciceProfessionnel : 0 / 64 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-FonctionQualifiee : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-FormationSpecialiseeTransversale : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Groupement : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Horaire : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-LangueParlee : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-LicenceExploitation : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Lieu : 0 / 14 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-LieuRealisationOffre : 0 / 10 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Membre : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-MesureCapacite : 0 / 14 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-MesureProtection : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-NoteLiaison : 0 / 12 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Observation : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-OffreOperationnelle : 0 / 42 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-OrganisationInterne : 0 / 14 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-OrientationParticuliere : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Parent : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Patientele : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PersonnePhysique : 0 / 18 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PersonnePriseCharge : 0 / 38 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PlageDisponibilite : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PlageReference : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PoleActivite : 0 / 0 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Professionnel : 0 / 16 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-QualificationPAC : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-RendezVous : 0 / 16 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ResultatObservation : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-SavoirFaire : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-SituationExercice : 0 / 20 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-SituationOperationnelle : 0 / 10 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Specialite : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-StructureInterne : 0 / 0 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-SurspecialiteTransversale : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-TarifPrestation : 0 / 2 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Telecommunication : 0 / 6 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-UniteFonctionnelle : 0 / 0 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-VieProfessionnelle : 0 / 12 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-VieQuotidienne : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-VieScolaire : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-DESCNonQualifiant-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-besoinScolarite-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-besoinVieQuotidienne-vs : 0 / 6 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-categorieEtablissement-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-code-vs : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-competence-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-competenceExclusive-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-competenceMetier-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-droitExerciceComplementaire-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-familleActiviteOperationnelle-vs : 0 / 6 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-fonctionQualifiee-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-lieuNaissance-vs : 0 / 4 / 2
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-orientationParticuliere-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-paysNaissance-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-paysNationalite-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-profession-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-professionCategorieSocioProfessionnelle-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-professionRessource-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-qualificationPAC-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-relation-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-role-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-secteurActivite-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-sexe-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-specialite-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-surspecialiteTransversale-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-typeProfession-vs : 0 / 4 / 1
- /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-typeRole-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fr.mos : 32 / 1 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteEnseignement : 0 / 14 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteSociale : 0 / 24 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteSoinAutorisee : 0 / 8 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteSoumiseReconnaissance : 0 / 10 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Adresse : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Agenda : 0 / 18 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-AidantDemarche : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ArretTravail : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Attestation : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-AutorisationExercice : 0 / 8 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-AutreActiviteSoumiseAutorisation : 0 / 8 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-AutreDiplomeObtenu : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-BoiteLettreMSS : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteAccueil : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteActiviteExercee : 0 / 10 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteDiplome : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteHabitation : 0 / 8 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapacitePriseCharge : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CapaciteSavoirfaire : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CarteProfessionnel : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Certificat : 0 / 12 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CertificatEtudeSpeciale : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Competence : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CompetenceExclusive : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CompetenceMetier : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Contact : 0 / 18 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Convention : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CoordonneeGeographique : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Creneau : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DESC1 : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DESC2 : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DESCNonQualifiant : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Decision : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Demande : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Diplome : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeDivers : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeEEE : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeEES : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeEtat : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeEtudeSpecialisee : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DiplomeUniversitaire : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DispositifMedical : 0 / 24 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DivisionTerritoriale : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Document : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DossierPersonnePriseCharge : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-DroitExerciceComplementaire : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Emploi : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EntiteGeographique : 0 / 72 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EntiteJuridique : 0 / 20 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EquipementMaterielLourd : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EquipementSpecifique : 0 / 16 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ExerciceProfessionnel : 0 / 64 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-FonctionQualifiee : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-FormationSpecialiseeTransversale : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Groupement : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Horaire : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-LangueParlee : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-LicenceExploitation : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Lieu : 0 / 14 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-LieuRealisationOffre : 0 / 10 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Membre : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-MesureCapacite : 0 / 14 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-MesureProtection : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-NoteLiaison : 0 / 12 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Observation : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-OffreOperationnelle : 0 / 42 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-OrganisationInterne : 0 / 14 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-OrientationParticuliere : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Parent : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Patientele : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PersonnePhysique : 0 / 18 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PersonnePriseCharge : 0 / 38 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PlageDisponibilite : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PlageReference : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-PoleActivite : 0 / 0 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Professionnel : 0 / 16 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-QualificationPAC : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-RendezVous : 0 / 16 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ResultatObservation : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-SavoirFaire : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-SituationExercice : 0 / 20 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-SituationOperationnelle : 0 / 10 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Specialite : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-StructureInterne : 0 / 0 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-SurspecialiteTransversale : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-TarifPrestation : 0 / 2 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Telecommunication : 0 / 6 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-UniteFonctionnelle : 0 / 0 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-VieProfessionnelle : 0 / 12 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-VieQuotidienne : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-VieScolaire : 0 / 4 / 2
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-DESCNonQualifiant-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-besoinScolarite-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-besoinVieQuotidienne-vs : 0 / 6 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-categorieEtablissement-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-code-vs : 0 / 5 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-competence-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-competenceExclusive-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-competenceMetier-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-droitExerciceComplementaire-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-familleActiviteOperationnelle-vs : 0 / 6 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-fonctionQualifiee-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-lieuNaissance-vs : 0 / 5 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-orientationParticuliere-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-paysNaissance-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-paysNationalite-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-profession-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-professionCategorieSocioProfessionnelle-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-professionRessource-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-qualificationPAC-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-relation-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-role-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-secteurActivite-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-sexe-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-specialite-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-surspecialiteTransversale-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-typeProfession-vs : 0 / 4 / 1
+ /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-typeRole-vs : 0 / 4 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/besoinScolarite-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -156,7 +156,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/surspecialiteTransversale-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/typeProfession-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/typeRole-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: /__w/IG-modele-objets-sante/IG-modele-objets-sante/igSource/output/accompagnant.html#/html/body/div/div/div/div/div/script at Line 348, column 2: The <script> containing the javascript '(function() {   // A'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 12 other files)
+WARNING: /__w/interop-IG-modele-objets-sante/interop-IG-modele-objets-sante/igSource/output/accompagnant.html#/html/body/div/div/div/div/div/script at Line 348, column 2: The <script> containing the javascript '(function() {   // A'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 12 other files)
 ERROR: change_notes.html#/html/body/div/div/div/div/div/h3/a at Line 213, column 55: The link 'https://interop.esante.gouv.fr/ig/mos/0.1.0' for "Release 0.1.0" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
@@ -193,7 +193,7 @@ ERROR: ImplementationGuide/ans.fr.mos: ImplementationGuide.definition.resource[8
 ERROR: ImplementationGuide/ans.fr.mos: ImplementationGuide.definition.resource[87].groupingId: id value 'Classes communes' is not valid
 ERROR: ImplementationGuide/ans.fr.mos: ImplementationGuide.definition.resource[112].groupingId: id value 'Classes communes' is not valid
 ERROR: ImplementationGuide/ans.fr.mos: ImplementationGuide.definition.resource[113].groupingId: id value 'Classes communes' is not valid
-WARNING: ImplementationGuide/ans.fr.mos: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package ans.fr.terminologies#1.1.0 released on 2025-07-02, but the most recent appropriate version is 1.10.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/ans.fr.mos: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package ans.fr.terminologies#1.1.0 released on 2025-07-02, but the most recent appropriate version is 1.14.0. This reference is getting old and the more recent version should be considered
 INFORMATION: Resource: The resource ImplementationGuide/ans.fr.mos could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-ActiviteEnseignement.json ==
 WARNING: StructureDefinition/ActiviteEnseignement: StructureDefinition.snapshot.element[1].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R295-AgregatDisciplineEnseignNiv1/FHIR/TRE-R295-AgregatDisciplineEnseignNiv1?vs'
@@ -238,18 +238,22 @@ WARNING: StructureDefinition/ActiviteSociale: StructureDefinition.differential.e
 WARNING: StructureDefinition/ActiviteSociale: StructureDefinition.differential.element[21]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/ActiviteSociale could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-ActiviteSoinAutorisee.json ==
+WARNING: StructureDefinition/ActiviteSoinAutorisee: StructureDefinition.snapshot.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs'
 WARNING: StructureDefinition/ActiviteSoinAutorisee: StructureDefinition.snapshot.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R275-ModaliteActivite/FHIR/TRE-R275-ModaliteActivite?vs'
 WARNING: StructureDefinition/ActiviteSoinAutorisee: StructureDefinition.snapshot.element[5].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite?vs'
 WARNING: StructureDefinition/ActiviteSoinAutorisee: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/ActiviteSoinAutorisee: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs'
 WARNING: StructureDefinition/ActiviteSoinAutorisee: StructureDefinition.differential.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R275-ModaliteActivite/FHIR/TRE-R275-ModaliteActivite?vs'
 WARNING: StructureDefinition/ActiviteSoinAutorisee: StructureDefinition.differential.element[5].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite?vs'
 WARNING: StructureDefinition/ActiviteSoinAutorisee: StructureDefinition.differential.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/ActiviteSoinAutorisee could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-ActiviteSoumiseReconnaissance.json ==
+WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.snapshot.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs'
 WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.snapshot.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R275-ModaliteActivite/FHIR/TRE-R275-ModaliteActivite?vs'
 WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.snapshot.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite?vs'
 WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.snapshot.element[11]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.differential.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs'
 WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R275-ModaliteActivite/FHIR/TRE-R275-ModaliteActivite?vs'
 WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.differential.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite?vs'
 WARNING: StructureDefinition/ActiviteSoumiseReconnaissance: StructureDefinition.differential.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -310,9 +314,11 @@ WARNING: StructureDefinition/AutorisationExercice: StructureDefinition.different
 WARNING: StructureDefinition/AutorisationExercice: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/AutorisationExercice could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-AutreActiviteSoumiseAutorisation.json ==
+WARNING: StructureDefinition/AutreActiviteSoumiseAutorisation: StructureDefinition.snapshot.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs'
 WARNING: StructureDefinition/AutreActiviteSoumiseAutorisation: StructureDefinition.snapshot.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R275-ModaliteActivite/FHIR/TRE-R275-ModaliteActivite?vs'
 WARNING: StructureDefinition/AutreActiviteSoumiseAutorisation: StructureDefinition.snapshot.element[5].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite?vs'
 WARNING: StructureDefinition/AutreActiviteSoumiseAutorisation: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/AutreActiviteSoumiseAutorisation: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs'
 WARNING: StructureDefinition/AutreActiviteSoumiseAutorisation: StructureDefinition.differential.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R275-ModaliteActivite/FHIR/TRE-R275-ModaliteActivite?vs'
 WARNING: StructureDefinition/AutreActiviteSoumiseAutorisation: StructureDefinition.differential.element[5].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite?vs'
 WARNING: StructureDefinition/AutreActiviteSoumiseAutorisation: StructureDefinition.differential.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -596,6 +602,8 @@ WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.el
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.element[17].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R64-AgregatCategorieEtablissementNiv2/FHIR/TRE-R64-AgregatCategorieEtablissementNiv2?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.element[18].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R65-AgregatCategorieEtablissement/FHIR/TRE-R65-AgregatCategorieEtablissement?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.element[19].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R75-InseeNAFrev2Niveau5/FHIR/TRE-R75-InseeNAFrev2Niveau5?vs'
+WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.element[20].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire?vs'
+WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.element[21].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.element[23].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R241-AideFinanciere/FHIR/TRE-R241-AideFinanciere?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.element[33].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R286-TypeFermeture/FHIR/TRE-R286-TypeFermeture?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.snapshot.element[35].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R202-AccessibiliteLieu/FHIR/TRE-R202-AccessibiliteLieu?vs'
@@ -630,6 +638,8 @@ WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differentia
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differential.element[17].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R64-AgregatCategorieEtablissementNiv2/FHIR/TRE-R64-AgregatCategorieEtablissementNiv2?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differential.element[18].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R65-AgregatCategorieEtablissement/FHIR/TRE-R65-AgregatCategorieEtablissement?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differential.element[19].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R75-InseeNAFrev2Niveau5/FHIR/TRE-R75-InseeNAFrev2Niveau5?vs'
+WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differential.element[20].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire?vs'
+WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differential.element[21].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differential.element[23].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R241-AideFinanciere/FHIR/TRE-R241-AideFinanciere?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differential.element[33].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R286-TypeFermeture/FHIR/TRE-R286-TypeFermeture?vs'
 WARNING: StructureDefinition/EntiteGeographique: StructureDefinition.differential.element[35].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R202-AccessibiliteLieu/FHIR/TRE-R202-AccessibiliteLieu?vs'
@@ -682,7 +692,9 @@ WARNING: StructureDefinition/EntiteJuridique: StructureDefinition.differential.e
 WARNING: StructureDefinition/EntiteJuridique: StructureDefinition.differential.element[27]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/EntiteJuridique could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-EquipementMaterielLourd.json ==
+WARNING: StructureDefinition/EquipementMaterielLourd: StructureDefinition.snapshot.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R272-EquipementMaterielLourd/FHIR/TRE-R272-EquipementMaterielLourd?vs'
 WARNING: StructureDefinition/EquipementMaterielLourd: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/EquipementMaterielLourd: StructureDefinition.differential.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R272-EquipementMaterielLourd/FHIR/TRE-R272-EquipementMaterielLourd?vs'
 WARNING: StructureDefinition/EquipementMaterielLourd: StructureDefinition.differential.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/EquipementMaterielLourd could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-EquipementSpecifique.json ==
@@ -1169,8 +1181,7 @@ WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 WARNING: Resource: The resource ValueSet/besoinVieQuotidienne-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [fabe2061-2e07-4a10-95d3-815557a70d28]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
-Information: X-Request-Id: a70bcc5c-f563-4a8b-9a54-09099cc601b4
+WARNING: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs.json ==
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -1186,7 +1197,7 @@ WARNING: ValueSet/code-vs: ValueSet: Published value sets SHOULD conform to the 
 WARNING: ValueSet/code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 WARNING: Resource: The resource ValueSet/code-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: ValueSet.where(id = 'code-vs'): The value set expansion is too large, and only a subset has been displayed
+WARNING: ValueSet.where(id = 'code-vs'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-competence-vs.json ==
 WARNING: ValueSet/competence-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/competence-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -1213,8 +1224,7 @@ WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value se
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 WARNING: Resource: The resource ValueSet/familleActiviteOperationnelle-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [196ba990-147d-4ec3-8d0f-35e5f61dac71]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
-Information: X-Request-Id: bddc4c08-f108-46ae-a1d1-92003e148a57
+WARNING: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-fonctionQualifiee-vs.json ==
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -1225,7 +1235,7 @@ WARNING: ValueSet/lieuNaissance-vs: ValueSet: Published value sets SHOULD confor
 WARNING: ValueSet/lieuNaissance-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/lieuNaissance-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 WARNING: Resource: The resource ValueSet/lieuNaissance-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: ValueSet.where(id = 'lieuNaissance-vs'): The value set expansion is too large, and only a subset has been displayed
+WARNING: ValueSet.where(id = 'lieuNaissance-vs'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-orientationParticuliere-vs.json ==
 WARNING: ValueSet/orientationParticuliere-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/orientationParticuliere-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

@@ -57,15 +57,15 @@
     "oids" : ["1.2.250.1.71.4.2.5"],
     "uses" : {
     },
-    "ValueSet-qualificationPAC-vs.html" : "QualificationpacVs",
-    "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs",
-    "ValueSet-capaciteSavoirFaire-vs.html" : "CapacitesavoirfaireVs",
-    "ValueSet-competence-vs.html" : "CompetenceVs",
-    "ValueSet-DESCNonQualifiant-vs.html" : "DescnonqualifiantVs",
-    "ValueSet-competenceMetier-vs.html" : "CompetencemetierVs",
-    "ValueSet-specialite-vs.html" : "SpecialiteVs",
-    "ValueSet-surspecialiteTransversale-vs.html" : "SurspecialitetransversaleVs",
     "ValueSet-orientationParticuliere-vs.html" : "OrientationparticuliereVs",
+    "ValueSet-surspecialiteTransversale-vs.html" : "SurspecialitetransversaleVs",
+    "ValueSet-competenceMetier-vs.html" : "CompetencemetierVs",
+    "ValueSet-qualificationPAC-vs.html" : "QualificationpacVs",
+    "ValueSet-capaciteSavoirFaire-vs.html" : "CapacitesavoirfaireVs",
+    "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs",
+    "ValueSet-competence-vs.html" : "CompetenceVs",
+    "ValueSet-specialite-vs.html" : "SpecialiteVs",
+    "ValueSet-DESCNonQualifiant-vs.html" : "DescnonqualifiantVs",
     "ValueSet-competenceExclusive-vs.html" : "CompetenceexclusiveVs",
     "ValueSet-droitExerciceComplementaire-vs.html" : "DroitexercicecomplementaireVs"
   },
@@ -91,8 +91,8 @@
     "oids" : ["1.2.250.1.213.2.23"],
     "uses" : {
     },
-    "ValueSet-code-vs.html" : "CodeVs",
-    "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs"
+    "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs",
+    "ValueSet-code-vs.html" : "CodeVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
@@ -104,10 +104,10 @@
     "oids" : ["1.2.250.1.213.2.24"],
     "uses" : {
     },
-    "ValueSet-code-vs.html" : "CodeVs",
     "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs",
-    "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
-    "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
+    "ValueSet-code-vs.html" : "CodeVs",
+    "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
+    "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
@@ -203,32 +203,8 @@
     "oids" : ["1.2.250.1.213.2.57"],
     "uses" : {
     },
-    "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
-    "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
-  },
-  {
-    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R272-EquipementMaterielLourd/FHIR/TRE-R272-EquipementMaterielLourd",
-    "version" : "20231215120000",
-    "status" : "active",
-    "name" : "TRE_R272_EquipementMaterielLourd",
-    "title" : null,
-    "description" : "Equipements Matériels Lourds",
-    "oids" : ["1.2.250.1.213.1.6.1.124"],
-    "uses" : {
-    },
-    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r272-equipement-materiel-lourd-all" : "Vs Tre R272 Equipement Materiel Lourd All"
-  },
-  {
-    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee",
-    "version" : "20231215120000",
-    "status" : "active",
-    "name" : "TRE_R274_ActiviteSanitaireRegulee",
-    "title" : null,
-    "description" : "Activités sanitaires soumises à une régulation de la part de l'ARS",
-    "oids" : ["1.2.250.1.213.1.6.1.126"],
-    "uses" : {
-    },
-    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r274-activite-sanitaire-regulee-all" : "Vs Tre R274 Activite Sanitaire Regulee All"
+    "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
+    "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession",
@@ -508,30 +484,6 @@
     "ValueSet-categorieEtablissement-vs.html" : "CategorieetablissementVs"
   },
   {
-    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC",
-    "version" : "20231215120000",
-    "status" : "active",
-    "name" : "TRE_R73_ESPIC",
-    "title" : null,
-    "description" : "Etablissement de santé privé d'intérêt collectif",
-    "oids" : ["1.2.250.1.213.1.6.1.45"],
-    "uses" : {
-    },
-    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r73-espic-all" : "Vs Tre R73 Espic All"
-  },
-  {
-    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire",
-    "version" : "20240223120000",
-    "status" : "active",
-    "name" : "TRE_R74_ModeFixationTarifaire",
-    "title" : null,
-    "description" : "Mode de fixation tarifaire",
-    "oids" : ["1.2.250.1.213.1.6.1.46"],
-    "uses" : {
-    },
-    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r74-mode-fixation-tarifaire-all" : "Vs Tre R74 Mode Fixation Tarifaire All"
-  },
-  {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
     "version" : "20250328120000",
     "status" : "active",
@@ -565,8 +517,8 @@
     "oids" : ["1.2.250.1.213.1.6.1.4"],
     "uses" : {
     },
-    "ValueSet-profession-vs.html" : "ProfessionVs",
-    "ValueSet-professionRessource-vs.html" : "ProfessionressourceVs"
+    "ValueSet-professionRessource-vs.html" : "ProfessionressourceVs",
+    "ValueSet-profession-vs.html" : "ProfessionVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
