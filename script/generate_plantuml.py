@@ -141,13 +141,14 @@ def generate_plantuml_parts(path, sections):
                                     card_s2t = "*"
                                 else:
                                     card_s2t = f"{ref['min_s2t']}..{ref['max_s2t']}"
-                                if str(ref["min_t2s"]) == str(ref["max_t2s"]):
-                                    card_t2s = ref["min_t2s"]
-                                elif (ref["min_t2s"] == 0) & (ref["max_t2s"] == "*"):
-                                    card_t2s = "*"
-                                else:
-                                    card_t2s = f"{ref['min_t2s']}..{ref['max_t2s']}"
-                                f.write(f"{ref['source']} \"{card_t2s}\" -- \"{card_s2t}\" {ref['target']}\n")
+                                if "min_t2s" in ref:
+                                    if str(ref["min_t2s"]) == str(ref["max_t2s"]):
+                                        card_t2s = ref["min_t2s"]
+                                    elif (ref["min_t2s"] == 0) & (ref["max_t2s"] == "*"):
+                                        card_t2s = "*"
+                                    else:
+                                        card_t2s = f"{ref['min_t2s']}..{ref['max_t2s']}"
+                                    f.write(f"{ref['source']} \"{card_t2s}\" -- \"{card_s2t}\" {ref['target']}\n")
                     if len(sds[sd]["backbones"]) > 0:
                         f.write("\n")
                     for sd in sds.keys():

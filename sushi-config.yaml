@@ -100,8 +100,11 @@ groups:
    Accord:
      name: Accord
      resources:
+     - StructureDefinition/Arrete
      - StructureDefinition/AutorisationExercice
      - StructureDefinition/Convention
+     - StructureDefinition/Engagement
+     - StructureDefinition/Label
      - StructureDefinition/LicenceExploitation
    Agenda:
      name: Agenda
@@ -113,12 +116,16 @@ groups:
    Autorisation:
      name: Autorisation
      resources:
-     - StructureDefinition/ActiviteEnseignement
-     - StructureDefinition/ActiviteSociale
-     - StructureDefinition/ActiviteSoinAutorisee
+     - StructureDefinition/ActiviteAutoriseeExercee
+     - StructureDefinition/ActiviteEnseignementRegulee
+     - StructureDefinition/ActiviteMedicoSocialeRegulee
+     - StructureDefinition/ActiviteSanitaireDiverseRegulee
+     - StructureDefinition/ActiviteSOCialeRegulee
+     - StructureDefinition/ActiviteSoinAutoriseeAMF
+     - StructureDefinition/ActiviteSoinAutoriseeAMM
      - StructureDefinition/ActiviteSoumiseReconnaissance
      - StructureDefinition/AutreActiviteSoumiseAutorisation
-     - StructureDefinition/CapaciteActiviteExercee
+     - StructureDefinition/CapaciteActiviteAutoriseeExercee
      - StructureDefinition/EquipementMaterielLourd
    Dispositif:
      name: Dispositif d'authentification
@@ -134,7 +141,7 @@ groups:
      resources:
      - StructureDefinition/Decision
      - StructureDefinition/Demande
-     - StructureDefinition/Document
+     - StructureDefinition/DocumentDossierPersonnePriseCharge
      - StructureDefinition/DossierPersonnePriseCharge
      - StructureDefinition/NoteLiaison
    Offre:
@@ -164,13 +171,14 @@ groups:
      name: Professionnel
      resources:
      - StructureDefinition/CapaciteSavoirfaire
-     - StructureDefinition/Competence
      - StructureDefinition/CompetenceExclusive
+     - StructureDefinition/CompetenceMedecine
      - StructureDefinition/CompetenceMetier
      - StructureDefinition/DESCNonQualifiant
      - StructureDefinition/DroitExerciceComplementaire
      - StructureDefinition/ExerciceProfessionnel
      - StructureDefinition/FonctionQualifiee
+     - StructureDefinition/InterruptionExerciceProfessionnel
      - StructureDefinition/OrientationParticuliere
      - StructureDefinition/Professionnel
      - StructureDefinition/QualificationPAC
@@ -188,13 +196,23 @@ groups:
    Structure:
      name: Structure
      resources:
-     - StructureDefinition/EntiteGeographique
-     - StructureDefinition/EntiteJuridique
+     - StructureDefinition/DocumentStructure
+     - StructureDefinition/EntiteGeographiqueExercice
+     - StructureDefinition/EntiteGroupementStructure
+     - StructureDefinition/EtablissementINSEE
+     - StructureDefinition/EvenementStructure
+     - StructureDefinition/GroupeCooperationConventionnelle
+     - StructureDefinition/GroupeCooperationOrganique
+     - StructureDefinition/GroupementStructure
+     - StructureDefinition/PersonneMorale
+     - StructureDefinition/RelationEGE
+     - StructureDefinition/UniteLegaleINSEE
    Classes communes:
      name: Classes communes
      resources:
      - StructureDefinition/Adresse
      - StructureDefinition/Attestation
+     - StructureDefinition/Autorite
      - StructureDefinition/AutreDiplomeObtenu
      - StructureDefinition/BoiteLettreMSS
      - StructureDefinition/CapaciteAccueil
@@ -214,6 +232,8 @@ groups:
      - StructureDefinition/DiplomeEtudeSpecialisee
      - StructureDefinition/DiplomeUniversitaire
      - StructureDefinition/DivisionTerritoriale
+     - StructureDefinition/Document
+     - StructureDefinition/Evenement
      - StructureDefinition/FormationSpecialiseeTransversale
      - StructureDefinition/Groupement
      - StructureDefinition/Horaire
@@ -225,3 +245,4 @@ groups:
      - StructureDefinition/PersonnePhysique
      - StructureDefinition/TarifPrestation
      - StructureDefinition/Telecommunication
+     - StructureDefinition/Zone

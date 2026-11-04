@@ -21,7 +21,7 @@ Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as 
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
 }
 
 package "Offre opérationnelle" as Offre_opérationnelle_part {
@@ -33,7 +33,7 @@ package "Agenda" as Agenda_part {
   Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
 }
 
-OrganisationInterne "*" -- "1..*" EntiteGeographique
+OrganisationInterne "*" -- "1..*" EntiteGeographiqueExercice
 OrganisationInterne "*" -- "*" OrganisationInterne
 OrganisationInterne "0..1" -- "1..*" OffreOperationnelle
 OrganisationInterne "*" -- "*" Agenda

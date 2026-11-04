@@ -1,12 +1,40 @@
 @startuml
 !theme carbon-gray
 
-package "Professionnel" {
-  Class "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel
-  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
-  Class "[[StructureDefinition-SavoirFaire.html SavoirFaire]]" as SavoirFaire
-  Class "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice
-  Class "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle
+package "Accompagnant" {
+  Class "[[StructureDefinition-AidantDemarche.html AidantDemarche]]" as AidantDemarche
+  Class "[[StructureDefinition-MesureProtection.html MesureProtection]]" as MesureProtection
+  Class "[[StructureDefinition-Parent.html Parent]]" as Parent
+}
+
+package "Accord" {
+  Class "[[StructureDefinition-Arrete.html Arrete]]" as Arrete
+  Class "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" as AutorisationExercice
+  Class "[[StructureDefinition-Convention.html Convention]]" as Convention
+  Class "[[StructureDefinition-Engagement.html Engagement]]" as Engagement
+  Class "[[StructureDefinition-Label.html Label]]" as Label
+  Class "[[StructureDefinition-LicenceExploitation.html LicenceExploitation]]" as LicenceExploitation
+}
+
+package "Agenda" {
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  Class "[[StructureDefinition-Creneau.html Creneau]]" as Creneau
+  Class "[[StructureDefinition-PlageDisponibilite.html PlageDisponibilite]]" as PlageDisponibilite
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
+}
+
+package "Autorisation" {
+  Class "[[StructureDefinition-ActiviteAutoriseeExercee.html ActiviteAutoriseeExercee]]" as ActiviteAutoriseeExercee
+  Class "[[StructureDefinition-ActiviteEnseignementRegulee.html ActiviteEnseignementRegulee]]" as ActiviteEnseignementRegulee
+  Class "[[StructureDefinition-ActiviteMedicoSocialeRegulee.html ActiviteMedicoSocialeRegulee]]" as ActiviteMedicoSocialeRegulee
+  Class "[[StructureDefinition-ActiviteSanitaireDiverseRegulee.html ActiviteSanitaireDiverseRegulee]]" as ActiviteSanitaireDiverseRegulee
+  Class "[[StructureDefinition-ActiviteSOCialeRegulee.html ActiviteSOCialeRegulee]]" as ActiviteSOCialeRegulee
+  Class "[[StructureDefinition-ActiviteSoinAutoriseeAMF.html ActiviteSoinAutoriseeAMF]]" as ActiviteSoinAutoriseeAMF
+  Class "[[StructureDefinition-ActiviteSoinAutoriseeAMM.html ActiviteSoinAutoriseeAMM]]" as ActiviteSoinAutoriseeAMM
+  Class "[[StructureDefinition-ActiviteSoumiseReconnaissance.html ActiviteSoumiseReconnaissance]]" as ActiviteSoumiseReconnaissance
+  Class "[[StructureDefinition-AutreActiviteSoumiseAutorisation.html AutreActiviteSoumiseAutorisation]]" as AutreActiviteSoumiseAutorisation
+  Class "[[StructureDefinition-CapaciteActiviteAutoriseeExercee.html CapaciteActiviteAutoriseeExercee]]" as CapaciteActiviteAutoriseeExercee
+  Class "[[StructureDefinition-EquipementMaterielLourd.html EquipementMaterielLourd]]" as EquipementMaterielLourd
 }
 
 package "Dispositif d'authentification" {
@@ -14,79 +42,69 @@ package "Dispositif d'authentification" {
   Class "[[StructureDefinition-Certificat.html Certificat]]" as Certificat
 }
 
-package "Structure" {
-  Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+package "Dispositif médical" {
+  Class "[[StructureDefinition-DispositifMedical.html DispositifMedical]]" as DispositifMedical
 }
 
-package "Autorisation" {
-  Class "[[StructureDefinition-ActiviteSoinAutorisee.html ActiviteSoinAutorisee]]" as ActiviteSoinAutorisee
-  Class "[[StructureDefinition-AutreActiviteSoumiseAutorisation.html AutreActiviteSoumiseAutorisation]]" as AutreActiviteSoumiseAutorisation
-  Class "[[StructureDefinition-ActiviteSoumiseReconnaissance.html ActiviteSoumiseReconnaissance]]" as ActiviteSoumiseReconnaissance
-  Class "[[StructureDefinition-ActiviteSociale.html ActiviteSociale]]" as ActiviteSociale
-  Class "[[StructureDefinition-ActiviteEnseignement.html ActiviteEnseignement]]" as ActiviteEnseignement
-  Class "[[StructureDefinition-EquipementMaterielLourd.html EquipementMaterielLourd]]" as EquipementMaterielLourd
-  Class "[[StructureDefinition-CapaciteActiviteExercee.html CapaciteActiviteExercee]]" as CapaciteActiviteExercee
+package "Dossier" {
+  Class "[[StructureDefinition-Decision.html Decision]]" as Decision
+  Class "[[StructureDefinition-Demande.html Demande]]" as Demande
+  Class "[[StructureDefinition-DocumentDossierPersonnePriseCharge.html DocumentDossierPersonnePriseCharge]]" as DocumentDossierPersonnePriseCharge
+  Class "[[StructureDefinition-DossierPersonnePriseCharge.html DossierPersonnePriseCharge]]" as DossierPersonnePriseCharge
+  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
 }
 
 package "Offre opérationnelle" {
   Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
 }
 
-package "Ressources opérationnelles" {
-  Class "[[StructureDefinition-LieuRealisationOffre.html LieuRealisationOffre]]" as LieuRealisationOffre
-  Class "[[StructureDefinition-EquipementSpecifique.html EquipementSpecifique]]" as EquipementSpecifique
-  Class "[[StructureDefinition-CapacitePriseCharge.html CapacitePriseCharge]]" as CapacitePriseCharge
-}
-
 package "Organisation opérationnelle" {
+  Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne
   Class "[[StructureDefinition-PoleActivite.html PoleActivite]]" as PoleActivite
   Class "[[StructureDefinition-StructureInterne.html StructureInterne]]" as StructureInterne
   Class "[[StructureDefinition-UniteFonctionnelle.html UniteFonctionnelle]]" as UniteFonctionnelle
-  Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne
-}
-
-package "Accord" {
-  Class "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" as AutorisationExercice
-  Class "[[StructureDefinition-Convention.html Convention]]" as Convention
-  Class "[[StructureDefinition-LicenceExploitation.html LicenceExploitation]]" as LicenceExploitation
 }
 
 package "Personne prise en charge" {
-  Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
-  Class "[[StructureDefinition-VieQuotidienne.html VieQuotidienne]]" as VieQuotidienne
-  Class "[[StructureDefinition-VieProfessionnelle.html VieProfessionnelle]]" as VieProfessionnelle
-  Class "[[StructureDefinition-Emploi.html Emploi]]" as Emploi
   Class "[[StructureDefinition-ArretTravail.html ArretTravail]]" as ArretTravail
-  Class "[[StructureDefinition-VieScolaire.html VieScolaire]]" as VieScolaire
+  Class "[[StructureDefinition-Emploi.html Emploi]]" as Emploi
   Class "[[StructureDefinition-Observation.html Observation]]" as Observation
-  Class "[[StructureDefinition-ResultatObservation.html ResultatObservation]]" as ResultatObservation
+  Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
   Class "[[StructureDefinition-PlageReference.html PlageReference]]" as PlageReference
+  Class "[[StructureDefinition-ResultatObservation.html ResultatObservation]]" as ResultatObservation
+  Class "[[StructureDefinition-VieProfessionnelle.html VieProfessionnelle]]" as VieProfessionnelle
+  Class "[[StructureDefinition-VieQuotidienne.html VieQuotidienne]]" as VieQuotidienne
+  Class "[[StructureDefinition-VieScolaire.html VieScolaire]]" as VieScolaire
 }
 
-package "Accompagnant" {
-  Class "[[StructureDefinition-Parent.html Parent]]" as Parent
-  Class "[[StructureDefinition-AidantDemarche.html AidantDemarche]]" as AidantDemarche
-  Class "[[StructureDefinition-MesureProtection.html MesureProtection]]" as MesureProtection
+package "Professionnel" {
+  Class "[[StructureDefinition-CompetenceMedecine.html CompetenceMedecine]]" as CompetenceMedecine
+  Class "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel
+  Class "[[StructureDefinition-InterruptionExerciceProfessionnel.html InterruptionExerciceProfessionnel]]" as InterruptionExerciceProfessionnel
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+  Class "[[StructureDefinition-SavoirFaire.html SavoirFaire]]" as SavoirFaire
+  Class "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice
+  Class "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle
 }
 
-package "Dossier" {
-  Class "[[StructureDefinition-Demande.html Demande]]" as Demande
-  Class "[[StructureDefinition-Decision.html Decision]]" as Decision
-  Class "[[StructureDefinition-DossierPersonnePriseCharge.html DossierPersonnePriseCharge]]" as DossierPersonnePriseCharge
-  Class "[[StructureDefinition-Document.html Document]]" as Document
-  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
+package "Ressources opérationnelles" {
+  Class "[[StructureDefinition-CapacitePriseCharge.html CapacitePriseCharge]]" as CapacitePriseCharge
+  Class "[[StructureDefinition-EquipementSpecifique.html EquipementSpecifique]]" as EquipementSpecifique
+  Class "[[StructureDefinition-LieuRealisationOffre.html LieuRealisationOffre]]" as LieuRealisationOffre
 }
 
-package "Agenda" {
-  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
-  Class "[[StructureDefinition-Creneau.html Creneau]]" as Creneau
-  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
-  Class "[[StructureDefinition-PlageDisponibilite.html PlageDisponibilite]]" as PlageDisponibilite
-}
-
-package "Dispositif médical" {
-  Class "[[StructureDefinition-DispositifMedical.html DispositifMedical]]" as DispositifMedical
+package "Structure" {
+  Class "[[StructureDefinition-DocumentStructure.html DocumentStructure]]" as DocumentStructure
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
+  Class "[[StructureDefinition-EntiteGroupementStructure.html EntiteGroupementStructure]]" as EntiteGroupementStructure
+  Class "[[StructureDefinition-EtablissementINSEE.html EtablissementINSEE]]" as EtablissementINSEE
+  Class "[[StructureDefinition-EvenementStructure.html EvenementStructure]]" as EvenementStructure
+  Class "[[StructureDefinition-GroupeCooperationConventionnelle.html GroupeCooperationConventionnelle]]" as GroupeCooperationConventionnelle
+  Class "[[StructureDefinition-GroupeCooperationOrganique.html GroupeCooperationOrganique]]" as GroupeCooperationOrganique
+  Class "[[StructureDefinition-GroupementStructure.html GroupementStructure]]" as GroupementStructure
+  Class "[[StructureDefinition-PersonneMorale.html PersonneMorale]]" as PersonneMorale
+  Class "[[StructureDefinition-RelationEGE.html RelationEGE]]" as RelationEGE
+  Class "[[StructureDefinition-UniteLegaleINSEE.html UniteLegaleINSEE]]" as UniteLegaleINSEE
 }
 
 @enduml

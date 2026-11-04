@@ -214,9 +214,9 @@ def create_sd(name, url, url_termino, url_termino_new, conf, data, refs, inherit
         if ref not in backbones and ref not in refs_added:
         # Cardinalités vides dans Modelio
             if pd.isna(ref_min):
-                if ref_max == "*":
+                if str(ref_max) == "*":
                     ref_min = 0
-                elif ref_max == 1:
+                elif str(ref_max) == "1":
                     ref_min = 1
             elements.append({
                 "id": name + '.' + ref,

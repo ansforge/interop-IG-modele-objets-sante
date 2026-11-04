@@ -16,8 +16,8 @@ Class "[[StructureDefinition-DossierPersonnePriseCharge.html DossierPersonnePris
   identifiantDossier : Identifier [0..1]
 }
 
-Class "[[StructureDefinition-Document.html Document]]" as Document {
-  typeDocument : Coding [0..1]
+Class "[[StructureDefinition-DocumentDossierPersonnePriseCharge.html DocumentDossierPersonnePriseCharge]]" as DocumentDossierPersonnePriseCharge {
+  typeDocument : Coding [1..1]
 }
 
 Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison {
@@ -38,7 +38,7 @@ package "Professionnel" as Professionnel_part {
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
 }
 
 package "Dispositif médical" as Dispositif_médical_part {
@@ -46,14 +46,14 @@ package "Dispositif médical" as Dispositif_médical_part {
 }
 
 Demande "1" -- "*" Decision
-Demande "*" -- "*" Document
+Demande "*" -- "*" DocumentDossierPersonnePriseCharge
 Demande "*" -- "1" DossierPersonnePriseCharge
-DossierPersonnePriseCharge "1" -- "*" Document
-Document "1..*" -- "*" NoteLiaison
+DocumentDossierPersonnePriseCharge "*" -- "1" DossierPersonnePriseCharge
+DocumentDossierPersonnePriseCharge "1..*" -- "*" NoteLiaison
 DossierPersonnePriseCharge "1" -- "1" PersonnePriseCharge
 NoteLiaison "*" -- "1" PersonnePriseCharge
 NoteLiaison "*" -- "0..1" Professionnel
-NoteLiaison "*" -- "0..1" EntiteGeographique
+NoteLiaison "*" -- "0..1" EntiteGeographiqueExercice
 NoteLiaison "*" -- "0..1" DispositifMedical
 
 @enduml

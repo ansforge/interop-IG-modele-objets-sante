@@ -1,3 +1,5 @@
+/!\ Partie en cours de construction
+
 Ensemble de documents se rapportant à un même sujet.
 
 Remarque : Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans d'autres parties (ou packages).

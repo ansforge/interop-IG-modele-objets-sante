@@ -9,13 +9,6 @@ Class "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" a
   profession : Coding [0..1]
 }
 
-Class "[[StructureDefinition-Convention.html Convention]]" as Convention {
-  numeroConvention : Identifier [0..1]
-  titre : string [0..1]
-  dateDebutConvention : date [0..1]
-  dateFinConvention : date [0..1]
-}
-
 Class "[[StructureDefinition-LicenceExploitation.html LicenceExploitation]]" as LicenceExploitation {
   numeroLicence : Identifier [0..1]
   dateDebutLicence : date [0..1]
@@ -26,12 +19,35 @@ package "Professionnel" as Professionnel_part {
   Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
 }
 
+Class "[[StructureDefinition-Engagement.html Engagement]]" as Engagement {
+  commentaire : string [0..1]
+  dateEffetEngagement : date [0..1]
+  dateSignatureEngagement : date [0..1]
+  dureeValiditeEngagement : Quantity [0..1]
+  identifiantEngagement : Identifier [0..1]
+  sousTypeEngagement : Coding [0..1]
+  typeEngagement : Coding [0..1]
+}
+
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-PersonneMorale.html PersonneMorale]]" as PersonneMorale
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
+}
+
+package "Professionnel" as Professionnel_part {
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+}
+
+package "Autorisation" as Autorisation_part {
+  Class "[[StructureDefinition-ActiviteAutoriseeExercee.html ActiviteAutoriseeExercee]]" as ActiviteAutoriseeExercee
+  Class "[[StructureDefinition-CapaciteActiviteAutoriseeExercee.html CapaciteActiviteAutoriseeExercee]]" as CapaciteActiviteAutoriseeExercee
 }
 
 AutorisationExercice "*" -- "0..1" Professionnel
-Convention "*" -- "1" EntiteGeographique
-LicenceExploitation "0..1" -- "1" EntiteGeographique
+Engagement "*" -- "0..1" PersonneMorale
+Engagement "*" -- "0..1" EntiteGeographiqueExercice
+LicenceExploitation "0..1" -- "1" EntiteGeographiqueExercice
+Engagement "1..*" -- "*" ActiviteAutoriseeExercee
+Engagement "0..1" -- "*" CapaciteActiviteAutoriseeExercee
 
 @enduml

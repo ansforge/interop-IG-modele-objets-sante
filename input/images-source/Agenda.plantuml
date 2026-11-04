@@ -46,7 +46,7 @@ package "Professionnel" as Professionnel_part {
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
 }
 
 package "Ressources opérationnelles" as Ressources_opérationnelles_part {
@@ -61,8 +61,8 @@ Agenda "*" -- "*" PersonnePriseCharge
 RendezVous "*" -- "*" PersonnePriseCharge
 Agenda "*" -- "*" Professionnel
 RendezVous "*" -- "*" Professionnel
-Agenda "*" -- "*" EntiteGeographique
-RendezVous "*" -- "*" EntiteGeographique
+Agenda "*" -- "*" EntiteGeographiqueExercice
+RendezVous "*" -- "*" EntiteGeographiqueExercice
 Agenda "*" -- "*" EquipementSpecifique
 RendezVous "*" -- "*" EquipementSpecifique
 Agenda "*" -- "*" OrganisationInterne

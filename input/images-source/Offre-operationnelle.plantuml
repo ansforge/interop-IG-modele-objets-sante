@@ -2,7 +2,6 @@
 !theme carbon-gray
 
 Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle {
-  familleActiviteOperationnelle : Coding [0..1]
   identifiantOffre : Identifier [0..1]
   nomOffre : string [0..1]
   typeOffre : Coding [0..1]
@@ -28,6 +27,7 @@ Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as 
 
 Class ActiviteOperationnelle #LightBlue {
   activiteOperationnelle : Coding [0..1]
+  familleActiviteOperationnelle : Coding [0..1]
 }
 
 package "Professionnel" as Professionnel_part {
@@ -35,7 +35,7 @@ package "Professionnel" as Professionnel_part {
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
 }
 
 package "Ressources opérationnelles" as Ressources_opérationnelles_part {
@@ -47,7 +47,7 @@ package "Organisation opérationnelle" as Organisation_opérationnelle_part {
 }
 
 OffreOperationnelle "1" -- "*" SituationOperationnelle
-OffreOperationnelle "*" -- "0..1" EntiteGeographique
+OffreOperationnelle "*" -- "0..1" EntiteGeographiqueExercice
 OffreOperationnelle "1..*" -- "1..*" LieuRealisationOffre
 OffreOperationnelle "1..*" -- "0..1" OrganisationInterne
 

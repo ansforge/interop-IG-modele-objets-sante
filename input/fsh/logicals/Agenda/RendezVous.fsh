@@ -21,7 +21,7 @@ Description: "Rencontre prévue entre au moins deux personnes à une heure et da
 * commentaire 0..1 string "Détails sur le rendez-vous." "Détails sur le rendez-vous."
 * PersonnePriseCharge 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge "Lien vers la classe PersonnePriseCharge" "Lien vers la classe PersonnePriseCharge"
 * Creneau 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Creneau "Lien vers la classe Creneau" "Lien vers la classe Creneau"
-* EntiteGeographique 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* EntiteGeographiqueExercice 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice "Lien vers la classe EntiteGeographiqueExercice" "Lien vers la classe EntiteGeographiqueExercice"
 * Professionnel 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel "Lien vers la classe Professionnel" "Lien vers la classe Professionnel"
 * EquipementSpecifique 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique "Lien vers la classe EquipementSpecifique" "Lien vers la classe EquipementSpecifique"
 * OrganisationInterne 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne "Lien vers la classe OrganisationInterne" "Lien vers la classe OrganisationInterne"

@@ -10,7 +10,16 @@ Class "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]"
   categorieProfessionnelle : Coding [0..1]
   dateEffetExercice : date [0..1]
   dateFinEffetExercice : date [0..1]
+  motifFinExercice : Coding [0..1]
   departementPremierReferencementAE : Coding [0..1]
+}
+
+Class "[[StructureDefinition-InterruptionExerciceProfessionnel.html InterruptionExerciceProfessionnel]]" as InterruptionExerciceProfessionnel {
+  dateDebutInterruption : date [0..1]
+  dateFinInterruption : date [0..1]
+  origineInterruption : Coding [0..1]
+  perimetreInterruption : Coding [0..1]
+  typeDureeInterruption : Coding [0..1]
 }
 
 Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel {
@@ -95,7 +104,7 @@ package "Agenda" as Agenda_part {
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
 }
 
 package "Offre opérationnelle" as Offre_opérationnelle_part {
@@ -106,6 +115,7 @@ ExerciceProfessionnel "1" -- "*" SituationExercice
 ExerciceProfessionnel "1" -- "*" SavoirFaire
 ExerciceProfessionnel "*" -- "1" Professionnel
 ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+ExerciceProfessionnel "1" -- "*" InterruptionExerciceProfessionnel
 ExerciceProfessionnel "0..1" -- "*" Certificat
 ExerciceProfessionnel "1" -- "*" CarteProfessionnel
 Professionnel "0..1" -- "*" NoteLiaison
@@ -114,7 +124,7 @@ Professionnel "*" -- "*" PersonnePriseCharge
 Professionnel "0..1" -- "*" AutorisationExercice
 Professionnel "*" -- "*" Agenda
 Professionnel "*" -- "*" RendezVous
-SituationExercice "*" -- "0..1" EntiteGeographique
+SituationExercice "*" -- "0..1" EntiteGeographiqueExercice
 SituationOperationnelle "*" -- "1" OffreOperationnelle
 ExerciceProfessionnel --> InscriptionOrdre : 0..*
 ExerciceProfessionnel --> AttributionParticuliere : 0..1

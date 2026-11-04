@@ -29,14 +29,14 @@ package "Professionnel" as Professionnel_part {
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
-  Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
+  Class "[[StructureDefinition-PersonneMorale.html PersonneMorale]]" as PersonneMorale
 }
 
 CarteProfessionnel "*" -- "1" ExerciceProfessionnel
 Certificat "*" -- "0..1" ExerciceProfessionnel
 CarteProfessionnel "0..1" -- "1..*" Certificat
-Certificat "*" -- "0..1" EntiteGeographique
-Certificat "0..1" -- "0..1" EntiteJuridique
+Certificat "*" -- "0..1" EntiteGeographiqueExercice
+Certificat "0..1" -- "0..1" PersonneMorale
 
 @enduml

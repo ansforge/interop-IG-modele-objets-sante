@@ -14,10 +14,10 @@ Class "[[StructureDefinition-MesureProtection.html MesureProtection]]" as Mesure
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
 }
 
-AidantDemarche "0..1" -- "0..1" EntiteGeographique
-MesureProtection "0..1" -- "0..1" EntiteGeographique
+AidantDemarche "0..1" -- "0..1" EntiteGeographiqueExercice
+MesureProtection "0..1" -- "0..1" EntiteGeographiqueExercice
 
 @enduml

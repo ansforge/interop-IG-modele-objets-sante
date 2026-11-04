@@ -99,7 +99,7 @@ package "Professionnel" as Professionnel_part {
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographiqueExercice.html EntiteGeographiqueExercice]]" as EntiteGeographiqueExercice
 }
 
 PersonnePriseCharge "*" -- "*" RendezVous
@@ -116,7 +116,7 @@ PersonnePriseCharge "1" -- "*" NoteLiaison
 PersonnePriseCharge "1" -- "1" DossierPersonnePriseCharge
 PersonnePriseCharge "*" -- "*" Professionnel
 Observation "*" -- "0..1" Professionnel
-Emploi "0..1" -- "1" EntiteGeographique
+Emploi "0..1" -- "1" EntiteGeographiqueExercice
 PersonnePriseCharge --> INS : 0..*
 
 @enduml

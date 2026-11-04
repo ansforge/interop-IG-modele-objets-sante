@@ -6,4 +6,4 @@ Description: "Prix des prestations et services d'une entité géographique."
 * ^status = #draft
 * . ^short = "Prix des prestations et services d'une entité géographique."
 * . ^definition = "Prix des prestations et services d'une entité géographique."
-* EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* EntiteGeographiqueExercice 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice "Lien vers la classe EntiteGeographiqueExercice" "Lien vers la classe EntiteGeographiqueExercice"

@@ -33,14 +33,14 @@ Class SupportIUD #LightBlue {
 }
 
 package "Structure" as Structure_part {
-  Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique
+  Class "[[StructureDefinition-PersonneMorale.html PersonneMorale]]" as PersonneMorale
 }
 
 package "Dossier" as Dossier_part {
   Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
 }
 
-DispositifMedical "*" -- "1" EntiteJuridique
+DispositifMedical "*" -- "1" PersonneMorale
 DispositifMedical "0..1" -- "*" NoteLiaison
 
 DispositifMedical --> SupportIUD : 0..*
