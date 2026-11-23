@@ -1,0 +1,206 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "GroupementStructure",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure GroupementStructure</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-GroupementStructure-definitions.html#GroupementStructure\" title=\"Dans le cadre de structures complexes, il existe la notion de groupements. Ils permettent de fédérer des Personnes Morales ou des Entités Géographiques d’Exercice. Les Groupements sont de 2 types : les “GCO” et les “GCC” Les groupements fédèrent des membres\">GroupementStructure</a><a name=\"GroupementStructure\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Groupement.html\">Groupement</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Dans le cadre de structures complexes, il existe la notion de groupements. Ils permettent de fédérer des Personnes Morales ou des Entités Géographiques d’Exercice. Les Groupements sont de 2 types : les “GCO” et les “GCC” Les groupements fédèrent des membres<br/><br/>Éléments définis dans les ancêtres :<a href=\"StructureDefinition-Groupement.html\" title=\"Identifiant du groupement.\">idGroupement</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de création du groupement.\">dateCreation</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de mise à jour du groupement.\">dateMAJ</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de fin d'existence du groupement.\">dateFin</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Lien vers la classe Membre\">Membre</a></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupementStructure.</span><a href=\"StructureDefinition-GroupementStructure-definitions.html#GroupementStructure.typeGroupementStructure\" title=\"Type de regroupement  de structures ( à compléter)\">typeGroupementStructure</a><a name=\"GroupementStructure.typeGroupementStructure\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Type de regroupement  de structures ( à compléter)<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r387-type-groupement?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r387-type-groupement?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupementStructure.</span><a href=\"StructureDefinition-GroupementStructure-definitions.html#GroupementStructure.EntiteGroupementStructure\" title=\"Lien vers la classe EntiteGroupementStructure\">EntiteGroupementStructure</a><a name=\"GroupementStructure.EntiteGroupementStructure\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EntiteGroupementStructure.html\">EntiteGroupementStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe EntiteGroupementStructure<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupementStructure",
+  "version" : "0.1.0-ballot",
+  "name" : "GroupementStructure",
+  "title" : "GroupementStructure",
+  "status" : "draft",
+  "date" : "2026-11-04T15:30:59+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Dans le cadre de structures complexes, il existe la notion de groupements. Ils permettent de fédérer des Personnes Morales ou des Entités Géographiques d’Exercice. Les Groupements sont de 2 types : les “GCO” et les “GCC” Les groupements fédèrent des membres",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupementStructure",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Groupement",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.1.0-ballot"
+    }],
+    "element" : [{
+      "id" : "GroupementStructure",
+      "path" : "GroupementStructure",
+      "short" : "Dans le cadre de structures complexes, il existe la notion de groupements. Ils permettent de fédérer des Personnes Morales ou des Entités Géographiques d’Exercice. Les Groupements sont de 2 types : les “GCO” et les “GCC” Les groupements fédèrent des membres",
+      "definition" : "Dans le cadre de structures complexes, il existe la notion de groupements. Ils permettent de fédérer des Personnes Morales ou des Entités Géographiques d’Exercice. Les Groupements sont de 2 types : les “GCO” et les “GCC” Les groupements fédèrent des membres",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "GroupementStructure.idGroupement",
+      "path" : "GroupementStructure.idGroupement",
+      "short" : "Identifiant du groupement.",
+      "definition" : "Identifiant du groupement.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Groupement.idGroupement",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "GroupementStructure.dateCreation",
+      "path" : "GroupementStructure.dateCreation",
+      "short" : "Date de création du groupement.",
+      "definition" : "Date de création du groupement.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Groupement.dateCreation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "GroupementStructure.dateMAJ",
+      "path" : "GroupementStructure.dateMAJ",
+      "short" : "Date de mise à jour du groupement.",
+      "definition" : "Date de mise à jour du groupement.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Groupement.dateMAJ",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "GroupementStructure.dateFin",
+      "path" : "GroupementStructure.dateFin",
+      "short" : "Date de fin d'existence du groupement.",
+      "definition" : "Date de fin d'existence du groupement.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Groupement.dateFin",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "GroupementStructure.Membre",
+      "path" : "GroupementStructure.Membre",
+      "short" : "Lien vers la classe Membre",
+      "definition" : "Lien vers la classe Membre",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Groupement.Membre",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Membre"
+      }]
+    },
+    {
+      "id" : "GroupementStructure.typeGroupementStructure",
+      "path" : "GroupementStructure.typeGroupementStructure",
+      "short" : "Type de regroupement  de structures ( à compléter)",
+      "definition" : "Type de regroupement  de structures ( à compléter)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "GroupementStructure.typeGroupementStructure",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r387-type-groupement?vs"
+      }
+    },
+    {
+      "id" : "GroupementStructure.EntiteGroupementStructure",
+      "path" : "GroupementStructure.EntiteGroupementStructure",
+      "short" : "Lien vers la classe EntiteGroupementStructure",
+      "definition" : "Lien vers la classe EntiteGroupementStructure",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "GroupementStructure.EntiteGroupementStructure",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGroupementStructure"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "GroupementStructure",
+      "path" : "GroupementStructure",
+      "short" : "Dans le cadre de structures complexes, il existe la notion de groupements. Ils permettent de fédérer des Personnes Morales ou des Entités Géographiques d’Exercice. Les Groupements sont de 2 types : les “GCO” et les “GCC” Les groupements fédèrent des membres",
+      "definition" : "Dans le cadre de structures complexes, il existe la notion de groupements. Ils permettent de fédérer des Personnes Morales ou des Entités Géographiques d’Exercice. Les Groupements sont de 2 types : les “GCO” et les “GCC” Les groupements fédèrent des membres"
+    },
+    {
+      "id" : "GroupementStructure.typeGroupementStructure",
+      "path" : "GroupementStructure.typeGroupementStructure",
+      "short" : "Type de regroupement  de structures ( à compléter)",
+      "definition" : "Type de regroupement  de structures ( à compléter)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r387-type-groupement?vs"
+      }
+    },
+    {
+      "id" : "GroupementStructure.EntiteGroupementStructure",
+      "path" : "GroupementStructure.EntiteGroupementStructure",
+      "short" : "Lien vers la classe EntiteGroupementStructure",
+      "definition" : "Lien vers la classe EntiteGroupementStructure",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGroupementStructure"
+      }]
+    }]
+  }
+}

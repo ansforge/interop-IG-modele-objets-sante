@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Accord - Modèle des Objets de Santé (MOS) v0.1.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="https://esante.gouv.fr/produits-services/ci-sis"><img height="50" alt="Visit the CI-SIS website" src="assets/images/ci-sis-logo.jpeg"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0-ballot - public-comment
+
+
+
+  France (la)
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="classes_communes.html">Classes communes</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Composants élémentaires
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="accompagnant.html">Accompagnant</a>
+      </li>
+      <li>
+        <a href="accord.html">Accord</a>
+      </li>
+      <li>
+        <a href="agenda.html">Agenda</a>
+      </li>
+      <li>
+        <a href="autorisation.html">Autorisation</a>
+      </li>
+      <li>
+        <a href="dispo-authent.html">Dispositif d&apos;authentification</a>
+      </li>
+      <li>
+        <a href="dispositif-medical.html">Dispositif médical</a>
+      </li>
+      <li>
+        <a href="dossier.html">Dossier</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre opérationnelle</a>
+      </li>
+      <li>
+        <a href="ppec.html">Personne prise en charge</a>
+      </li>
+      <li>
+        <a href="professionnel.html">Professionnel</a>
+      </li>
+      <li>
+        <a href="ressops.html">Ressources opérationnelles</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="change_notes.html">Historique</a>
+  </li>
+  <li>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='composants_elementaires.html'><b>Composants élémentaires</b></a></li><li><b>Accord</b></li>
+
+          <span style="float:right;">
+
+            <a href="accompagnant.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="agenda.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - version de développement local (intégration continue v0.1.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Accord</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>Cette partie décrit les modalités réglementaires, contractuelles ou de financement qui régissent l’exercice voire l’existence des principaux objets métiers de la sphère (activité, professionnel, structure, bien d’équipement). Un accord est donné par une autorité institutionnelle comme un ordre professionnel, une ARS, ou l’assurance maladie.</p>
+
+<p>L’accord peut intervenir entre plusieurs acteurs dans le cas, par exemple, de convention tripartite. Plusieurs types d’accord peuvent être répertoriés en cible :</p>
+<ul>
+  <li>autorisation (ex : accord entre l’ARS et l’entité juridique à laquelle est donnée l’autorisation);</li>
+  <li>autorisation d’exercice (ex : lors de l’inscription à l’ordre d’un professionnel);</li>
+  <li>contrat (ex : convention entre un professionnel et l’assurance maladie, etc.);</li>
+  <li>agrément (ex : agrément donné par l’ARS à une entreprise de transport sanitaire pour ses véhicules);</li>
+  <li>etc.</li>
+</ul>
+
+<p>Ref.: DSSIS_CibleIntermédiaire_20131122_v2.docx
+Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).</p>
+
+<!-- CSS pour les contrôles SVG interactifs -->
+<style>
+/* ===========================
+   CONTENEUR SVG - MODE NORMAL
+   =========================== */
+.svg-wrap {
+  position: relative;
+  cursor: default;
+  overflow: visible !important;
+  text-align: center;
+}
+
+.svg-wrap > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-wrap svg {
+  transition: transform 0.1s ease-out;
+  display: block;
+  margin: 0 auto;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* ===========================
+   CONTENEUR SVG - FULLSCREEN
+   =========================== */
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) {
+  background: white;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) > p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) svg {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+/* Curseur grabbing pendant le drag */
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen).grabbing {
+  cursor: grabbing;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen).grabbing * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+/* ===========================
+   BOUTONS DE CONTRÔLE
+   =========================== */
+.svg-controls {
+  z-index: 99999 !important;
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+}
+
+.svg-controls .btn {
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+  transition: none !important;
+  z-index: 99999 !important;
+  border-radius: 0.25rem !important;
+  position: relative;
+  background: white;
+  color: var(--body-color);
+}
+
+/* Surcharge Bootstrap btn-group-vertical */
+.svg-controls.btn-group-vertical .btn {
+  border-radius: 0.25rem !important;
+  margin-top: 2px;
+}
+
+/* Boutons zoom cachés en mode normal */
+.svg-controls .svg-zoom-in,
+.svg-controls .svg-zoom-out,
+.svg-controls .svg-zoom-reset {
+  display: none;
+}
+
+/* Boutons zoom visibles en fullscreen */
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls .svg-zoom-in,
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls .svg-zoom-out,
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls .svg-zoom-reset {
+  display: block;
+}
+
+/* Z-index élevé pour les contrôles en fullscreen */
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls {
+  z-index: 99999 !important;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls .btn {
+  z-index: 99999 !important;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls .btn:is(:hover, :focus, :active) {
+  z-index: 99999 !important;
+}
+</style>
+
+<div class="figure svg-wrap" style="width:100%;">
+  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
+    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
+    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
+    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
+    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
+  </div>
+  <p style="margin: 0; padding: 0;">
+    <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="445px" preserveAspectRatio="none" style="width:1212px;height:445px;" version="1.1" viewBox="0 0 1212 445" width="1212px" zoomAndPan="magnify"><defs><linearGradient id="gnc5h80nlziud0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F4F4F4" /><stop offset="100%" stop-color="#F4F4F4" /></linearGradient></defs><g><!--cluster Professionnel_part--><g id="cluster_Professionnel_part"><polygon fill="#FFFFFF" points="41.5,311,165.5,311,172.5,350.9688,201.5,350.9688,201.5,438,41.5,438,41.5,311" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="41.5" x2="172.5" y1="350.9688" y2="350.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="98" x="55.5" y="334.1387">Professionnel</text></g><!--cluster Structure_part--><g id="cluster_Structure_part"><polygon fill="#FFFFFF" points="257.5,311,350.5,311,357.5,350.9688,676.5,350.9688,676.5,438,257.5,438,257.5,311" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="257.5" x2="357.5" y1="350.9688" y2="350.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="67" x="271.5" y="334.1387">Structure</text></g><!--cluster Autorisation_part--><g id="cluster_Autorisation_part"><polygon fill="#FFFFFF" points="700.5,311,814.5,311,821.5,350.9688,1195.5,350.9688,1195.5,438,700.5,438,700.5,311" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="700.5" x2="821.5" y1="350.9688" y2="350.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="88" x="714.5" y="334.1387">Autorisation</text></g><!--class Professionnel--><g id="elem_Professionnel"><rect codeLine="37" fill="url(#gnc5h80nlziud0)" height="58.8047" id="Professionnel" style="stroke:#C6C6C6;stroke-width:1.0;" width="128" x="57.5" y="363" /><rect fill="url(#gnc5h80nlziud0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="128" x="57.5" y="363" /><ellipse cx="71.5" cy="384.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M73.3281,388.6523 Q72.9219,388.8555 72.4688,388.9648 Q72.0156,389.0742 71.5313,389.0742 Q69.75,389.0742 68.8125,387.918 Q67.8906,386.7461 67.8906,384.543 Q67.8906,382.3242 68.8125,381.168 Q69.75,379.9961 71.5313,379.9961 Q72.0156,379.9961 72.4688,380.1055 Q72.9375,380.1992 73.3281,380.418 L73.3281,382.3398 Q72.8906,381.9336 72.4688,381.7461 Q72.0469,381.543 71.6094,381.543 Q70.6563,381.543 70.1719,382.3086 Q69.6875,383.0586 69.6875,384.543 Q69.6875,386.0117 70.1719,386.7617 Q70.6563,387.5117 71.6094,387.5117 Q72.0469,387.5117 72.4688,387.3242 Q72.8906,387.1367 73.3281,386.7305 L73.3281,388.6523 Z " fill="#000000" /><a href="StructureDefinition-Professionnel.html" target="_top" title="StructureDefinition-Professionnel.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-Professionnel.html" xlink:show="new" xlink:title="StructureDefinition-Professionnel.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="78" x="94.5" y="388.2104">Professionnel</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="58.5" x2="184.5" y1="405.8047" y2="405.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="58.5" x2="184.5" y1="413.8047" y2="413.8047" /></g><!--class PersonneMorale--><g id="elem_PersonneMorale"><rect codeLine="32" fill="url(#gnc5h80nlziud0)" height="58.8047" id="PersonneMorale" style="stroke:#C6C6C6;stroke-width:1.0;" width="142" x="518.5" y="363" /><rect fill="url(#gnc5h80nlziud0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="142" x="518.5" y="363" /><ellipse cx="532.5" cy="384.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M534.3281,388.6523 Q533.9219,388.8555 533.4688,388.9648 Q533.0156,389.0742 532.5313,389.0742 Q530.75,389.0742 529.8125,387.918 Q528.8906,386.7461 528.8906,384.543 Q528.8906,382.3242 529.8125,381.168 Q530.75,379.9961 532.5313,379.9961 Q533.0156,379.9961 533.4688,380.1055 Q533.9375,380.1992 534.3281,380.418 L534.3281,382.3398 Q533.8906,381.9336 533.4688,381.7461 Q533.0469,381.543 532.6094,381.543 Q531.6563,381.543 531.1719,382.3086 Q530.6875,383.0586 530.6875,384.543 Q530.6875,386.0117 531.1719,386.7617 Q531.6563,387.5117 532.6094,387.5117 Q533.0469,387.5117 533.4688,387.3242 Q533.8906,387.1367 534.3281,386.7305 L534.3281,388.6523 Z " fill="#000000" /><a href="StructureDefinition-PersonneMorale.html" target="_top" title="StructureDefinition-PersonneMorale.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-PersonneMorale.html" xlink:show="new" xlink:title="StructureDefinition-PersonneMorale.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="92" x="555.5" y="388.2104">PersonneMorale</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="519.5" x2="659.5" y1="405.8047" y2="405.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="519.5" x2="659.5" y1="413.8047" y2="413.8047" /></g><!--class EntiteGeographiqueExercice--><g id="elem_EntiteGeographiqueExercice"><rect codeLine="33" fill="url(#gnc5h80nlziud0)" height="58.8047" id="EntiteGeographiqueExercice" style="stroke:#C6C6C6;stroke-width:1.0;" width="209" x="274" y="363" /><rect fill="url(#gnc5h80nlziud0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="209" x="274" y="363" /><ellipse cx="288" cy="384.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M289.8281,388.6523 Q289.4219,388.8555 288.9688,388.9648 Q288.5156,389.0742 288.0313,389.0742 Q286.25,389.0742 285.3125,387.918 Q284.3906,386.7461 284.3906,384.543 Q284.3906,382.3242 285.3125,381.168 Q286.25,379.9961 288.0313,379.9961 Q288.5156,379.9961 288.9688,380.1055 Q289.4375,380.1992 289.8281,380.418 L289.8281,382.3398 Q289.3906,381.9336 288.9688,381.7461 Q288.5469,381.543 288.1094,381.543 Q287.1563,381.543 286.6719,382.3086 Q286.1875,383.0586 286.1875,384.543 Q286.1875,386.0117 286.6719,386.7617 Q287.1563,387.5117 288.1094,387.5117 Q288.5469,387.5117 288.9688,387.3242 Q289.3906,387.1367 289.8281,386.7305 L289.8281,388.6523 Z " fill="#000000" /><a href="StructureDefinition-EntiteGeographiqueExercice.html" target="_top" title="StructureDefinition-EntiteGeographiqueExercice.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-EntiteGeographiqueExercice.html" xlink:show="new" xlink:title="StructureDefinition-EntiteGeographiqueExercice.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="159" x="311" y="388.2104">EntiteGeographiqueExercice</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="275" x2="482" y1="405.8047" y2="405.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="275" x2="482" y1="413.8047" y2="413.8047" /></g><!--class ActiviteAutoriseeExercee--><g id="elem_ActiviteAutoriseeExercee"><rect codeLine="41" fill="url(#gnc5h80nlziud0)" height="58.8047" id="ActiviteAutoriseeExercee" style="stroke:#C6C6C6;stroke-width:1.0;" width="189" x="990" y="363" /><rect fill="url(#gnc5h80nlziud0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="189" x="990" y="363" /><ellipse cx="1004" cy="384.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1005.8281,388.6523 Q1005.4219,388.8555 1004.9688,388.9648 Q1004.5156,389.0742 1004.0313,389.0742 Q1002.25,389.0742 1001.3125,387.918 Q1000.3906,386.7461 1000.3906,384.543 Q1000.3906,382.3242 1001.3125,381.168 Q1002.25,379.9961 1004.0313,379.9961 Q1004.5156,379.9961 1004.9688,380.1055 Q1005.4375,380.1992 1005.8281,380.418 L1005.8281,382.3398 Q1005.3906,381.9336 1004.9688,381.7461 Q1004.5469,381.543 1004.1094,381.543 Q1003.1563,381.543 1002.6719,382.3086 Q1002.1875,383.0586 1002.1875,384.543 Q1002.1875,386.0117 1002.6719,386.7617 Q1003.1563,387.5117 1004.1094,387.5117 Q1004.5469,387.5117 1004.9688,387.3242 Q1005.3906,387.1367 1005.8281,386.7305 L1005.8281,388.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteAutoriseeExercee.html" target="_top" title="StructureDefinition-ActiviteAutoriseeExercee.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteAutoriseeExercee.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteAutoriseeExercee.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="139" x="1027" y="388.2104">ActiviteAutoriseeExercee</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="991" x2="1178" y1="405.8047" y2="405.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="991" x2="1178" y1="413.8047" y2="413.8047" /></g><!--class CapaciteActiviteAutoriseeExercee--><g id="elem_CapaciteActiviteAutoriseeExercee"><rect codeLine="42" fill="url(#gnc5h80nlziud0)" height="58.8047" id="CapaciteActiviteAutoriseeExercee" style="stroke:#C6C6C6;stroke-width:1.0;" width="238" x="716.5" y="363" /><rect fill="url(#gnc5h80nlziud0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="238" x="716.5" y="363" /><ellipse cx="730.5" cy="384.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M732.3281,388.6523 Q731.9219,388.8555 731.4688,388.9648 Q731.0156,389.0742 730.5313,389.0742 Q728.75,389.0742 727.8125,387.918 Q726.8906,386.7461 726.8906,384.543 Q726.8906,382.3242 727.8125,381.168 Q728.75,379.9961 730.5313,379.9961 Q731.0156,379.9961 731.4688,380.1055 Q731.9375,380.1992 732.3281,380.418 L732.3281,382.3398 Q731.8906,381.9336 731.4688,381.7461 Q731.0469,381.543 730.6094,381.543 Q729.6563,381.543 729.1719,382.3086 Q728.6875,383.0586 728.6875,384.543 Q728.6875,386.0117 729.1719,386.7617 Q729.6563,387.5117 730.6094,387.5117 Q731.0469,387.5117 731.4688,387.3242 Q731.8906,387.1367 732.3281,386.7305 L732.3281,388.6523 Z " fill="#000000" /><a href="StructureDefinition-CapaciteActiviteAutoriseeExercee.html" target="_top" title="StructureDefinition-CapaciteActiviteAutoriseeExercee.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-CapaciteActiviteAutoriseeExercee.html" xlink:show="new" xlink:title="StructureDefinition-CapaciteActiviteAutoriseeExercee.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="188" x="753.5" y="388.2104">CapaciteActiviteAutoriseeExercee</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="717.5" x2="953.5" y1="405.8047" y2="405.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="717.5" x2="953.5" y1="413.8047" y2="413.8047" /></g><!--class AutorisationExercice--><g id="elem_AutorisationExercice"><rect codeLine="3" fill="url(#gnc5h80nlziud0)" height="222.8281" id="AutorisationExercice" style="stroke:#C6C6C6;stroke-width:1.0;" width="229" x="7" y="39.5" /><rect fill="url(#gnc5h80nlziud0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="229" x="7" y="39.5" /><ellipse cx="50" cy="60.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M51.8281,65.1523 Q51.4219,65.3555 50.9688,65.4648 Q50.5156,65.5742 50.0313,65.5742 Q48.25,65.5742 47.3125,64.418 Q46.3906,63.2461 46.3906,61.043 Q46.3906,58.8242 47.3125,57.668 Q48.25,56.4961 50.0313,56.4961 Q50.5156,56.4961 50.9688,56.6055 Q51.4375,56.6992 51.8281,56.918 L51.8281,58.8398 Q51.3906,58.4336 50.9688,58.2461 Q50.5469,58.043 50.1094,58.043 Q49.1563,58.043 48.6719,58.8086 Q48.1875,59.5586 48.1875,61.043 Q48.1875,62.5117 48.6719,63.2617 Q49.1563,64.0117 50.1094,64.0117 Q50.5469,64.0117 50.9688,63.8242 Q51.3906,63.6367 51.8281,63.2305 L51.8281,65.1523 Z " fill="#000000" /><a href="StructureDefinition-AutorisationExercice.html" target="_top" title="StructureDefinition-AutorisationExercice.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-AutorisationExercice.html" xlink:show="new" xlink:title="StructureDefinition-AutorisationExercice.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="115" x="79" y="64.7104">AutorisationExercice</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="235" y1="82.3047" y2="82.3047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="177" x="23" y="106.5151">typeAutorisation : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="192" x="23" y="139.3198">disciplineAutorisee : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="197" x="23" y="172.1245">dateDebutAutorisation : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="180" x="23" y="204.9292">dateFinAutorisation : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="146" x="23" y="237.7339">profession : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="235" y1="254.3281" y2="254.3281" /></g><!--class LicenceExploitation--><g id="elem_LicenceExploitation"><rect codeLine="11" fill="url(#gnc5h80nlziud0)" height="157.2188" id="LicenceExploitation" style="stroke:#C6C6C6;stroke-width:1.0;" width="214" x="271.5" y="72.5" /><rect fill="url(#gnc5h80nlziud0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="214" x="271.5" y="72.5" /><ellipse cx="311.15" cy="93.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M312.9781,98.1523 Q312.5719,98.3555 312.1188,98.4648 Q311.6656,98.5742 311.1813,98.5742 Q309.4,98.5742 308.4625,97.418 Q307.5406,96.2461 307.5406,94.043 Q307.5406,91.8242 308.4625,90.668 Q309.4,89.4961 311.1813,89.4961 Q311.6656,89.4961 312.1188,89.6055 Q312.5875,89.6992 312.9781,89.918 L312.9781,91.8398 Q312.5406,91.4336 312.1188,91.2461 Q311.6969,91.043 311.2594,91.043 Q310.3063,91.043 309.8219,91.8086 Q309.3375,92.5586 309.3375,94.043 Q309.3375,95.5117 309.8219,96.2617 Q310.3063,97.0117 311.2594,97.0117 Q311.6969,97.0117 312.1188,96.8242 Q312.5406,96.6367 312.9781,96.2305 L312.9781,98.1523 Z " fill="#000000" /><a href="StructureDefinition-LicenceExploitation.html" target="_top" title="StructureDefinition-LicenceExploitation.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-LicenceExploitation.html" xlink:show="new" xlink:title="StructureDefinition-LicenceExploitation.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="107" x="339.85" y="97.7104">LicenceExploitation</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="272.5" x2="484.5" y1="115.3047" y2="115.3047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="182" x="287.5" y="139.5151">numeroLicence : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="171" x="287.5" y="172.3198">dateDebutLicence : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="154" x="287.5" y="205.1245">dateFinLicence : date [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="272.5" x2="484.5" y1="221.7188" y2="221.7188" /></g><!--class Engagement--><g id="elem_Engagement"><rect codeLine="21" fill="url(#gnc5h80nlziud0)" height="288.4375" id="Engagement" style="stroke:#C6C6C6;stroke-width:1.0;" width="270" x="610.5" y="7" /><rect fill="url(#gnc5h80nlziud0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="270" x="610.5" y="7" /><ellipse cx="696" cy="28.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M697.8281,32.6523 Q697.4219,32.8555 696.9688,32.9648 Q696.5156,33.0742 696.0313,33.0742 Q694.25,33.0742 693.3125,31.918 Q692.3906,30.7461 692.3906,28.543 Q692.3906,26.3242 693.3125,25.168 Q694.25,23.9961 696.0313,23.9961 Q696.5156,23.9961 696.9688,24.1055 Q697.4375,24.1992 697.8281,24.418 L697.8281,26.3398 Q697.3906,25.9336 696.9688,25.7461 Q696.5469,25.543 696.1094,25.543 Q695.1563,25.543 694.6719,26.3086 Q694.1875,27.0586 694.1875,28.543 Q694.1875,30.0117 694.6719,30.7617 Q695.1563,31.5117 696.1094,31.5117 Q696.5469,31.5117 696.9688,31.3242 Q697.3906,31.1367 697.8281,30.7305 L697.8281,32.6523 Z " fill="#000000" /><a href="StructureDefinition-Engagement.html" target="_top" title="StructureDefinition-Engagement.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-Engagement.html" xlink:show="new" xlink:title="StructureDefinition-Engagement.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="71" x="725" y="32.2104">Engagement</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="611.5" x2="879.5" y1="49.8047" y2="49.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="154" x="626.5" y="74.0151">commentaire : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="193" x="626.5" y="106.8198">dateEffetEngagement : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="222" x="626.5" y="139.6245">dateSignatureEngagement : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="238" x="626.5" y="172.4292">dureeValiditeEngagement : Quantity [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="223" x="626.5" y="205.2339">identifiantEngagement : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="211" x="626.5" y="238.0386">sousTypeEngagement : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="180" x="626.5" y="270.8433">typeEngagement : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="611.5" x2="879.5" y1="287.4375" y2="287.4375" /></g><!--link AutorisationExercice to Professionnel--><g id="link_AutorisationExercice_Professionnel"><path codeLine="45" d="M121.5,262.64 C121.5,299.65 121.5,337.83 121.5,362.93 " fill="none" id="AutorisationExercice-Professionnel" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="104.7078" y="291.622">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="83.1688" y="342.1132">0..1</text></g><!--link Engagement to PersonneMorale--><g id="link_Engagement_PersonneMorale"><path codeLine="46" d="M652.28,295.12 C635.49,320.9 619.68,345.17 608.13,362.91 " fill="none" id="Engagement-PersonneMorale" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="630.803" y="324.5543">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="573.4665" y="342.0893">0..1</text></g><!--link Engagement to EntiteGeographiqueExercice--><g id="link_Engagement_EntiteGeographiqueExercice"><path codeLine="47" d="M610.19,232.88 C574.2,255.08 535.58,279.51 500.5,303 C471.8,322.22 440.26,345.14 416.44,362.85 " fill="none" id="Engagement-EntiteGeographiqueExercice" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="586.5428" y="224.4035">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="385.4786" y="342.3023">0..1</text></g><!--link LicenceExploitation to EntiteGeographiqueExercice--><g id="link_LicenceExploitation_EntiteGeographiqueExercice"><path codeLine="48" d="M378.5,229.76 C378.5,275.38 378.5,330.31 378.5,362.99 " fill="none" id="LicenceExploitation-EntiteGeographiqueExercice" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="342.6781" y="258.8184">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="357.7438" y="342.185">1</text></g><!--link Engagement to ActiviteAutoriseeExercee--><g id="link_Engagement_ActiviteAutoriseeExercee"><path codeLine="49" d="M880.58,239.24 C911.14,259.69 943.2,281.73 972.5,303 C998.97,322.22 1027.92,345.14 1049.76,362.85 " fill="none" id="Engagement-ActiviteAutoriseeExercee" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="898.6279" y="231.0915">1..*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="1024.6596" y="342.3023">*</text></g><!--link Engagement to CapaciteActiviteAutoriseeExercee--><g id="link_Engagement_CapaciteActiviteAutoriseeExercee"><path codeLine="50" d="M799.28,295.12 C808.97,320.9 818.09,345.17 824.75,362.91 " fill="none" id="Engagement-CapaciteActiviteAutoriseeExercee" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="766.9187" y="324.5543">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="804.0742" y="342.0893">*</text></g></g></svg>
+  </p>
+</div>
+
+<!-- Script pour les contrôles SVG interactifs -->
+<script>
+(function() {
+  // Attendre que le DOM soit complètement chargé
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAllSvgWrappers);
+  } else {
+    initAllSvgWrappers();
+  }
+
+  function initAllSvgWrappers() {
+    // Initialiser tous les wrappers SVG sur la page
+    const wrappers = document.querySelectorAll('.svg-wrap');
+    wrappers.forEach(wrap => initSvgWrapper(wrap));
+  }
+
+  function initSvgWrapper(wrap) {
+    if (!wrap) return;
+
+    // Trouver le SVG inclus
+    const svg = wrap.querySelector('svg');
+    if (!svg) {
+      console.warn('SVG non trouvé dans', wrap);
+      return;
+    }
+
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+    const zoomStep = 0.15;
+    const minScale = 0.3;
+    const maxScale = 5;
+    const panSpeed = 1;
+
+    let isPanning = false;
+    let startX = 0;
+    let startY = 0;
+
+    // Fonction pour vérifier si on est en fullscreen
+    function isFullscreen() {
+      return document.fullscreenElement === wrap;
+    }
+
+    function applyTransform() {
+      if (isFullscreen()) {
+        svg.style.transformOrigin = "center center";
+        svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      } else {
+        // En mode normal, pas de transformation
+        svg.style.transform = '';
+      }
+    }
+
+    // Récupérer les boutons de contrôle pour ce wrapper spécifique
+    const zoomInBtn = wrap.querySelector('.svg-zoom-in');
+    const zoomOutBtn = wrap.querySelector('.svg-zoom-out');
+    const zoomResetBtn = wrap.querySelector('.svg-zoom-reset');
+    const fsBtn = wrap.querySelector('.svg-fullscreen');
+
+    /* ZOOM PAR BOUTONS */
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = Math.min(maxScale, scale + zoomStep);
+        applyTransform();
+      });
+    }
+
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = Math.max(minScale, scale - zoomStep);
+        applyTransform();
+      });
+    }
+
+    if (zoomResetBtn) {
+      zoomResetBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      });
+    }
+
+    /* ZOOM À LA MOLETTE */
+    wrap.addEventListener('wheel', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      e.preventDefault();
+      const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
+      scale = Math.min(maxScale, Math.max(minScale, scale + delta));
+      applyTransform();
+    }, { passive: false });
+
+    /* PAN (déplacement à la souris) */
+    wrap.addEventListener('mousedown', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+
+      // Ignorer si clic sur les boutons de contrôle
+      if (e.target.closest('.svg-controls')) return;
+
+      // Ignorer si clic sur un lien ou élément cliquable dans le SVG
+      if (e.target.tagName === 'A' || e.target.closest('a')) return;
+      if (e.target.hasAttribute('href') || e.target.getAttribute('xlink:href')) return;
+
+      // Ignorer si ce n'est pas le bouton gauche
+      if (e.button !== 0) return;
+
+      e.preventDefault();
+      isPanning = true;
+      startX = e.clientX - (translateX / panSpeed);
+      startY = e.clientY - (translateY / panSpeed);
+      wrap.classList.add('grabbing');
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isPanning) return;
+      e.preventDefault();
+      const deltaX = (e.clientX - startX) * panSpeed;
+      const deltaY = (e.clientY - startY) * panSpeed;
+      translateX = deltaX;
+      translateY = deltaY;
+      applyTransform();
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    /* PINCH ZOOM (mobile) */
+    let touchDistance = null;
+    let lastTouchX = 0;
+    let lastTouchY = 0;
+
+    wrap.addEventListener('touchstart', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDistance = Math.sqrt(dx*dx + dy*dy);
+
+        lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      } else if (e.touches.length === 1) {
+        lastTouchX = e.touches[0].clientX;
+        lastTouchY = e.touches[0].clientY;
+      }
+    });
+
+    wrap.addEventListener('touchmove', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (e.touches.length === 2) {
+        e.preventDefault();
+
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const newDist = Math.sqrt(dx*dx + dy*dy);
+
+        if (touchDistance) {
+          const diff = newDist - touchDistance;
+          scale += diff * 0.005;
+          scale = Math.min(maxScale, Math.max(minScale, scale));
+          applyTransform();
+        }
+
+        touchDistance = newDist;
+      } else if (e.touches.length === 1 && scale > 1) {
+        e.preventDefault();
+        const touchX = e.touches[0].clientX;
+        const touchY = e.touches[0].clientY;
+
+        translateX += touchX - lastTouchX;
+        translateY += touchY - lastTouchY;
+        applyTransform();
+
+        lastTouchX = touchX;
+        lastTouchY = touchY;
+      }
+    }, { passive: false });
+
+    wrap.addEventListener('touchend', () => {
+      touchDistance = null;
+    });
+
+    /* FULLSCREEN */
+    if (fsBtn) {
+      fsBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        try {
+          if (!document.fullscreenElement) {
+            // Réinitialiser zoom/pan avant fullscreen
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            applyTransform();
+            await wrap.requestFullscreen();
+          } else {
+            await document.exitFullscreen();
+          }
+        } catch (err) {
+          console.error('Erreur fullscreen:', err);
+        }
+      });
+    }
+
+    // Gérer fullscreenchange pour réinitialiser quand on sort du fullscreen
+    document.addEventListener('fullscreenchange', () => {
+      if (!isFullscreen()) {
+        // Sortie du fullscreen : réinitialiser le zoom/pan
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="accompagnant.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="agenda.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 4, 2026 15:30+0000">2026-11-04</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/mos/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

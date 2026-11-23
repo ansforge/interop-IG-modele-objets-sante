@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"GroupeCooperationOrganique","GroupeCooperationOrganique","","","",0,*,"","","","null {[]} {[]}
+","Le Groupement de Coopération Organique, ou GCO, se traduit par un groupement qui est lui-même une Personne Morale, avec une immatriculation FiNESS, qui fédère des membres de type Personnes Morales. Les GCO sont utilisés pour décrire des structures de type GCS, GCSMS, Holding par exemple","Le Groupement de Coopération Organique, ou GCO, se traduit par un groupement qui est lui-même une Personne Morale, avec une immatriculation FiNESS, qui fédère des membres de type Personnes Morales. Les GCO sont utilisés pour décrire des structures de type GCS, GCSMS, Holding par exemple","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"GroupeCooperationOrganique.idGroupement","GroupeCooperationOrganique.idGroupement","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant du groupement.","Identifiant du groupement.","","","","","","","","","",,,,,"",,,,"Groupement.idGroupement",0,1,"",""
+"GroupeCooperationOrganique.dateCreation","GroupeCooperationOrganique.dateCreation","","","",0,1,"","","","date {[]} {[]}
+","Date de création du groupement.","Date de création du groupement.","","","","","","","","","",,,,,"",,,,"Groupement.dateCreation",0,1,"",""
+"GroupeCooperationOrganique.dateMAJ","GroupeCooperationOrganique.dateMAJ","","","",0,*,"","","","date {[]} {[]}
+","Date de mise à jour du groupement.","Date de mise à jour du groupement.","","","","","","","","","",,,,,"",,,,"Groupement.dateMAJ",0,*,"",""
+"GroupeCooperationOrganique.dateFin","GroupeCooperationOrganique.dateFin","","","",0,1,"","","","date {[]} {[]}
+","Date de fin d'existence du groupement.","Date de fin d'existence du groupement.","","","","","","","","","",,,,,"",,,,"Groupement.dateFin",0,1,"",""
+"GroupeCooperationOrganique.Membre","GroupeCooperationOrganique.Membre","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Membre {[]} {[]}
+","Lien vers la classe Membre","Lien vers la classe Membre","","","","","","","","","",,,,,"",,,,"Groupement.Membre",0,*,"",""
+"GroupeCooperationOrganique.typeGroupementStructure","GroupeCooperationOrganique.typeGroupementStructure","","","",0,1,"","","","Coding {[]} {[]}
+","Type de regroupement  de structures ( à compléter)","Type de regroupement  de structures ( à compléter)","","","","","","","","","",,"preferred","","https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r387-type-groupement?vs","",,,,"GroupementStructure.typeGroupementStructure",0,1,"",""
+"GroupeCooperationOrganique.EntiteGroupementStructure","GroupeCooperationOrganique.EntiteGroupementStructure","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGroupementStructure {[]} {[]}
+","Lien vers la classe EntiteGroupementStructure","Lien vers la classe EntiteGroupementStructure","","","","","","","","","",,,,,"",,,,"GroupementStructure.EntiteGroupementStructure",0,*,"",""
+"GroupeCooperationOrganique.typeGroupeGCO","GroupeCooperationOrganique.typeGroupeGCO","","","",0,1,"","","","Coding {[]} {[]}
+","Type de groupe GCO  (à compléter)","Type de groupe GCO  (à compléter)","","","","","","","","","",,"preferred","","https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r372-type-groupe-gco?vs","",,,,"GroupeCooperationOrganique.typeGroupeGCO",0,1,"",""

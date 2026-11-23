@@ -1,0 +1,1128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "PersonneMorale"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure PersonneMorale</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale\" title=\"Une PM-EJ ou Personne Morale / Entité Juridique est une entité regroupant des personnes, physiques ou morales, dotée d’une existence juridique.Une Personne Morale est identifiée avec un numéro SIREN au sein de SIRENE.Les Personnes Morales sont enregistrées dans FINESS, dès lors que leurs activités relèvent du champ sanitaire, Médicosociale ou Sociale. Elles sont à ce titre identifiées par un numéro FINESS juridique et catégorisées par un statut juridique.Synonyme EntiteJuridique\">PersonneMorale</a><a name=\"PersonneMorale\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Une PM-EJ ou Personne Morale / Entité Juridique est une entité regroupant des personnes, physiques ou morales, dotée d’une existence juridique.Une Personne Morale est identifiée avec un numéro SIREN au sein de SIRENE.Les Personnes Morales sont enregistrées dans FINESS, dès lors que leurs activités relèvent du champ sanitaire, Médicosociale ou Sociale. Elles sont à ce titre identifiées par un numéro FINESS juridique et catégorisées par un statut juridique.Synonyme EntiteJuridique</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.adresse\" title=\"Adresse géopostale de la personne morale\">adresse</a><a name=\"PersonneMorale.adresse\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Adresse.html\">Adresse</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Adresse géopostale de la personne morale<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.agregatStatutJuridiqueFinessNiv1\" title=\"Agrégat de statut juridique Finess de niveau 1. L'agrégat de niveau 1 représente des regroupements d'agrégats de niveau 2. Par exemple, le code 1000 &quot;Organismes et Etablissements publics&quot; regroupe les codes d'agrégat de niveau 2 1100 et 1200.\">agregatStatutJuridiqueFinessNiv1</a><a name=\"PersonneMorale.agregatStatutJuridiqueFinessNiv1\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de statut juridique Finess de niveau 1. L'agrégat de niveau 1 représente des regroupements d'agrégats de niveau 2. Par exemple, le code 1000 \"Organismes et Etablissements publics\" regroupe les codes d'agrégat de niveau 2 1100 et 1200.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.agregatStatutJuridiqueFinessNiv2\" title=\"Agrégat de statut juridique de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégats de niveau 3. Par exemple, le code 1100 &quot;Etat et Collectivités territoriales&quot; regroupe les codes d'agrégats de niveau 3 1110 et 1120. Il caractérise le statut juridique d’une structure au sens du droit applicable (public / privé) et de la finalité (non lucratif / commercial).\">agregatStatutJuridiqueFinessNiv2</a><a name=\"PersonneMorale.agregatStatutJuridiqueFinessNiv2\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de statut juridique de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégats de niveau 3. Par exemple, le code 1100 \"Etat et Collectivités territoriales\" regroupe les codes d'agrégats de niveau 3 1110 et 1120. Il caractérise le statut juridique d’une structure au sens du droit applicable (public / privé) et de la finalité (non lucratif / commercial).<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.agregatStatutJuridiqueFinessNiv3\" title=\"Agrégat de statut juridique de niveau 3. L'agrégat de niveau 3 représente des regroupements de statuts juridiques. Par exemple, le code 1120 &quot;Collectivité territoriale&quot; regroupe les statuts juridiques 02, 03 etc.\">agregatStatutJuridiqueFinessNiv3</a><a name=\"PersonneMorale.agregatStatutJuridiqueFinessNiv3\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de statut juridique de niveau 3. L'agrégat de niveau 3 représente des regroupements de statuts juridiques. Par exemple, le code 1120 \"Collectivité territoriale\" regroupe les statuts juridiques 02, 03 etc.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.boiteLettresMSS\" title=\"Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité juridique.Remarque : ce n'est pas une donnée FINESS\">boiteLettresMSS</a><a name=\"PersonneMorale.boiteLettresMSS\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-BoiteLettreMSS.html\">BoiteLettreMSS</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité juridique.Remarque : ce n'est pas une donnée FINESS<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.complementNom\" title=\"Suite du nom de la personne morale. Ce complément peut contenir notamment des informations facilitant l'adressage d'un courrier aux structures.Ancien synonyme : complément raison sociale\">complementNom</a><a name=\"PersonneMorale.complementNom\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Suite du nom de la personne morale. Ce complément peut contenir notamment des informations facilitant l'adressage d'un courrier aux structures.Ancien synonyme : complément raison sociale</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.contact\" title=\"Point(s) de contact de la personne morale\">contact</a><a name=\"PersonneMorale.contact\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Contact.html\">Contact</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Point(s) de contact de la personne morale<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.dateEntreeFiness\" title=\"Date d'entrée dans le référentiel FINESS\">dateEntreeFiness</a><a name=\"PersonneMorale.dateEntreeFiness\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Date d'entrée dans le référentiel FINESS</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.dateSortieFiness\" title=\"Date de sortie de la personne morale du référentiel FINESSAncien Synonyme : dateFermeture\">dateSortieFiness</a><a name=\"PersonneMorale.dateSortieFiness\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Date de sortie de la personne morale du référentiel FINESSAncien Synonyme : dateFermeture</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.documentAdministratif\" title=\"Document(s) administratif(s) associé(s) à la personne morale\">documentAdministratif</a><a name=\"PersonneMorale.documentAdministratif\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-DocumentStructure.html\">DocumentStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Document(s) administratif(s) associé(s) à la personne morale<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.evenementAdministratif\" title=\"Evénement(s) administratif(s) associé(s) à la personne morale\">evenementAdministratif</a><a name=\"PersonneMorale.evenementAdministratif\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EvenementStructure.html\">EvenementStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Evénement(s) administratif(s) associé(s) à la personne morale<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.fonctionPublique\" title=\"type de fonction publique>\">fonctionPublique</a><a name=\"PersonneMorale.fonctionPublique\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">type de fonction publique&gt;<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r361-fonction-publique.?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r361-fonction-publique.?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.identifiantEJ\" title=\"Identifiant spécifique de la personne morale  d’un cabinet individuel ou d’un cabinet de groupe dont l’entité géographique est identifiée par l’attribut identifiantEG. Cet identifiant concerne les entités juridiques qui ne sont pas identifiées par un numéro SIREN mais qui sont présentes dans le RPPS. Pour information, cet identifiant est construit en reprenant l’identifiantEG précédé des caractère « EJ » (cf. Attribut IdentifiantEG  de la classe EntiteGeographiqueExercice).Ancien synonyme : numEJ_RPPS_ADELI\">identifiantEJ</a><a name=\"PersonneMorale.identifiantEJ\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Identifiant spécifique de la personne morale  d’un cabinet individuel ou d’un cabinet de groupe dont l’entité géographique est identifiée par l’attribut identifiantEG. Cet identifiant concerne les entités juridiques qui ne sont pas identifiées par un numéro SIREN mais qui sont présentes dans le RPPS. Pour information, cet identifiant est construit en reprenant l’identifiantEG précédé des caractère « EJ » (cf. Attribut IdentifiantEG  de la classe EntiteGeographiqueExercice).Ancien synonyme : numEJ_RPPS_ADELI</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.idNatStruct\" title=\"Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature CodeSystem-TRE-G07-TypeIdentifiantStructure) et de l'identifiant de la structure:** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 2 + N° Siren.Cas particulier:La notion d’identifiant d'entité juridique n'a pas de sens métier pour un cabinet individuel ou un cabinet de groupe identifié par un RPPS-Rang ou un ADELI-rang (cf. Attribut IdentifiantEG de la classe EntiteGeographique). Si un cas d'usage nécessite d'appliquer la notion générique d'entité juridique et d'entité géographique pour un cabinet individuel ou un cabinet de groupe, alors l'identifiant de l'entité juridique est constitué de la façon suivante: ** pour le cabinet d’un PS ADELI : 0 + IdentifiantEJ;** pour le cabinet d’un PS RPPS : 4 + IdentifiantEJ. Synonyme : Struct_IdNat (CI-SIS)\">idNatStruct</a><a name=\"PersonneMorale.idNatStruct\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature CodeSystem-TRE-G07-TypeIdentifiantStructure) et de l'identifiant de la structure:** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 2 + N° Siren.Cas particulier:La notion d’identifiant d'entité juridique n'a pas de sens métier pour un cabinet individuel ou un cabinet de groupe identifié par un RPPS-Rang ou un ADELI-rang (cf. Attribut IdentifiantEG de la classe EntiteGeographique). Si un cas d'usage nécessite d'appliquer la notion générique d'entité juridique et d'entité géographique pour un cabinet individuel ou un cabinet de groupe, alors l'identifiant de l'entité juridique est constitué de la façon suivante: ** pour le cabinet d’un PS ADELI : 0 + IdentifiantEJ;** pour le cabinet d’un PS RPPS : 4 + IdentifiantEJ. Synonyme : Struct_IdNat (CI-SIS)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.nomCourt\" title=\"Nom de la personne moraleCe nom figure obligatoirement dans les statuts de la personne moraleSynonyme: Dénomination, raison sociale\">nomCourt</a><a name=\"PersonneMorale.nomCourt\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Nom de la personne moraleCe nom figure obligatoirement dans les statuts de la personne moraleSynonyme: Dénomination, raison sociale</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.nomLong\" title=\"Nom  complet de la personne morale  (acronymes, sigles ou abréviations développées).Synonyme : raisonSocialeLongue, raison sociale complète\">nomLong</a><a name=\"PersonneMorale.nomLong\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Nom  complet de la personne morale  (acronymes, sigles ou abréviations développées).Synonyme : raisonSocialeLongue, raison sociale complète</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.numeroSRN\" title=\"Numéro d'enregistrement unique (Single Registration Number - SRN) de l’acteur EUDAMED. Un acteur est un opérateur économique dont le rôle vis-à-vis du dispositif médical est enregistré dans la base de données EUDAMED : **MF : Fabricant**AR : Mandataire**IM : Importateur **PR :  AssembleurCe numéro est construit sur la base du numéro de tva intracommunautaire.\">numeroSRN</a><a name=\"PersonneMorale.numeroSRN\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Numéro d'enregistrement unique (Single Registration Number - SRN) de l’acteur EUDAMED. Un acteur est un opérateur économique dont le rôle vis-à-vis du dispositif médical est enregistré dans la base de données EUDAMED : **MF : Fabricant**AR : Mandataire**IM : Importateur **PR :  AssembleurCe numéro est construit sur la base du numéro de tva intracommunautaire.<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.numeroTVAIntracommunautaire\" title=\"Le numéro de TVA intracommunautaire est un numéro d'identification individuel.Il est délivré par l'administration fiscale du pays de domiciliation de l'entreprise concernée au moment de son immatriculation ou de sa déclaration d'activité.La structure du numéro est propre à chaque pays.En France, le numéro est constitué du code FR, d'une clé informatique à 2 chiffres ou lettres et du numéro Siren de l'entreprise (9 chiffres).\">numeroTVAIntracommunautaire</a><a name=\"PersonneMorale.numeroTVAIntracommunautaire\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Le numéro de TVA intracommunautaire est un numéro d'identification individuel.Il est délivré par l'administration fiscale du pays de domiciliation de l'entreprise concernée au moment de son immatriculation ou de sa déclaration d'activité.La structure du numéro est propre à chaque pays.En France, le numéro est constitué du code FR, d'une clé informatique à 2 chiffres ou lettres et du numéro Siren de l'entreprise (9 chiffres).</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.numFINESS\" title=\"Identifiant FINESS de l'entité juridique attribué lors de sa création.Les personnes morales identifiées par des numéros FINESS sont également dotées de numéros Siren.  Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanitaire ou le domaine médico-social, il est, s'il existe, à privilégier pour l’identification de ces personnes morales en tant qu’acteurs sanitaires et médico-sociaux (Référentiel d’identification des acteurs sanitaires et médico-sociaux - Politique Générale de Sécurité des Systèmes d’Information de Santé (PGSSI-S)).Le numéro FINESS est composé de 9 caractères numériques, tels que:** Position 1-2 : numéro du département d'implantation (&quot;2A&quot;, &quot;2B&quot; pour la Corse; &quot;97&quot; pour les départements d’Outre-mer; &quot;98&quot; pour Mayotte);** Position 3 : &quot;0&quot;;** Position 4-8: &quot;1&quot; pour Guadeloupe, &quot;2&quot; pour Martinique, &quot;3&quot; pour Guyane, &quot;4&quot; pour Réunion, &quot;5&quot; pour Saint-Pierre-et-Miquelon + numéro d'ordre de 4 chiffres;** Position 4-8 : numéro d’ordre de 5 chiffres pour tous les autres départements;** Position 9 : clé de Luhn calculée automatiquement.\">numFINESS</a><a name=\"PersonneMorale.numFINESS\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Identifiant FINESS de l'entité juridique attribué lors de sa création.Les personnes morales identifiées par des numéros FINESS sont également dotées de numéros Siren.  Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanitaire ou le domaine médico-social, il est, s'il existe, à privilégier pour l’identification de ces personnes morales en tant qu’acteurs sanitaires et médico-sociaux (Référentiel d’identification des acteurs sanitaires et médico-sociaux - Politique Générale de Sécurité des Systèmes d’Information de Santé (PGSSI-S)).Le numéro FINESS est composé de 9 caractères numériques, tels que:** Position 1-2 : numéro du département d'implantation (\"2A\", \"2B\" pour la Corse; \"97\" pour les départements d’Outre-mer; \"98\" pour Mayotte);** Position 3 : \"0\";** Position 4-8: \"1\" pour Guadeloupe, \"2\" pour Martinique, \"3\" pour Guyane, \"4\" pour Réunion, \"5\" pour Saint-Pierre-et-Miquelon + numéro d'ordre de 4 chiffres;** Position 4-8 : numéro d’ordre de 5 chiffres pour tous les autres départements;** Position 9 : clé de Luhn calculée automatiquement.</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.statutJuridiqueFiness\" title=\"Chaque personne morale dispose d'un statut juridique Finess qui caractérise sa situation juridique.Le statut juridique détermine la situation juridique de l’établissement c’est-à-dire les règles particulières de fonctionnement qui le régissent, notamment sa gestion administrative et financière et la gestion de ses biens. Le statut juridique est attribué à la personne morale ou physique de l’établissement : l’entité juridique. Tous les établissements de la même EJ relèvent du même statut juridique.La nomenclature des statuts juridiques est une notion propre à FINESS.Les statuts juridiques sont eux-mêmes classifiés en grands agrégats qui sont :** Organismes et établissements publics:      - Etat et collectivités territoriales;     - Etablissements publics;** Organismes privés:     - Organismes privés à but non lucratif;     - Organismes privés à caractère commercial;** Personne morale de droit étranger.\">statutJuridiqueFiness</a><a name=\"PersonneMorale.statutJuridiqueFiness\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Chaque personne morale dispose d'un statut juridique Finess qui caractérise sa situation juridique.Le statut juridique détermine la situation juridique de l’établissement c’est-à-dire les règles particulières de fonctionnement qui le régissent, notamment sa gestion administrative et financière et la gestion de ses biens. Le statut juridique est attribué à la personne morale ou physique de l’établissement : l’entité juridique. Tous les établissements de la même EJ relèvent du même statut juridique.La nomenclature des statuts juridiques est une notion propre à FINESS.Les statuts juridiques sont eux-mêmes classifiés en grands agrégats qui sont :** Organismes et établissements publics:      - Etat et collectivités territoriales;     - Etablissements publics;** Organismes privés:     - Organismes privés à but non lucratif;     - Organismes privés à caractère commercial;** Personne morale de droit étranger.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.telecommunication\" title=\"Adresse(s) de télécommunication de la personne morale (numéro de téléphone, adresse email, URL, etc.).Remarque : Ce n'est pas une donnée FINESS\">telecommunication</a><a name=\"PersonneMorale.telecommunication\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Telecommunication.html\">Telecommunication</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Adresse(s) de télécommunication de la personne morale (numéro de téléphone, adresse email, URL, etc.).Remarque : Ce n'est pas une donnée FINESS<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.typeFermeture\" title=\"Type de fermeture de la personne morale, par exemple, fermeture définitive), obligatoire lors de la fermeture de l'entité.Remarque : n'est pas une donnée FINESS\">typeFermeture</a><a name=\"PersonneMorale.typeFermeture\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Type de fermeture de la personne morale, par exemple, fermeture définitive), obligatoire lors de la fermeture de l'entité.Remarque : n'est pas une donnée FINESS<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://mos.esante.gouv.fr/NOS/TRE_R286-TypeFermeture/FHIR/TRE-R286-TypeFermeture?vs\" class=\"binding\">https://mos.esante.gouv.fr/NOS/TRE_R286-TypeFermeture/FHIR/TRE-R286-TypeFermeture?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.typeIdNatStruct\" title=\"Type d’identifiant national de la personne morale.Remarque : n'est pas une donnée Finess\">typeIdNatStruct</a><a name=\"PersonneMorale.typeIdNatStruct\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Type d’identifiant national de la personne morale.Remarque : n'est pas une donnée Finess<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure?vs\" class=\"binding\">https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.typePersonneMorale\" title=\"Type de personne morale\">typePersonneMorale</a><a name=\"PersonneMorale.typePersonneMorale\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Type de personne morale<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r373-type-personne-morale-all\" title=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r373-type-personne-morale?vs\" class=\"binding\">Vs Tre R373 Type Personne Morale All <img src=\"external.png\" alt=\"\"/></a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.EntiteGeographiqueExercice\" title=\"Lien vers la classe EntiteGeographiqueExercice\">EntiteGeographiqueExercice</a><a name=\"PersonneMorale.EntiteGeographiqueExercice\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EntiteGeographiqueExercice.html\">EntiteGeographiqueExercice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe EntiteGeographiqueExercice<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.DispositifMedical\" title=\"Lien vers la classe DispositifMedical\">DispositifMedical</a><a name=\"PersonneMorale.DispositifMedical\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-DispositifMedical.html\">DispositifMedical</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe DispositifMedical<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.Certificat\" title=\"Lien vers la classe Certificat\">Certificat</a><a name=\"PersonneMorale.Certificat\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Certificat.html\">Certificat</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe Certificat</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.EntiteGroupementStructure\" title=\"Lien vers la classe EntiteGroupementStructure\">EntiteGroupementStructure</a><a name=\"PersonneMorale.EntiteGroupementStructure\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EntiteGroupementStructure.html\">EntiteGroupementStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe EntiteGroupementStructure<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.UniteLegaleINSEE\" title=\"Lien vers la classe UniteLegaleINSEE\">UniteLegaleINSEE</a><a name=\"PersonneMorale.UniteLegaleINSEE\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-UniteLegaleINSEE.html\">UniteLegaleINSEE</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe UniteLegaleINSEE</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.GroupeCooperationConventionnelle\" title=\"Lien vers la classe GroupeCooperationConventionnelle\">GroupeCooperationConventionnelle</a><a name=\"PersonneMorale.GroupeCooperationConventionnelle\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-GroupeCooperationConventionnelle.html\">GroupeCooperationConventionnelle</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe GroupeCooperationConventionnelle<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.ActiviteAutoriseeExercee\" title=\"Lien vers la classe ActiviteAutoriseeExercee\">ActiviteAutoriseeExercee</a><a name=\"PersonneMorale.ActiviteAutoriseeExercee\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\">ActiviteAutoriseeExercee</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe ActiviteAutoriseeExercee<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">PersonneMorale.</span><a href=\"StructureDefinition-PersonneMorale-definitions.html#PersonneMorale.Engagement\" title=\"Lien vers la classe Engagement\">Engagement</a><a name=\"PersonneMorale.Engagement\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Engagement.html\">Engagement</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe Engagement<br/></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0-ballot"] ;
+  fhir:StructureDefinition.name [ fhir:value "PersonneMorale"] ;
+  fhir:StructureDefinition.title [ fhir:value "PersonneMorale"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-04T15:30:59+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "Une PM-EJ ou Personne Morale / Entité Juridique est une entité regroupant des personnes, physiques ou morales, dotée d’une existence juridique.Une Personne Morale est identifiée avec un numéro SIREN au sein de SIRENE.Les Personnes Morales sont enregistrées dans FINESS, dès lors que leurs activités relèvent du champ sanitaire, Médicosociale ou Sociale. Elles sont à ce titre identifiées par un numéro FINESS juridique et catégorisées par un statut juridique.Synonyme EntiteJuridique"] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Base" ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "4.0.1" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "PersonneMorale" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Une PM-EJ ou Personne Morale / Entité Juridique est une entité regroupant des personnes, physiques ou morales, dotée d’une existence juridique.Une Personne Morale est identifiée avec un numéro SIREN au sein de SIRENE.Les Personnes Morales sont enregistrées dans FINESS, dès lors que leurs activités relèvent du champ sanitaire, Médicosociale ou Sociale. Elles sont à ce titre identifiées par un numéro FINESS juridique et catégorisées par un statut juridique.Synonyme EntiteJuridique" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Une PM-EJ ou Personne Morale / Entité Juridique est une entité regroupant des personnes, physiques ou morales, dotée d’une existence juridique.Une Personne Morale est identifiée avec un numéro SIREN au sein de SIRENE.Les Personnes Morales sont enregistrées dans FINESS, dès lors que leurs activités relèvent du champ sanitaire, Médicosociale ou Sociale. Elles sont à ce titre identifiées par un numéro FINESS juridique et catégorisées par un statut juridique.Synonyme EntiteJuridique" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.adresse" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.adresse" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Adresse géopostale de la personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Adresse géopostale de la personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.adresse" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv1" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv1" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de statut juridique Finess de niveau 1. L'agrégat de niveau 1 représente des regroupements d'agrégats de niveau 2. Par exemple, le code 1000 \"Organismes et Etablissements publics\" regroupe les codes d'agrégat de niveau 2 1100 et 1200." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de statut juridique Finess de niveau 1. L'agrégat de niveau 1 représente des regroupements d'agrégats de niveau 2. Par exemple, le code 1000 \"Organismes et Etablissements publics\" regroupe les codes d'agrégat de niveau 2 1100 et 1200." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv1" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs>
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv2" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv2" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de statut juridique de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégats de niveau 3. Par exemple, le code 1100 \"Etat et Collectivités territoriales\" regroupe les codes d'agrégats de niveau 3 1110 et 1120. Il caractérise le statut juridique d’une structure au sens du droit applicable (public / privé) et de la finalité (non lucratif / commercial)." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de statut juridique de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégats de niveau 3. Par exemple, le code 1100 \"Etat et Collectivités territoriales\" regroupe les codes d'agrégats de niveau 3 1110 et 1120. Il caractérise le statut juridique d’une structure au sens du droit applicable (public / privé) et de la finalité (non lucratif / commercial)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv2" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs>
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv3" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv3" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de statut juridique de niveau 3. L'agrégat de niveau 3 représente des regroupements de statuts juridiques. Par exemple, le code 1120 \"Collectivité territoriale\" regroupe les statuts juridiques 02, 03 etc." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de statut juridique de niveau 3. L'agrégat de niveau 3 représente des regroupements de statuts juridiques. Par exemple, le code 1120 \"Collectivité territoriale\" regroupe les statuts juridiques 02, 03 etc." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv3" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs>
+         ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.boiteLettresMSS" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.boiteLettresMSS" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité juridique.Remarque : ce n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité juridique.Remarque : ce n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.boiteLettresMSS" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.complementNom" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.complementNom" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Suite du nom de la personne morale. Ce complément peut contenir notamment des informations facilitant l'adressage d'un courrier aux structures.Ancien synonyme : complément raison sociale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Suite du nom de la personne morale. Ce complément peut contenir notamment des informations facilitant l'adressage d'un courrier aux structures.Ancien synonyme : complément raison sociale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.complementNom" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.contact" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.contact" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Point(s) de contact de la personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Point(s) de contact de la personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.contact" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.dateEntreeFiness" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.dateEntreeFiness" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date d'entrée dans le référentiel FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date d'entrée dans le référentiel FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.dateEntreeFiness" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.dateSortieFiness" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.dateSortieFiness" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de sortie de la personne morale du référentiel FINESSAncien Synonyme : dateFermeture" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de sortie de la personne morale du référentiel FINESSAncien Synonyme : dateFermeture" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.dateSortieFiness" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.documentAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.documentAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Document(s) administratif(s) associé(s) à la personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Document(s) administratif(s) associé(s) à la personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.documentAdministratif" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.evenementAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.evenementAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Evénement(s) administratif(s) associé(s) à la personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Evénement(s) administratif(s) associé(s) à la personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.evenementAdministratif" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.fonctionPublique" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.fonctionPublique" ] ;
+       fhir:ElementDefinition.short [ fhir:value "type de fonction publique>" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "type de fonction publique>" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.fonctionPublique" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r361-fonction-publique.?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r361-fonction-publique.?vs>
+         ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.identifiantEJ" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.identifiantEJ" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifiant spécifique de la personne morale  d’un cabinet individuel ou d’un cabinet de groupe dont l’entité géographique est identifiée par l’attribut identifiantEG. Cet identifiant concerne les entités juridiques qui ne sont pas identifiées par un numéro SIREN mais qui sont présentes dans le RPPS. Pour information, cet identifiant est construit en reprenant l’identifiantEG précédé des caractère « EJ » (cf. Attribut IdentifiantEG  de la classe EntiteGeographiqueExercice).Ancien synonyme : numEJ_RPPS_ADELI" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifiant spécifique de la personne morale  d’un cabinet individuel ou d’un cabinet de groupe dont l’entité géographique est identifiée par l’attribut identifiantEG. Cet identifiant concerne les entités juridiques qui ne sont pas identifiées par un numéro SIREN mais qui sont présentes dans le RPPS. Pour information, cet identifiant est construit en reprenant l’identifiantEG précédé des caractère « EJ » (cf. Attribut IdentifiantEG  de la classe EntiteGeographiqueExercice).Ancien synonyme : numEJ_RPPS_ADELI" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.identifiantEJ" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.idNatStruct" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.idNatStruct" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature CodeSystem-TRE-G07-TypeIdentifiantStructure) et de l'identifiant de la structure:** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 2 + N° Siren.Cas particulier:La notion d’identifiant d'entité juridique n'a pas de sens métier pour un cabinet individuel ou un cabinet de groupe identifié par un RPPS-Rang ou un ADELI-rang (cf. Attribut IdentifiantEG de la classe EntiteGeographique). Si un cas d'usage nécessite d'appliquer la notion générique d'entité juridique et d'entité géographique pour un cabinet individuel ou un cabinet de groupe, alors l'identifiant de l'entité juridique est constitué de la façon suivante: ** pour le cabinet d’un PS ADELI : 0 + IdentifiantEJ;** pour le cabinet d’un PS RPPS : 4 + IdentifiantEJ. Synonyme : Struct_IdNat (CI-SIS)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature CodeSystem-TRE-G07-TypeIdentifiantStructure) et de l'identifiant de la structure:** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 2 + N° Siren.Cas particulier:La notion d’identifiant d'entité juridique n'a pas de sens métier pour un cabinet individuel ou un cabinet de groupe identifié par un RPPS-Rang ou un ADELI-rang (cf. Attribut IdentifiantEG de la classe EntiteGeographique). Si un cas d'usage nécessite d'appliquer la notion générique d'entité juridique et d'entité géographique pour un cabinet individuel ou un cabinet de groupe, alors l'identifiant de l'entité juridique est constitué de la façon suivante: ** pour le cabinet d’un PS ADELI : 0 + IdentifiantEJ;** pour le cabinet d’un PS RPPS : 4 + IdentifiantEJ. Synonyme : Struct_IdNat (CI-SIS)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.idNatStruct" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.nomCourt" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.nomCourt" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nom de la personne moraleCe nom figure obligatoirement dans les statuts de la personne moraleSynonyme: Dénomination, raison sociale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Nom de la personne moraleCe nom figure obligatoirement dans les statuts de la personne moraleSynonyme: Dénomination, raison sociale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.nomCourt" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.nomLong" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.nomLong" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nom  complet de la personne morale  (acronymes, sigles ou abréviations développées).Synonyme : raisonSocialeLongue, raison sociale complète" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Nom  complet de la personne morale  (acronymes, sigles ou abréviations développées).Synonyme : raisonSocialeLongue, raison sociale complète" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.nomLong" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.numeroSRN" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.numeroSRN" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Numéro d'enregistrement unique (Single Registration Number - SRN) de l’acteur EUDAMED. Un acteur est un opérateur économique dont le rôle vis-à-vis du dispositif médical est enregistré dans la base de données EUDAMED : **MF : Fabricant**AR : Mandataire**IM : Importateur **PR :  AssembleurCe numéro est construit sur la base du numéro de tva intracommunautaire." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Numéro d'enregistrement unique (Single Registration Number - SRN) de l’acteur EUDAMED. Un acteur est un opérateur économique dont le rôle vis-à-vis du dispositif médical est enregistré dans la base de données EUDAMED : **MF : Fabricant**AR : Mandataire**IM : Importateur **PR :  AssembleurCe numéro est construit sur la base du numéro de tva intracommunautaire." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.numeroSRN" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.numeroTVAIntracommunautaire" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.numeroTVAIntracommunautaire" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Le numéro de TVA intracommunautaire est un numéro d'identification individuel.Il est délivré par l'administration fiscale du pays de domiciliation de l'entreprise concernée au moment de son immatriculation ou de sa déclaration d'activité.La structure du numéro est propre à chaque pays.En France, le numéro est constitué du code FR, d'une clé informatique à 2 chiffres ou lettres et du numéro Siren de l'entreprise (9 chiffres)." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le numéro de TVA intracommunautaire est un numéro d'identification individuel.Il est délivré par l'administration fiscale du pays de domiciliation de l'entreprise concernée au moment de son immatriculation ou de sa déclaration d'activité.La structure du numéro est propre à chaque pays.En France, le numéro est constitué du code FR, d'une clé informatique à 2 chiffres ou lettres et du numéro Siren de l'entreprise (9 chiffres)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.numeroTVAIntracommunautaire" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.numFINESS" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.numFINESS" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifiant FINESS de l'entité juridique attribué lors de sa création.Les personnes morales identifiées par des numéros FINESS sont également dotées de numéros Siren.  Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanitaire ou le domaine médico-social, il est, s'il existe, à privilégier pour l’identification de ces personnes morales en tant qu’acteurs sanitaires et médico-sociaux (Référentiel d’identification des acteurs sanitaires et médico-sociaux - Politique Générale de Sécurité des Systèmes d’Information de Santé (PGSSI-S)).Le numéro FINESS est composé de 9 caractères numériques, tels que:** Position 1-2 : numéro du département d'implantation (\"2A\", \"2B\" pour la Corse; \"97\" pour les départements d’Outre-mer; \"98\" pour Mayotte);** Position 3 : \"0\";** Position 4-8: \"1\" pour Guadeloupe, \"2\" pour Martinique, \"3\" pour Guyane, \"4\" pour Réunion, \"5\" pour Saint-Pierre-et-Miquelon + numéro d'ordre de 4 chiffres;** Position 4-8 : numéro d’ordre de 5 chiffres pour tous les autres départements;** Position 9 : clé de Luhn calculée automatiquement." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifiant FINESS de l'entité juridique attribué lors de sa création.Les personnes morales identifiées par des numéros FINESS sont également dotées de numéros Siren.  Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanitaire ou le domaine médico-social, il est, s'il existe, à privilégier pour l’identification de ces personnes morales en tant qu’acteurs sanitaires et médico-sociaux (Référentiel d’identification des acteurs sanitaires et médico-sociaux - Politique Générale de Sécurité des Systèmes d’Information de Santé (PGSSI-S)).Le numéro FINESS est composé de 9 caractères numériques, tels que:** Position 1-2 : numéro du département d'implantation (\"2A\", \"2B\" pour la Corse; \"97\" pour les départements d’Outre-mer; \"98\" pour Mayotte);** Position 3 : \"0\";** Position 4-8: \"1\" pour Guadeloupe, \"2\" pour Martinique, \"3\" pour Guyane, \"4\" pour Réunion, \"5\" pour Saint-Pierre-et-Miquelon + numéro d'ordre de 4 chiffres;** Position 4-8 : numéro d’ordre de 5 chiffres pour tous les autres départements;** Position 9 : clé de Luhn calculée automatiquement." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.numFINESS" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.statutJuridiqueFiness" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.statutJuridiqueFiness" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Chaque personne morale dispose d'un statut juridique Finess qui caractérise sa situation juridique.Le statut juridique détermine la situation juridique de l’établissement c’est-à-dire les règles particulières de fonctionnement qui le régissent, notamment sa gestion administrative et financière et la gestion de ses biens. Le statut juridique est attribué à la personne morale ou physique de l’établissement : l’entité juridique. Tous les établissements de la même EJ relèvent du même statut juridique.La nomenclature des statuts juridiques est une notion propre à FINESS.Les statuts juridiques sont eux-mêmes classifiés en grands agrégats qui sont :** Organismes et établissements publics:      - Etat et collectivités territoriales;     - Etablissements publics;** Organismes privés:     - Organismes privés à but non lucratif;     - Organismes privés à caractère commercial;** Personne morale de droit étranger." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Chaque personne morale dispose d'un statut juridique Finess qui caractérise sa situation juridique.Le statut juridique détermine la situation juridique de l’établissement c’est-à-dire les règles particulières de fonctionnement qui le régissent, notamment sa gestion administrative et financière et la gestion de ses biens. Le statut juridique est attribué à la personne morale ou physique de l’établissement : l’entité juridique. Tous les établissements de la même EJ relèvent du même statut juridique.La nomenclature des statuts juridiques est une notion propre à FINESS.Les statuts juridiques sont eux-mêmes classifiés en grands agrégats qui sont :** Organismes et établissements publics:      - Etat et collectivités territoriales;     - Etablissements publics;** Organismes privés:     - Organismes privés à but non lucratif;     - Organismes privés à caractère commercial;** Personne morale de droit étranger." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.statutJuridiqueFiness" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs>
+         ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.telecommunication" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.telecommunication" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Adresse(s) de télécommunication de la personne morale (numéro de téléphone, adresse email, URL, etc.).Remarque : Ce n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Adresse(s) de télécommunication de la personne morale (numéro de téléphone, adresse email, URL, etc.).Remarque : Ce n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.telecommunication" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.typeFermeture" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.typeFermeture" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type de fermeture de la personne morale, par exemple, fermeture définitive), obligatoire lors de la fermeture de l'entité.Remarque : n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type de fermeture de la personne morale, par exemple, fermeture définitive), obligatoire lors de la fermeture de l'entité.Remarque : n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.typeFermeture" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R286-TypeFermeture/FHIR/TRE-R286-TypeFermeture?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_R286-TypeFermeture/FHIR/TRE-R286-TypeFermeture?vs>
+         ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.typeIdNatStruct" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.typeIdNatStruct" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type d’identifiant national de la personne morale.Remarque : n'est pas une donnée Finess" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type d’identifiant national de la personne morale.Remarque : n'est pas une donnée Finess" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.typeIdNatStruct" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure?vs>
+         ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.typePersonneMorale" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.typePersonneMorale" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type de personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type de personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.typePersonneMorale" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r373-type-personne-morale?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r373-type-personne-morale?vs>
+         ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.EntiteGeographiqueExercice" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice" ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.DispositifMedical" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.DispositifMedical" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe DispositifMedical" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe DispositifMedical" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.DispositifMedical" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DispositifMedical" ]
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.Certificat" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.Certificat" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe Certificat" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe Certificat" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.Certificat" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat" ]
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.EntiteGroupementStructure" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGroupementStructure" ]
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.UniteLegaleINSEE" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.UniteLegaleINSEE" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe UniteLegaleINSEE" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe UniteLegaleINSEE" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.UniteLegaleINSEE" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/UniteLegaleINSEE" ]
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.GroupeCooperationConventionnelle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle" ]
+       ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.ActiviteAutoriseeExercee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee" ]
+       ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.Engagement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.Engagement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe Engagement" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe Engagement" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonneMorale.Engagement" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Engagement" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "PersonneMorale" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Une PM-EJ ou Personne Morale / Entité Juridique est une entité regroupant des personnes, physiques ou morales, dotée d’une existence juridique.Une Personne Morale est identifiée avec un numéro SIREN au sein de SIRENE.Les Personnes Morales sont enregistrées dans FINESS, dès lors que leurs activités relèvent du champ sanitaire, Médicosociale ou Sociale. Elles sont à ce titre identifiées par un numéro FINESS juridique et catégorisées par un statut juridique.Synonyme EntiteJuridique" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Une PM-EJ ou Personne Morale / Entité Juridique est une entité regroupant des personnes, physiques ou morales, dotée d’une existence juridique.Une Personne Morale est identifiée avec un numéro SIREN au sein de SIRENE.Les Personnes Morales sont enregistrées dans FINESS, dès lors que leurs activités relèvent du champ sanitaire, Médicosociale ou Sociale. Elles sont à ce titre identifiées par un numéro FINESS juridique et catégorisées par un statut juridique.Synonyme EntiteJuridique" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.adresse" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.adresse" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Adresse géopostale de la personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Adresse géopostale de la personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv1" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv1" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de statut juridique Finess de niveau 1. L'agrégat de niveau 1 représente des regroupements d'agrégats de niveau 2. Par exemple, le code 1000 \"Organismes et Etablissements publics\" regroupe les codes d'agrégat de niveau 2 1100 et 1200." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de statut juridique Finess de niveau 1. L'agrégat de niveau 1 représente des regroupements d'agrégats de niveau 2. Par exemple, le code 1000 \"Organismes et Etablissements publics\" regroupe les codes d'agrégat de niveau 2 1100 et 1200." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs>
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv2" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv2" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de statut juridique de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégats de niveau 3. Par exemple, le code 1100 \"Etat et Collectivités territoriales\" regroupe les codes d'agrégats de niveau 3 1110 et 1120. Il caractérise le statut juridique d’une structure au sens du droit applicable (public / privé) et de la finalité (non lucratif / commercial)." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de statut juridique de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégats de niveau 3. Par exemple, le code 1100 \"Etat et Collectivités territoriales\" regroupe les codes d'agrégats de niveau 3 1110 et 1120. Il caractérise le statut juridique d’une structure au sens du droit applicable (public / privé) et de la finalité (non lucratif / commercial)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs>
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv3" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.agregatStatutJuridiqueFinessNiv3" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de statut juridique de niveau 3. L'agrégat de niveau 3 représente des regroupements de statuts juridiques. Par exemple, le code 1120 \"Collectivité territoriale\" regroupe les statuts juridiques 02, 03 etc." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de statut juridique de niveau 3. L'agrégat de niveau 3 représente des regroupements de statuts juridiques. Par exemple, le code 1120 \"Collectivité territoriale\" regroupe les statuts juridiques 02, 03 etc." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs>
+         ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.boiteLettresMSS" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.boiteLettresMSS" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité juridique.Remarque : ce n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité juridique.Remarque : ce n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.complementNom" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.complementNom" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Suite du nom de la personne morale. Ce complément peut contenir notamment des informations facilitant l'adressage d'un courrier aux structures.Ancien synonyme : complément raison sociale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Suite du nom de la personne morale. Ce complément peut contenir notamment des informations facilitant l'adressage d'un courrier aux structures.Ancien synonyme : complément raison sociale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.contact" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.contact" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Point(s) de contact de la personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Point(s) de contact de la personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.dateEntreeFiness" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.dateEntreeFiness" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date d'entrée dans le référentiel FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date d'entrée dans le référentiel FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.dateSortieFiness" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.dateSortieFiness" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de sortie de la personne morale du référentiel FINESSAncien Synonyme : dateFermeture" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de sortie de la personne morale du référentiel FINESSAncien Synonyme : dateFermeture" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.documentAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.documentAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Document(s) administratif(s) associé(s) à la personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Document(s) administratif(s) associé(s) à la personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.evenementAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.evenementAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Evénement(s) administratif(s) associé(s) à la personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Evénement(s) administratif(s) associé(s) à la personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.fonctionPublique" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.fonctionPublique" ] ;
+       fhir:ElementDefinition.short [ fhir:value "type de fonction publique>" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "type de fonction publique>" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r361-fonction-publique.?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r361-fonction-publique.?vs>
+         ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.identifiantEJ" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.identifiantEJ" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifiant spécifique de la personne morale  d’un cabinet individuel ou d’un cabinet de groupe dont l’entité géographique est identifiée par l’attribut identifiantEG. Cet identifiant concerne les entités juridiques qui ne sont pas identifiées par un numéro SIREN mais qui sont présentes dans le RPPS. Pour information, cet identifiant est construit en reprenant l’identifiantEG précédé des caractère « EJ » (cf. Attribut IdentifiantEG  de la classe EntiteGeographiqueExercice).Ancien synonyme : numEJ_RPPS_ADELI" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifiant spécifique de la personne morale  d’un cabinet individuel ou d’un cabinet de groupe dont l’entité géographique est identifiée par l’attribut identifiantEG. Cet identifiant concerne les entités juridiques qui ne sont pas identifiées par un numéro SIREN mais qui sont présentes dans le RPPS. Pour information, cet identifiant est construit en reprenant l’identifiantEG précédé des caractère « EJ » (cf. Attribut IdentifiantEG  de la classe EntiteGeographiqueExercice).Ancien synonyme : numEJ_RPPS_ADELI" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.idNatStruct" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.idNatStruct" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature CodeSystem-TRE-G07-TypeIdentifiantStructure) et de l'identifiant de la structure:** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 2 + N° Siren.Cas particulier:La notion d’identifiant d'entité juridique n'a pas de sens métier pour un cabinet individuel ou un cabinet de groupe identifié par un RPPS-Rang ou un ADELI-rang (cf. Attribut IdentifiantEG de la classe EntiteGeographique). Si un cas d'usage nécessite d'appliquer la notion générique d'entité juridique et d'entité géographique pour un cabinet individuel ou un cabinet de groupe, alors l'identifiant de l'entité juridique est constitué de la façon suivante: ** pour le cabinet d’un PS ADELI : 0 + IdentifiantEJ;** pour le cabinet d’un PS RPPS : 4 + IdentifiantEJ. Synonyme : Struct_IdNat (CI-SIS)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature CodeSystem-TRE-G07-TypeIdentifiantStructure) et de l'identifiant de la structure:** 1 + N° FINESS (entité juridique et entité géographique indéterminées);** 2 + N° Siren.Cas particulier:La notion d’identifiant d'entité juridique n'a pas de sens métier pour un cabinet individuel ou un cabinet de groupe identifié par un RPPS-Rang ou un ADELI-rang (cf. Attribut IdentifiantEG de la classe EntiteGeographique). Si un cas d'usage nécessite d'appliquer la notion générique d'entité juridique et d'entité géographique pour un cabinet individuel ou un cabinet de groupe, alors l'identifiant de l'entité juridique est constitué de la façon suivante: ** pour le cabinet d’un PS ADELI : 0 + IdentifiantEJ;** pour le cabinet d’un PS RPPS : 4 + IdentifiantEJ. Synonyme : Struct_IdNat (CI-SIS)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.nomCourt" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.nomCourt" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nom de la personne moraleCe nom figure obligatoirement dans les statuts de la personne moraleSynonyme: Dénomination, raison sociale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Nom de la personne moraleCe nom figure obligatoirement dans les statuts de la personne moraleSynonyme: Dénomination, raison sociale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.nomLong" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.nomLong" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nom  complet de la personne morale  (acronymes, sigles ou abréviations développées).Synonyme : raisonSocialeLongue, raison sociale complète" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Nom  complet de la personne morale  (acronymes, sigles ou abréviations développées).Synonyme : raisonSocialeLongue, raison sociale complète" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.numeroSRN" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.numeroSRN" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Numéro d'enregistrement unique (Single Registration Number - SRN) de l’acteur EUDAMED. Un acteur est un opérateur économique dont le rôle vis-à-vis du dispositif médical est enregistré dans la base de données EUDAMED : **MF : Fabricant**AR : Mandataire**IM : Importateur **PR :  AssembleurCe numéro est construit sur la base du numéro de tva intracommunautaire." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Numéro d'enregistrement unique (Single Registration Number - SRN) de l’acteur EUDAMED. Un acteur est un opérateur économique dont le rôle vis-à-vis du dispositif médical est enregistré dans la base de données EUDAMED : **MF : Fabricant**AR : Mandataire**IM : Importateur **PR :  AssembleurCe numéro est construit sur la base du numéro de tva intracommunautaire." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.numeroTVAIntracommunautaire" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.numeroTVAIntracommunautaire" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Le numéro de TVA intracommunautaire est un numéro d'identification individuel.Il est délivré par l'administration fiscale du pays de domiciliation de l'entreprise concernée au moment de son immatriculation ou de sa déclaration d'activité.La structure du numéro est propre à chaque pays.En France, le numéro est constitué du code FR, d'une clé informatique à 2 chiffres ou lettres et du numéro Siren de l'entreprise (9 chiffres)." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le numéro de TVA intracommunautaire est un numéro d'identification individuel.Il est délivré par l'administration fiscale du pays de domiciliation de l'entreprise concernée au moment de son immatriculation ou de sa déclaration d'activité.La structure du numéro est propre à chaque pays.En France, le numéro est constitué du code FR, d'une clé informatique à 2 chiffres ou lettres et du numéro Siren de l'entreprise (9 chiffres)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.numFINESS" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.numFINESS" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifiant FINESS de l'entité juridique attribué lors de sa création.Les personnes morales identifiées par des numéros FINESS sont également dotées de numéros Siren.  Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanitaire ou le domaine médico-social, il est, s'il existe, à privilégier pour l’identification de ces personnes morales en tant qu’acteurs sanitaires et médico-sociaux (Référentiel d’identification des acteurs sanitaires et médico-sociaux - Politique Générale de Sécurité des Systèmes d’Information de Santé (PGSSI-S)).Le numéro FINESS est composé de 9 caractères numériques, tels que:** Position 1-2 : numéro du département d'implantation (\"2A\", \"2B\" pour la Corse; \"97\" pour les départements d’Outre-mer; \"98\" pour Mayotte);** Position 3 : \"0\";** Position 4-8: \"1\" pour Guadeloupe, \"2\" pour Martinique, \"3\" pour Guyane, \"4\" pour Réunion, \"5\" pour Saint-Pierre-et-Miquelon + numéro d'ordre de 4 chiffres;** Position 4-8 : numéro d’ordre de 5 chiffres pour tous les autres départements;** Position 9 : clé de Luhn calculée automatiquement." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifiant FINESS de l'entité juridique attribué lors de sa création.Les personnes morales identifiées par des numéros FINESS sont également dotées de numéros Siren.  Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanitaire ou le domaine médico-social, il est, s'il existe, à privilégier pour l’identification de ces personnes morales en tant qu’acteurs sanitaires et médico-sociaux (Référentiel d’identification des acteurs sanitaires et médico-sociaux - Politique Générale de Sécurité des Systèmes d’Information de Santé (PGSSI-S)).Le numéro FINESS est composé de 9 caractères numériques, tels que:** Position 1-2 : numéro du département d'implantation (\"2A\", \"2B\" pour la Corse; \"97\" pour les départements d’Outre-mer; \"98\" pour Mayotte);** Position 3 : \"0\";** Position 4-8: \"1\" pour Guadeloupe, \"2\" pour Martinique, \"3\" pour Guyane, \"4\" pour Réunion, \"5\" pour Saint-Pierre-et-Miquelon + numéro d'ordre de 4 chiffres;** Position 4-8 : numéro d’ordre de 5 chiffres pour tous les autres départements;** Position 9 : clé de Luhn calculée automatiquement." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.statutJuridiqueFiness" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.statutJuridiqueFiness" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Chaque personne morale dispose d'un statut juridique Finess qui caractérise sa situation juridique.Le statut juridique détermine la situation juridique de l’établissement c’est-à-dire les règles particulières de fonctionnement qui le régissent, notamment sa gestion administrative et financière et la gestion de ses biens. Le statut juridique est attribué à la personne morale ou physique de l’établissement : l’entité juridique. Tous les établissements de la même EJ relèvent du même statut juridique.La nomenclature des statuts juridiques est une notion propre à FINESS.Les statuts juridiques sont eux-mêmes classifiés en grands agrégats qui sont :** Organismes et établissements publics:      - Etat et collectivités territoriales;     - Etablissements publics;** Organismes privés:     - Organismes privés à but non lucratif;     - Organismes privés à caractère commercial;** Personne morale de droit étranger." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Chaque personne morale dispose d'un statut juridique Finess qui caractérise sa situation juridique.Le statut juridique détermine la situation juridique de l’établissement c’est-à-dire les règles particulières de fonctionnement qui le régissent, notamment sa gestion administrative et financière et la gestion de ses biens. Le statut juridique est attribué à la personne morale ou physique de l’établissement : l’entité juridique. Tous les établissements de la même EJ relèvent du même statut juridique.La nomenclature des statuts juridiques est une notion propre à FINESS.Les statuts juridiques sont eux-mêmes classifiés en grands agrégats qui sont :** Organismes et établissements publics:      - Etat et collectivités territoriales;     - Etablissements publics;** Organismes privés:     - Organismes privés à but non lucratif;     - Organismes privés à caractère commercial;** Personne morale de droit étranger." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r400-finess-statut-juridique?vs>
+         ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.telecommunication" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.telecommunication" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Adresse(s) de télécommunication de la personne morale (numéro de téléphone, adresse email, URL, etc.).Remarque : Ce n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Adresse(s) de télécommunication de la personne morale (numéro de téléphone, adresse email, URL, etc.).Remarque : Ce n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.typeFermeture" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.typeFermeture" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type de fermeture de la personne morale, par exemple, fermeture définitive), obligatoire lors de la fermeture de l'entité.Remarque : n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type de fermeture de la personne morale, par exemple, fermeture définitive), obligatoire lors de la fermeture de l'entité.Remarque : n'est pas une donnée FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R286-TypeFermeture/FHIR/TRE-R286-TypeFermeture?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_R286-TypeFermeture/FHIR/TRE-R286-TypeFermeture?vs>
+         ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.typeIdNatStruct" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.typeIdNatStruct" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type d’identifiant national de la personne morale.Remarque : n'est pas une donnée Finess" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type d’identifiant national de la personne morale.Remarque : n'est pas une donnée Finess" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_G07-TypeIdentifiantStructure/FHIR/TRE-G07-TypeIdentifiantStructure?vs>
+         ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.typePersonneMorale" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.typePersonneMorale" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type de personne morale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type de personne morale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r373-type-personne-morale?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r373-type-personne-morale?vs>
+         ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice" ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.DispositifMedical" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.DispositifMedical" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe DispositifMedical" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe DispositifMedical" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DispositifMedical" ]
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.Certificat" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.Certificat" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe Certificat" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe Certificat" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat" ]
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGroupementStructure" ]
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.UniteLegaleINSEE" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.UniteLegaleINSEE" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe UniteLegaleINSEE" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe UniteLegaleINSEE" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/UniteLegaleINSEE" ]
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle" ]
+       ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee" ]
+       ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.id [ fhir:value "PersonneMorale.Engagement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "PersonneMorale.Engagement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe Engagement" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe Engagement" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Engagement" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

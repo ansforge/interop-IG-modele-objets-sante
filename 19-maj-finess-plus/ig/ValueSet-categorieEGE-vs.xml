@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="categorieEGE-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs categorieEGE-vs</b></p><a name="categorieEGE-vs"> </a><a name="hccategorieEGE-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href="https://smt.esante.gouv.fr/fhir"><code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r397-categorie-entite-geographique-exercice</code></a><span style="opacity: 0.50" title="La version n'est pas explicitement indiquée. Lors de la génération de cette spécification, la version la plus récente 20261102120000 a été utilisée"> version ⏿20261102120000</span></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R316-AutreCategorieEtablissement.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement</code></a><span title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à {0}, la version trouvée via les références de package"> version &#x1F4E6;20240329120000</span></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEGE-vs"/>
+  <version value="0.1.0-ballot"/>
+  <name value="CategorieegeVs"/>
+  <status value="draft"/>
+  <date value="2026-11-04T15:30:59+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r397-categorie-entite-geographique-exercice"/>
+    </include>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement"/>
+    </include>
+  </compose>
+</ValueSet>

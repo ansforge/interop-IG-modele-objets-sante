@@ -1,0 +1,445 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "GroupeCooperationConventionnelle"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure GroupeCooperationConventionnelle</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle\" title=\"Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés.\">GroupeCooperationConventionnelle</a><a name=\"GroupeCooperationConventionnelle\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-GroupementStructure.html\">GroupementStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés.<br/><br/>Éléments définis dans les ancêtres :<a href=\"StructureDefinition-Groupement.html\" title=\"Identifiant du groupement.\">idGroupement</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de création du groupement.\">dateCreation</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de mise à jour du groupement.\">dateMAJ</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de fin d'existence du groupement.\">dateFin</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Lien vers la classe Membre\">Membre</a>, <a href=\"StructureDefinition-GroupementStructure.html\" title=\"Type de regroupement  de structures ( à compléter)\">typeGroupementStructure</a>, <a href=\"StructureDefinition-GroupementStructure.html\" title=\"Lien vers la classe EntiteGroupementStructure\">EntiteGroupementStructure</a></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.autoriteRegulation\" title=\"autorité exercant une fonction de régulation\">autoriteRegulation</a><a name=\"GroupeCooperationConventionnelle.autoriteRegulation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">autorité exercant une fonction de régulation<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.documentAdministratif\" title=\"Document(s) administratif(s) du Groupe GCC\">documentAdministratif</a><a name=\"GroupeCooperationConventionnelle.documentAdministratif\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-DocumentStructure.html\">DocumentStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Document(s) administratif(s) du Groupe GCC<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.evenementAdministratif\" title=\"Evénement(s) administratif(s) du Groupe GCC\">evenementAdministratif</a><a name=\"GroupeCooperationConventionnelle.evenementAdministratif\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EvenementStructure.html\">EvenementStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Evénement(s) administratif(s) du Groupe GCC<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.nomGroupeGCC\" title=\"Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest.\">nomGroupeGCC</a><a name=\"GroupeCooperationConventionnelle.nomGroupeGCC\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest.</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.typeGroupeGCC\" title=\"Un Groupe GCC est caractérisé par un type de GCC.\">typeGroupeGCC</a><a name=\"GroupeCooperationConventionnelle.typeGroupeGCC\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Un Groupe GCC est caractérisé par un type de GCC.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.PersonneMorale\" title=\"Lien vers la classe PersonneMorale\">PersonneMorale</a><a name=\"GroupeCooperationConventionnelle.PersonneMorale\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-PersonneMorale.html\">PersonneMorale</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe PersonneMorale</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.ActiviteAutoriseeExercee\" title=\"Lien vers la classe ActiviteAutoriseeExercee\">ActiviteAutoriseeExercee</a><a name=\"GroupeCooperationConventionnelle.ActiviteAutoriseeExercee\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\">ActiviteAutoriseeExercee</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe ActiviteAutoriseeExercee<br/></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0-ballot"] ;
+  fhir:StructureDefinition.name [ fhir:value "GroupeCooperationConventionnelle"] ;
+  fhir:StructureDefinition.title [ fhir:value "GroupeCooperationConventionnelle"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-04T15:30:59+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupementStructure" ;
+     fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupementStructure>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "0.1.0-ballot" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.idGroupement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.idGroupement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifiant du groupement." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifiant du groupement." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Groupement.idGroupement" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.dateCreation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.dateCreation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de création du groupement." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de création du groupement." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Groupement.dateCreation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.dateMAJ" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.dateMAJ" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de mise à jour du groupement." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de mise à jour du groupement." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Groupement.dateMAJ" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.dateFin" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.dateFin" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de fin d'existence du groupement." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de fin d'existence du groupement." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Groupement.dateFin" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.Membre" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.Membre" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe Membre" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe Membre" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Groupement.Membre" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Membre" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.typeGroupementStructure" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.typeGroupementStructure" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type de regroupement  de structures ( à compléter)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type de regroupement  de structures ( à compléter)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupementStructure.typeGroupementStructure" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r387-type-groupement?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r387-type-groupement?vs>
+         ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe EntiteGroupementStructure" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupementStructure.EntiteGroupementStructure" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGroupementStructure" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.autoriteRegulation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.autoriteRegulation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "autorité exercant une fonction de régulation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "autorité exercant une fonction de régulation" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupeCooperationConventionnelle.autoriteRegulation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs>
+         ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.documentAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.documentAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Document(s) administratif(s) du Groupe GCC" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Document(s) administratif(s) du Groupe GCC" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupeCooperationConventionnelle.documentAdministratif" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.evenementAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.evenementAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Evénement(s) administratif(s) du Groupe GCC" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Evénement(s) administratif(s) du Groupe GCC" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupeCooperationConventionnelle.evenementAdministratif" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.nomGroupeGCC" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.nomGroupeGCC" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupeCooperationConventionnelle.nomGroupeGCC" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.typeGroupeGCC" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.typeGroupeGCC" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Un Groupe GCC est caractérisé par un type de GCC." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Un Groupe GCC est caractérisé par un type de GCC." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupeCooperationConventionnelle.typeGroupeGCC" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs>
+         ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.PersonneMorale" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.PersonneMorale" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe PersonneMorale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe PersonneMorale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupeCooperationConventionnelle.PersonneMorale" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés." ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.autoriteRegulation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.autoriteRegulation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "autorité exercant une fonction de régulation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "autorité exercant une fonction de régulation" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs>
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.documentAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.documentAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Document(s) administratif(s) du Groupe GCC" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Document(s) administratif(s) du Groupe GCC" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.evenementAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.evenementAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Evénement(s) administratif(s) du Groupe GCC" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Evénement(s) administratif(s) du Groupe GCC" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.nomGroupeGCC" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.nomGroupeGCC" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.typeGroupeGCC" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.typeGroupeGCC" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Un Groupe GCC est caractérisé par un type de GCC." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Un Groupe GCC est caractérisé par un type de GCC." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs>
+         ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.PersonneMorale" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.PersonneMorale" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe PersonneMorale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe PersonneMorale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe ActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

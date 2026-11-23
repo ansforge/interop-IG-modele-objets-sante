@@ -1,0 +1,829 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "ActiviteSOCialeRegulee",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ActiviteSOCialeRegulee</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee\" title=\"Les activités ASOCR sont les activités autorisées pour les ESSMS et les structures du champ social.Ces activités sont détaillées sous forme d'un triplet :- discipline- mode de fonctionnement- public pris en chargePour chaque activité, peut en outre être notée une capacité autorisée (nombre de places d'hébergement par exemple)\">ActiviteSOCialeRegulee</a><a name=\"ActiviteSOCialeRegulee\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\">ActiviteAutoriseeExercee</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Les activités ASOCR sont les activités autorisées pour les ESSMS et les structures du champ social.Ces activités sont détaillées sous forme d'un triplet :- discipline- mode de fonctionnement- public pris en chargePour chaque activité, peut en outre être notée une capacité autorisée (nombre de places d'hébergement par exemple)<br/><br/>Éléments définis dans les ancêtres :<a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date début effective de l'autorisation\">dateDebutPeriode</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS\">dateDecision</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est &quot;vivante&quot; ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation.\">dateFin</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité.\">dateFinPeriode</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre\">datePremiereMiseEnOeuvre</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Durée de l'autorisation.\">dureeAutorisation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Evénement(s) administratif(s) survenu(s) dans l'activité\">evenementAdministratif</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Indicateur de suppression de l'autorisation de l'activité Autorisée exercée\">indicateurSuppressionAutorisation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements\">indicateurSuppressionImplantation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées\">natureActivite</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Identifiant fonctionnel de l'autorisation ARHGOS de l'EML.\">numeroAutorisationARHGOS</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement\">typeActiviteSMSSE</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité.\">zoneInterventionAutorisee</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe EntiteGeographiqueExercice\">EntiteGeographiqueExercice</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe GroupeCooperationConventionnelle\">GroupeCooperationConventionnelle</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe PersonneMorale\">PersonneMorale</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe Engagement\">Engagement</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe CapaciteActiviteAutoriseeExercee\">CapaciteActiviteAutoriseeExercee</a></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.activite\" title=\"Code définissant l'activité &quot;ASOC&quot; des Activités SMSSE RéguléesLa liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).\">activite</a><a name=\"ActiviteSOCialeRegulee.activite\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Code définissant l'activité &quot;ASOC&quot; des Activités SMSSE RéguléesLa liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.ageMaxAutorise\" title=\"Age maximum de la clientèle autorisée.\">ageMaxAutorise</a><a name=\"ActiviteSOCialeRegulee.ageMaxAutorise\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Patientele.html\">Patientele</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Age maximum de la clientèle autorisée.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.ageMaxInstalle\" title=\"Age maximum de la clientèle installée.\">ageMaxInstalle</a><a name=\"ActiviteSOCialeRegulee.ageMaxInstalle\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Patientele.html\">Patientele</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Age maximum de la clientèle installée.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.ageMinAutorise\" title=\"Age minimum de la clientèle autorisée.\">ageMinAutorise</a><a name=\"ActiviteSOCialeRegulee.ageMinAutorise\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Patientele.html\">Patientele</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Age minimum de la clientèle autorisée.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.ageMinInstalle\" title=\"Age minimum de la clientèle installée.\">ageMinInstalle</a><a name=\"ActiviteSOCialeRegulee.ageMinInstalle\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-Patientele.html\">Patientele</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Age minimum de la clientèle installée.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv1\" title=\"Agrégat de niveau 1 de la ressource terminologique des Activites Sociales Regulées\">agregatActiviteSocialeReguleeNiv1</a><a name=\"ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv1\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de niveau 1 de la ressource terminologique des Activites Sociales Regulées<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv2\" title=\"Agrégat de niveau 2 de la ressource terminologique  des Activites Sociales Regulées\">agregatActiviteSocialeReguleeNiv2</a><a name=\"ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv2\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de niveau 2 de la ressource terminologique  des Activites Sociales Regulées<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv3\" title=\"Agrégat de niveau 3 de la ressource terminologique  des Activites Sociales Regulées\">agregatActiviteSocialeReguleeNiv3</a><a name=\"ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv3\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de niveau 3 de la ressource terminologique  des Activites Sociales Regulées<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.agregatPublicNiv1\" title=\"Agrégat de clientèle de niveau 1  de la ressource terminologique du public concerné\">agregatPublicNiv1</a><a name=\"ActiviteSOCialeRegulee.agregatPublicNiv1\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de clientèle de niveau 1  de la ressource terminologique du public concerné<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.agregatPublicNiv2\" title=\"Agrégat de clientèle de niveau 2  de la ressource terminologique du public concerné\">agregatPublicNiv2</a><a name=\"ActiviteSOCialeRegulee.agregatPublicNiv2\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de clientèle de niveau 2  de la ressource terminologique du public concerné<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.dateDerniereInstallation\" title=\"Date à laquelle le dernier constat d’installation des places est réalisé.\">dateDerniereInstallation</a><a name=\"ActiviteSOCialeRegulee.dateDerniereInstallation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Date à laquelle le dernier constat d’installation des places est réalisé.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.indicateurSuppressionInstallation\" title=\"Indicateur de suppression de l’installation de l'activité sociale.\">indicateurSuppressionInstallation</a><a name=\"ActiviteSOCialeRegulee.indicateurSuppressionInstallation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Indicateur de suppression de l’installation de l'activité sociale.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.modeFonctionnement\" title=\"Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Ancien synonyme : type d'activité\">modeFonctionnement</a><a name=\"ActiviteSOCialeRegulee.modeFonctionnement\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Ancien synonyme : type d'activité<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r404-mode-fonctionnement-activite-smsse-regulee-all\" title=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r404-mode-fonctionnement-activite-smsse-regulee?vs\" class=\"binding\">Vs Tre R404 Mode Fonctionnement Activite Smsse Regulee All <img src=\"external.png\" alt=\"\"/></a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.public\" title=\"Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle\">public</a><a name=\"ActiviteSOCialeRegulee.public\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSOCialeRegulee.</span><a href=\"StructureDefinition-ActiviteSOCialeRegulee-definitions.html#ActiviteSOCialeRegulee.CapaciteHabitation\" title=\"Lien vers la classe CapaciteHabitation\">CapaciteHabitation</a><a name=\"ActiviteSOCialeRegulee.CapaciteHabitation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-CapaciteHabitation.html\">CapaciteHabitation</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe CapaciteHabitation</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSOCialeRegulee",
+  "version" : "0.1.0-ballot",
+  "name" : "ActiviteSOCialeRegulee",
+  "title" : "ActiviteSOCialeRegulee",
+  "status" : "draft",
+  "date" : "2026-11-04T15:30:59+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Les activités ASOCR sont les activités autorisées pour les ESSMS et les structures du champ social.Ces activités sont détaillées sous forme d'un triplet :- discipline- mode de fonctionnement- public pris en chargePour chaque activité, peut en outre être notée une capacité autorisée (nombre de places d'hébergement par exemple)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSOCialeRegulee",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.1.0-ballot"
+    }],
+    "element" : [{
+      "id" : "ActiviteSOCialeRegulee",
+      "path" : "ActiviteSOCialeRegulee",
+      "short" : "Les activités ASOCR sont les activités autorisées pour les ESSMS et les structures du champ social.Ces activités sont détaillées sous forme d'un triplet :- discipline- mode de fonctionnement- public pris en chargePour chaque activité, peut en outre être notée une capacité autorisée (nombre de places d'hébergement par exemple)",
+      "definition" : "Les activités ASOCR sont les activités autorisées pour les ESSMS et les structures du champ social.Ces activités sont détaillées sous forme d'un triplet :- discipline- mode de fonctionnement- public pris en chargePour chaque activité, peut en outre être notée une capacité autorisée (nombre de places d'hébergement par exemple)",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.dateDebutPeriode",
+      "path" : "ActiviteSOCialeRegulee.dateDebutPeriode",
+      "short" : "Date début effective de l'autorisation",
+      "definition" : "Date début effective de l'autorisation",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dateDebutPeriode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.dateDecision",
+      "path" : "ActiviteSOCialeRegulee.dateDecision",
+      "short" : "Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS",
+      "definition" : "Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dateDecision",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.dateFin",
+      "path" : "ActiviteSOCialeRegulee.dateFin",
+      "short" : "Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est \"vivante\" ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation.",
+      "definition" : "Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est \"vivante\" ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dateFin",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.dateFinPeriode",
+      "path" : "ActiviteSOCialeRegulee.dateFinPeriode",
+      "short" : "Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité.",
+      "definition" : "Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dateFinPeriode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.datePremiereMiseEnOeuvre",
+      "path" : "ActiviteSOCialeRegulee.datePremiereMiseEnOeuvre",
+      "short" : "Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre",
+      "definition" : "Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.datePremiereMiseEnOeuvre",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.dureeAutorisation",
+      "path" : "ActiviteSOCialeRegulee.dureeAutorisation",
+      "short" : "Durée de l'autorisation.",
+      "definition" : "Durée de l'autorisation.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dureeAutorisation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.evenementAdministratif",
+      "path" : "ActiviteSOCialeRegulee.evenementAdministratif",
+      "short" : "Evénement(s) administratif(s) survenu(s) dans l'activité",
+      "definition" : "Evénement(s) administratif(s) survenu(s) dans l'activité",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.evenementAdministratif",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.indicateurSuppressionAutorisation",
+      "path" : "ActiviteSOCialeRegulee.indicateurSuppressionAutorisation",
+      "short" : "Indicateur de suppression de l'autorisation de l'activité Autorisée exercée",
+      "definition" : "Indicateur de suppression de l'autorisation de l'activité Autorisée exercée",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.indicateurSuppressionAutorisation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.indicateurSuppressionImplantation",
+      "path" : "ActiviteSOCialeRegulee.indicateurSuppressionImplantation",
+      "short" : "Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements",
+      "definition" : "Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.indicateurSuppressionImplantation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.natureActivite",
+      "path" : "ActiviteSOCialeRegulee.natureActivite",
+      "short" : "Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées",
+      "definition" : "Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.natureActivite",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r374-nature-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.numeroAutorisationARHGOS",
+      "path" : "ActiviteSOCialeRegulee.numeroAutorisationARHGOS",
+      "short" : "Identifiant fonctionnel de l'autorisation ARHGOS de l'EML.",
+      "definition" : "Identifiant fonctionnel de l'autorisation ARHGOS de l'EML.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.numeroAutorisationARHGOS",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.typeActiviteSMSSE",
+      "path" : "ActiviteSOCialeRegulee.typeActiviteSMSSE",
+      "short" : "Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement",
+      "definition" : "Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.typeActiviteSMSSE",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r392-type-act-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.zoneInterventionAutorisee",
+      "path" : "ActiviteSOCialeRegulee.zoneInterventionAutorisee",
+      "short" : "Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité.",
+      "definition" : "Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.zoneInterventionAutorisee",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Zone"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.EntiteGeographiqueExercice",
+      "path" : "ActiviteSOCialeRegulee.EntiteGeographiqueExercice",
+      "short" : "Lien vers la classe EntiteGeographiqueExercice",
+      "definition" : "Lien vers la classe EntiteGeographiqueExercice",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.EntiteGeographiqueExercice",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.GroupeCooperationConventionnelle",
+      "path" : "ActiviteSOCialeRegulee.GroupeCooperationConventionnelle",
+      "short" : "Lien vers la classe GroupeCooperationConventionnelle",
+      "definition" : "Lien vers la classe GroupeCooperationConventionnelle",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.GroupeCooperationConventionnelle",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.PersonneMorale",
+      "path" : "ActiviteSOCialeRegulee.PersonneMorale",
+      "short" : "Lien vers la classe PersonneMorale",
+      "definition" : "Lien vers la classe PersonneMorale",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.PersonneMorale",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.Engagement",
+      "path" : "ActiviteSOCialeRegulee.Engagement",
+      "short" : "Lien vers la classe Engagement",
+      "definition" : "Lien vers la classe Engagement",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.Engagement",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Engagement"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.CapaciteActiviteAutoriseeExercee",
+      "path" : "ActiviteSOCialeRegulee.CapaciteActiviteAutoriseeExercee",
+      "short" : "Lien vers la classe CapaciteActiviteAutoriseeExercee",
+      "definition" : "Lien vers la classe CapaciteActiviteAutoriseeExercee",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.CapaciteActiviteAutoriseeExercee",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteAutoriseeExercee"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.activite",
+      "path" : "ActiviteSOCialeRegulee.activite",
+      "short" : "Code définissant l'activité \"ASOC\" des Activités SMSSE RéguléesLa liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).",
+      "definition" : "Code définissant l'activité \"ASOC\" des Activités SMSSE RéguléesLa liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.activite",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.ageMaxAutorise",
+      "path" : "ActiviteSOCialeRegulee.ageMaxAutorise",
+      "short" : "Age maximum de la clientèle autorisée.",
+      "definition" : "Age maximum de la clientèle autorisée.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.ageMaxAutorise",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.ageMaxInstalle",
+      "path" : "ActiviteSOCialeRegulee.ageMaxInstalle",
+      "short" : "Age maximum de la clientèle installée.",
+      "definition" : "Age maximum de la clientèle installée.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.ageMaxInstalle",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.ageMinAutorise",
+      "path" : "ActiviteSOCialeRegulee.ageMinAutorise",
+      "short" : "Age minimum de la clientèle autorisée.",
+      "definition" : "Age minimum de la clientèle autorisée.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.ageMinAutorise",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.ageMinInstalle",
+      "path" : "ActiviteSOCialeRegulee.ageMinInstalle",
+      "short" : "Age minimum de la clientèle installée.",
+      "definition" : "Age minimum de la clientèle installée.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.ageMinInstalle",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv1",
+      "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv1",
+      "short" : "Agrégat de niveau 1 de la ressource terminologique des Activites Sociales Regulées",
+      "definition" : "Agrégat de niveau 1 de la ressource terminologique des Activites Sociales Regulées",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv1",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv2",
+      "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv2",
+      "short" : "Agrégat de niveau 2 de la ressource terminologique  des Activites Sociales Regulées",
+      "definition" : "Agrégat de niveau 2 de la ressource terminologique  des Activites Sociales Regulées",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv2",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv3",
+      "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv3",
+      "short" : "Agrégat de niveau 3 de la ressource terminologique  des Activites Sociales Regulées",
+      "definition" : "Agrégat de niveau 3 de la ressource terminologique  des Activites Sociales Regulées",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv3",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatPublicNiv1",
+      "path" : "ActiviteSOCialeRegulee.agregatPublicNiv1",
+      "short" : "Agrégat de clientèle de niveau 1  de la ressource terminologique du public concerné",
+      "definition" : "Agrégat de clientèle de niveau 1  de la ressource terminologique du public concerné",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.agregatPublicNiv1",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatPublicNiv2",
+      "path" : "ActiviteSOCialeRegulee.agregatPublicNiv2",
+      "short" : "Agrégat de clientèle de niveau 2  de la ressource terminologique du public concerné",
+      "definition" : "Agrégat de clientèle de niveau 2  de la ressource terminologique du public concerné",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.agregatPublicNiv2",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.dateDerniereInstallation",
+      "path" : "ActiviteSOCialeRegulee.dateDerniereInstallation",
+      "short" : "Date à laquelle le dernier constat d’installation des places est réalisé.",
+      "definition" : "Date à laquelle le dernier constat d’installation des places est réalisé.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.dateDerniereInstallation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.indicateurSuppressionInstallation",
+      "path" : "ActiviteSOCialeRegulee.indicateurSuppressionInstallation",
+      "short" : "Indicateur de suppression de l’installation de l'activité sociale.",
+      "definition" : "Indicateur de suppression de l’installation de l'activité sociale.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.indicateurSuppressionInstallation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.modeFonctionnement",
+      "path" : "ActiviteSOCialeRegulee.modeFonctionnement",
+      "short" : "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Ancien synonyme : type d'activité",
+      "definition" : "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Ancien synonyme : type d'activité",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.modeFonctionnement",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r404-mode-fonctionnement-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.public",
+      "path" : "ActiviteSOCialeRegulee.public",
+      "short" : "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle",
+      "definition" : "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.public",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.CapaciteHabitation",
+      "path" : "ActiviteSOCialeRegulee.CapaciteHabitation",
+      "short" : "Lien vers la classe CapaciteHabitation",
+      "definition" : "Lien vers la classe CapaciteHabitation",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSOCialeRegulee.CapaciteHabitation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "ActiviteSOCialeRegulee",
+      "path" : "ActiviteSOCialeRegulee",
+      "short" : "Les activités ASOCR sont les activités autorisées pour les ESSMS et les structures du champ social.Ces activités sont détaillées sous forme d'un triplet :- discipline- mode de fonctionnement- public pris en chargePour chaque activité, peut en outre être notée une capacité autorisée (nombre de places d'hébergement par exemple)",
+      "definition" : "Les activités ASOCR sont les activités autorisées pour les ESSMS et les structures du champ social.Ces activités sont détaillées sous forme d'un triplet :- discipline- mode de fonctionnement- public pris en chargePour chaque activité, peut en outre être notée une capacité autorisée (nombre de places d'hébergement par exemple)"
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.activite",
+      "path" : "ActiviteSOCialeRegulee.activite",
+      "short" : "Code définissant l'activité \"ASOC\" des Activités SMSSE RéguléesLa liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).",
+      "definition" : "Code définissant l'activité \"ASOC\" des Activités SMSSE RéguléesLa liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.ageMaxAutorise",
+      "path" : "ActiviteSOCialeRegulee.ageMaxAutorise",
+      "short" : "Age maximum de la clientèle autorisée.",
+      "definition" : "Age maximum de la clientèle autorisée.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.ageMaxInstalle",
+      "path" : "ActiviteSOCialeRegulee.ageMaxInstalle",
+      "short" : "Age maximum de la clientèle installée.",
+      "definition" : "Age maximum de la clientèle installée.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.ageMinAutorise",
+      "path" : "ActiviteSOCialeRegulee.ageMinAutorise",
+      "short" : "Age minimum de la clientèle autorisée.",
+      "definition" : "Age minimum de la clientèle autorisée.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.ageMinInstalle",
+      "path" : "ActiviteSOCialeRegulee.ageMinInstalle",
+      "short" : "Age minimum de la clientèle installée.",
+      "definition" : "Age minimum de la clientèle installée.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv1",
+      "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv1",
+      "short" : "Agrégat de niveau 1 de la ressource terminologique des Activites Sociales Regulées",
+      "definition" : "Agrégat de niveau 1 de la ressource terminologique des Activites Sociales Regulées",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv2",
+      "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv2",
+      "short" : "Agrégat de niveau 2 de la ressource terminologique  des Activites Sociales Regulées",
+      "definition" : "Agrégat de niveau 2 de la ressource terminologique  des Activites Sociales Regulées",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv3",
+      "path" : "ActiviteSOCialeRegulee.agregatActiviteSocialeReguleeNiv3",
+      "short" : "Agrégat de niveau 3 de la ressource terminologique  des Activites Sociales Regulées",
+      "definition" : "Agrégat de niveau 3 de la ressource terminologique  des Activites Sociales Regulées",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r401-activite-sociale-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatPublicNiv1",
+      "path" : "ActiviteSOCialeRegulee.agregatPublicNiv1",
+      "short" : "Agrégat de clientèle de niveau 1  de la ressource terminologique du public concerné",
+      "definition" : "Agrégat de clientèle de niveau 1  de la ressource terminologique du public concerné",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.agregatPublicNiv2",
+      "path" : "ActiviteSOCialeRegulee.agregatPublicNiv2",
+      "short" : "Agrégat de clientèle de niveau 2  de la ressource terminologique du public concerné",
+      "definition" : "Agrégat de clientèle de niveau 2  de la ressource terminologique du public concerné",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.dateDerniereInstallation",
+      "path" : "ActiviteSOCialeRegulee.dateDerniereInstallation",
+      "short" : "Date à laquelle le dernier constat d’installation des places est réalisé.",
+      "definition" : "Date à laquelle le dernier constat d’installation des places est réalisé.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.indicateurSuppressionInstallation",
+      "path" : "ActiviteSOCialeRegulee.indicateurSuppressionInstallation",
+      "short" : "Indicateur de suppression de l’installation de l'activité sociale.",
+      "definition" : "Indicateur de suppression de l’installation de l'activité sociale.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.modeFonctionnement",
+      "path" : "ActiviteSOCialeRegulee.modeFonctionnement",
+      "short" : "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Ancien synonyme : type d'activité",
+      "definition" : "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Ancien synonyme : type d'activité",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r404-mode-fonctionnement-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.public",
+      "path" : "ActiviteSOCialeRegulee.public",
+      "short" : "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle",
+      "definition" : "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSOCialeRegulee.CapaciteHabitation",
+      "path" : "ActiviteSOCialeRegulee.CapaciteHabitation",
+      "short" : "Lien vers la classe CapaciteHabitation",
+      "definition" : "Lien vers la classe CapaciteHabitation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation"
+      }]
+    }]
+  }
+}

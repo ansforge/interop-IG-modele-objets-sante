@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Engagement"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : DéfinitionStructure Engagement</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément">Nom</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément">Drapeaux</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-Engagement-definitions.html#Engagement" title="Les engagements regroupent l’ensemble des documents permettant de délivrer des autorisations liées à des structures (“PM EJ&quot;, “EGE” ou Groupements) ou à des activités. Les engagements sont de 3 types :  les arrêtés,  les labels, les conventions. Un engagement matérialise le cadre légal de mise en place d'une structure, d'un groupement ou d'exercice / exploitation d'une activité Sanitaire, médico-sociale, sociale ou d'enseignement (SMSSE) par une structure référencée dans FINESS. Ce cadre est conclu entre une structure et une Autorité de Régulation.Sur la base des engagements, les Autorités d’Enregistrement alimentent FINESS.">Engagement</a><a name="Engagement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="" class="hierarchy xhtCellBorder0">Les engagements regroupent l’ensemble des documents permettant de délivrer des autorisations liées à des structures (“PM EJ&quot;, “EGE” ou Groupements) ou à des activités. Les engagements sont de 3 types :  les arrêtés,  les labels, les conventions. Un engagement matérialise le cadre légal de mise en place d'une structure, d'un groupement ou d'exercice / exploitation d'une activité Sanitaire, médico-sociale, sociale ou d'enseignement (SMSSE) par une structure référencée dans FINESS. Ce cadre est conclu entre une structure et une Autorité de Régulation.Sur la base des engagements, les Autorités d’Enregistrement alimentent FINESS.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.autoriteRegulation" title="Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement.">autoriteRegulation</a><a name="Engagement.autoriteRegulation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-Autorite.html">Autorite</a></td><td style="" class="hierarchy xhtCellBorder0">Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.commentaire" title="Informations complémentaires sur l'engagement.">commentaire</a><a name="Engagement.commentaire"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Informations complémentaires sur l'engagement.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.dateEffetEngagement" title="Date d'effet de l'engagement.">dateEffetEngagement</a><a name="Engagement.dateEffetEngagement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="" class="hierarchy xhtCellBorder0">Date d'effet de l'engagement.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.dateSignatureEngagement" title="Date de signature de l'engagement.">dateSignatureEngagement</a><a name="Engagement.dateSignatureEngagement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="" class="hierarchy xhtCellBorder0">Date de signature de l'engagement.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.documentAdministratif" title="Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données">documentAdministratif</a><a name="Engagement.documentAdministratif"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-DocumentStructure.html">DocumentStructure</a></td><td style="" class="hierarchy xhtCellBorder0">Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.dureeValiditeEngagement" title="Durée de validité de l'engagement.">dureeValiditeEngagement</a><a name="Engagement.dureeValiditeEngagement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Durée de validité de l'engagement.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.identifiantEngagement" title="Identifiant de l'engagement.">identifiantEngagement</a><a name="Engagement.identifiantEngagement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Identifiant de l'engagement.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.sousTypeEngagement" title="Sous type de l'engagement.">sousTypeEngagement</a><a name="Engagement.sousTypeEngagement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="" class="hierarchy xhtCellBorder0">Sous type de l'engagement.<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs" class="binding">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.typeEngagement" title="Type d'engagement">typeEngagement</a><a name="Engagement.typeEngagement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="" class="hierarchy xhtCellBorder0">Type d'engagement<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs" class="binding">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.ActiviteAutoriseeExercee" title="Lien vers la classe ActiviteAutoriseeExercee">ActiviteAutoriseeExercee</a><a name="Engagement.ActiviteAutoriseeExercee"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-ActiviteAutoriseeExercee.html">ActiviteAutoriseeExercee</a></td><td style="" class="hierarchy xhtCellBorder0">Lien vers la classe ActiviteAutoriseeExercee<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.PersonneMorale" title="Lien vers la classe PersonneMorale">PersonneMorale</a><a name="Engagement.PersonneMorale"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-PersonneMorale.html">PersonneMorale</a></td><td style="" class="hierarchy xhtCellBorder0">Lien vers la classe PersonneMorale</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Engagement.</span><a href="StructureDefinition-Engagement-definitions.html#Engagement.EntiteGeographiqueExercice" title="Lien vers la classe EntiteGeographiqueExercice">EntiteGeographiqueExercice</a><a name="Engagement.EntiteGeographiqueExercice"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EntiteGeographiqueExercice.html">EntiteGeographiqueExercice</a></td><td style="" class="hierarchy xhtCellBorder0">Lien vers la classe EntiteGeographiqueExercice</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Engagement"/>
+  <version value="0.1.0-ballot"/>
+  <name value="Engagement"/>
+  <title value="Engagement"/>
+  <status value="draft"/>
+  <date value="2026-11-04T15:30:59+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Les engagements regroupent l’ensemble des documents permettant de délivrer des autorisations liées à des structures (“PM EJ&quot;, “EGE” ou Groupements) ou à des activités. Les engagements sont de 3 types :  les arrêtés,  les labels, les conventions. Un engagement matérialise le cadre légal de mise en place d'une structure, d'un groupement ou d'exercice / exploitation d'une activité Sanitaire, médico-sociale, sociale ou d'enseignement (SMSSE) par une structure référencée dans FINESS. Ce cadre est conclu entre une structure et une Autorité de Régulation.Sur la base des engagements, les Autorités d’Enregistrement alimentent FINESS."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Engagement"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="Engagement">
+      <path value="Engagement"/>
+      <short value="Les engagements regroupent l’ensemble des documents permettant de délivrer des autorisations liées à des structures (“PM EJ&quot;, “EGE” ou Groupements) ou à des activités. Les engagements sont de 3 types :  les arrêtés,  les labels, les conventions. Un engagement matérialise le cadre légal de mise en place d'une structure, d'un groupement ou d'exercice / exploitation d'une activité Sanitaire, médico-sociale, sociale ou d'enseignement (SMSSE) par une structure référencée dans FINESS. Ce cadre est conclu entre une structure et une Autorité de Régulation.Sur la base des engagements, les Autorités d’Enregistrement alimentent FINESS."/>
+      <definition value="Les engagements regroupent l’ensemble des documents permettant de délivrer des autorisations liées à des structures (“PM EJ&quot;, “EGE” ou Groupements) ou à des activités. Les engagements sont de 3 types :  les arrêtés,  les labels, les conventions. Un engagement matérialise le cadre légal de mise en place d'une structure, d'un groupement ou d'exercice / exploitation d'une activité Sanitaire, médico-sociale, sociale ou d'enseignement (SMSSE) par une structure référencée dans FINESS. Ce cadre est conclu entre une structure et une Autorité de Régulation.Sur la base des engagements, les Autorités d’Enregistrement alimentent FINESS."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="Engagement.autoriteRegulation">
+      <path value="Engagement.autoriteRegulation"/>
+      <short value="Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement."/>
+      <definition value="Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.autoriteRegulation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Autorite"/>
+      </type>
+    </element>
+    <element id="Engagement.commentaire">
+      <path value="Engagement.commentaire"/>
+      <short value="Informations complémentaires sur l'engagement."/>
+      <definition value="Informations complémentaires sur l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.commentaire"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Engagement.dateEffetEngagement">
+      <path value="Engagement.dateEffetEngagement"/>
+      <short value="Date d'effet de l'engagement."/>
+      <definition value="Date d'effet de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.dateEffetEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Engagement.dateSignatureEngagement">
+      <path value="Engagement.dateSignatureEngagement"/>
+      <short value="Date de signature de l'engagement."/>
+      <definition value="Date de signature de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.dateSignatureEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Engagement.documentAdministratif">
+      <path value="Engagement.documentAdministratif"/>
+      <short value="Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données"/>
+      <definition value="Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Engagement.documentAdministratif"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure"/>
+      </type>
+    </element>
+    <element id="Engagement.dureeValiditeEngagement">
+      <path value="Engagement.dureeValiditeEngagement"/>
+      <short value="Durée de validité de l'engagement."/>
+      <definition value="Durée de validité de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.dureeValiditeEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="Engagement.identifiantEngagement">
+      <path value="Engagement.identifiantEngagement"/>
+      <short value="Identifiant de l'engagement."/>
+      <definition value="Identifiant de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.identifiantEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Engagement.sousTypeEngagement">
+      <path value="Engagement.sousTypeEngagement"/>
+      <short value="Sous type de l'engagement."/>
+      <definition value="Sous type de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.sousTypeEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs"/>
+      </binding>
+    </element>
+    <element id="Engagement.typeEngagement">
+      <path value="Engagement.typeEngagement"/>
+      <short value="Type d'engagement"/>
+      <definition value="Type d'engagement"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.typeEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs"/>
+      </binding>
+    </element>
+    <element id="Engagement.ActiviteAutoriseeExercee">
+      <path value="Engagement.ActiviteAutoriseeExercee"/>
+      <short value="Lien vers la classe ActiviteAutoriseeExercee"/>
+      <definition value="Lien vers la classe ActiviteAutoriseeExercee"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Engagement.ActiviteAutoriseeExercee"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee"/>
+      </type>
+    </element>
+    <element id="Engagement.PersonneMorale">
+      <path value="Engagement.PersonneMorale"/>
+      <short value="Lien vers la classe PersonneMorale"/>
+      <definition value="Lien vers la classe PersonneMorale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.PersonneMorale"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"/>
+      </type>
+    </element>
+    <element id="Engagement.EntiteGeographiqueExercice">
+      <path value="Engagement.EntiteGeographiqueExercice"/>
+      <short value="Lien vers la classe EntiteGeographiqueExercice"/>
+      <definition value="Lien vers la classe EntiteGeographiqueExercice"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.EntiteGeographiqueExercice"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Engagement">
+      <path value="Engagement"/>
+      <short value="Les engagements regroupent l’ensemble des documents permettant de délivrer des autorisations liées à des structures (“PM EJ&quot;, “EGE” ou Groupements) ou à des activités. Les engagements sont de 3 types :  les arrêtés,  les labels, les conventions. Un engagement matérialise le cadre légal de mise en place d'une structure, d'un groupement ou d'exercice / exploitation d'une activité Sanitaire, médico-sociale, sociale ou d'enseignement (SMSSE) par une structure référencée dans FINESS. Ce cadre est conclu entre une structure et une Autorité de Régulation.Sur la base des engagements, les Autorités d’Enregistrement alimentent FINESS."/>
+      <definition value="Les engagements regroupent l’ensemble des documents permettant de délivrer des autorisations liées à des structures (“PM EJ&quot;, “EGE” ou Groupements) ou à des activités. Les engagements sont de 3 types :  les arrêtés,  les labels, les conventions. Un engagement matérialise le cadre légal de mise en place d'une structure, d'un groupement ou d'exercice / exploitation d'une activité Sanitaire, médico-sociale, sociale ou d'enseignement (SMSSE) par une structure référencée dans FINESS. Ce cadre est conclu entre une structure et une Autorité de Régulation.Sur la base des engagements, les Autorités d’Enregistrement alimentent FINESS."/>
+    </element>
+    <element id="Engagement.autoriteRegulation">
+      <path value="Engagement.autoriteRegulation"/>
+      <short value="Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement."/>
+      <definition value="Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Autorite"/>
+      </type>
+    </element>
+    <element id="Engagement.commentaire">
+      <path value="Engagement.commentaire"/>
+      <short value="Informations complémentaires sur l'engagement."/>
+      <definition value="Informations complémentaires sur l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Engagement.dateEffetEngagement">
+      <path value="Engagement.dateEffetEngagement"/>
+      <short value="Date d'effet de l'engagement."/>
+      <definition value="Date d'effet de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Engagement.dateSignatureEngagement">
+      <path value="Engagement.dateSignatureEngagement"/>
+      <short value="Date de signature de l'engagement."/>
+      <definition value="Date de signature de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Engagement.documentAdministratif">
+      <path value="Engagement.documentAdministratif"/>
+      <short value="Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données"/>
+      <definition value="Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure"/>
+      </type>
+    </element>
+    <element id="Engagement.dureeValiditeEngagement">
+      <path value="Engagement.dureeValiditeEngagement"/>
+      <short value="Durée de validité de l'engagement."/>
+      <definition value="Durée de validité de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="Engagement.identifiantEngagement">
+      <path value="Engagement.identifiantEngagement"/>
+      <short value="Identifiant de l'engagement."/>
+      <definition value="Identifiant de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Engagement.sousTypeEngagement">
+      <path value="Engagement.sousTypeEngagement"/>
+      <short value="Sous type de l'engagement."/>
+      <definition value="Sous type de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs"/>
+      </binding>
+    </element>
+    <element id="Engagement.typeEngagement">
+      <path value="Engagement.typeEngagement"/>
+      <short value="Type d'engagement"/>
+      <definition value="Type d'engagement"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs"/>
+      </binding>
+    </element>
+    <element id="Engagement.ActiviteAutoriseeExercee">
+      <path value="Engagement.ActiviteAutoriseeExercee"/>
+      <short value="Lien vers la classe ActiviteAutoriseeExercee"/>
+      <definition value="Lien vers la classe ActiviteAutoriseeExercee"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee"/>
+      </type>
+    </element>
+    <element id="Engagement.PersonneMorale">
+      <path value="Engagement.PersonneMorale"/>
+      <short value="Lien vers la classe PersonneMorale"/>
+      <definition value="Lien vers la classe PersonneMorale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"/>
+      </type>
+    </element>
+    <element id="Engagement.EntiteGeographiqueExercice">
+      <path value="Engagement.EntiteGeographiqueExercice"/>
+      <short value="Lien vers la classe EntiteGeographiqueExercice"/>
+      <definition value="Lien vers la classe EntiteGeographiqueExercice"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

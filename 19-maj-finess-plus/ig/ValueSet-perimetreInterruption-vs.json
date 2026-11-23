@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "perimetreInterruption-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs perimetreInterruption-vs</b></p><a name=\"perimetreInterruption-vs\"> </a><a name=\"hcperimetreInterruption-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r410-perime</code><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li><li>Inclut tous les codes définis dans <code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-interruption-exercice</code><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/perimetreInterruption-vs",
+  "version" : "0.1.0-ballot",
+  "name" : "PerimetreinterruptionVs",
+  "status" : "draft",
+  "date" : "2026-11-04T15:30:59+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r410-perime"
+    },
+    {
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-interruption-exercice"
+    }]
+  }
+}

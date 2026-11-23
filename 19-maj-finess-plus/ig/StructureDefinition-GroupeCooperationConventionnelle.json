@@ -1,0 +1,385 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "GroupeCooperationConventionnelle",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure GroupeCooperationConventionnelle</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle\" title=\"Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés.\">GroupeCooperationConventionnelle</a><a name=\"GroupeCooperationConventionnelle\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-GroupementStructure.html\">GroupementStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés.<br/><br/>Éléments définis dans les ancêtres :<a href=\"StructureDefinition-Groupement.html\" title=\"Identifiant du groupement.\">idGroupement</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de création du groupement.\">dateCreation</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de mise à jour du groupement.\">dateMAJ</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Date de fin d'existence du groupement.\">dateFin</a>, <a href=\"StructureDefinition-Groupement.html\" title=\"Lien vers la classe Membre\">Membre</a>, <a href=\"StructureDefinition-GroupementStructure.html\" title=\"Type de regroupement  de structures ( à compléter)\">typeGroupementStructure</a>, <a href=\"StructureDefinition-GroupementStructure.html\" title=\"Lien vers la classe EntiteGroupementStructure\">EntiteGroupementStructure</a></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.autoriteRegulation\" title=\"autorité exercant une fonction de régulation\">autoriteRegulation</a><a name=\"GroupeCooperationConventionnelle.autoriteRegulation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">autorité exercant une fonction de régulation<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.documentAdministratif\" title=\"Document(s) administratif(s) du Groupe GCC\">documentAdministratif</a><a name=\"GroupeCooperationConventionnelle.documentAdministratif\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-DocumentStructure.html\">DocumentStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Document(s) administratif(s) du Groupe GCC<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.evenementAdministratif\" title=\"Evénement(s) administratif(s) du Groupe GCC\">evenementAdministratif</a><a name=\"GroupeCooperationConventionnelle.evenementAdministratif\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EvenementStructure.html\">EvenementStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Evénement(s) administratif(s) du Groupe GCC<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.nomGroupeGCC\" title=\"Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest.\">nomGroupeGCC</a><a name=\"GroupeCooperationConventionnelle.nomGroupeGCC\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.typeGroupeGCC\" title=\"Un Groupe GCC est caractérisé par un type de GCC.\">typeGroupeGCC</a><a name=\"GroupeCooperationConventionnelle.typeGroupeGCC\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Un Groupe GCC est caractérisé par un type de GCC.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.PersonneMorale\" title=\"Lien vers la classe PersonneMorale\">PersonneMorale</a><a name=\"GroupeCooperationConventionnelle.PersonneMorale\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-PersonneMorale.html\">PersonneMorale</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe PersonneMorale</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">GroupeCooperationConventionnelle.</span><a href=\"StructureDefinition-GroupeCooperationConventionnelle-definitions.html#GroupeCooperationConventionnelle.ActiviteAutoriseeExercee\" title=\"Lien vers la classe ActiviteAutoriseeExercee\">ActiviteAutoriseeExercee</a><a name=\"GroupeCooperationConventionnelle.ActiviteAutoriseeExercee\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\">ActiviteAutoriseeExercee</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lien vers la classe ActiviteAutoriseeExercee<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle",
+  "version" : "0.1.0-ballot",
+  "name" : "GroupeCooperationConventionnelle",
+  "title" : "GroupeCooperationConventionnelle",
+  "status" : "draft",
+  "date" : "2026-11-04T15:30:59+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupementStructure",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.1.0-ballot"
+    }],
+    "element" : [{
+      "id" : "GroupeCooperationConventionnelle",
+      "path" : "GroupeCooperationConventionnelle",
+      "short" : "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés.",
+      "definition" : "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.idGroupement",
+      "path" : "GroupeCooperationConventionnelle.idGroupement",
+      "short" : "Identifiant du groupement.",
+      "definition" : "Identifiant du groupement.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Groupement.idGroupement",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.dateCreation",
+      "path" : "GroupeCooperationConventionnelle.dateCreation",
+      "short" : "Date de création du groupement.",
+      "definition" : "Date de création du groupement.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Groupement.dateCreation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.dateMAJ",
+      "path" : "GroupeCooperationConventionnelle.dateMAJ",
+      "short" : "Date de mise à jour du groupement.",
+      "definition" : "Date de mise à jour du groupement.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Groupement.dateMAJ",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.dateFin",
+      "path" : "GroupeCooperationConventionnelle.dateFin",
+      "short" : "Date de fin d'existence du groupement.",
+      "definition" : "Date de fin d'existence du groupement.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Groupement.dateFin",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.Membre",
+      "path" : "GroupeCooperationConventionnelle.Membre",
+      "short" : "Lien vers la classe Membre",
+      "definition" : "Lien vers la classe Membre",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Groupement.Membre",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Membre"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.typeGroupementStructure",
+      "path" : "GroupeCooperationConventionnelle.typeGroupementStructure",
+      "short" : "Type de regroupement  de structures ( à compléter)",
+      "definition" : "Type de regroupement  de structures ( à compléter)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "GroupementStructure.typeGroupementStructure",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r387-type-groupement?vs"
+      }
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.EntiteGroupementStructure",
+      "path" : "GroupeCooperationConventionnelle.EntiteGroupementStructure",
+      "short" : "Lien vers la classe EntiteGroupementStructure",
+      "definition" : "Lien vers la classe EntiteGroupementStructure",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "GroupementStructure.EntiteGroupementStructure",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGroupementStructure"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.autoriteRegulation",
+      "path" : "GroupeCooperationConventionnelle.autoriteRegulation",
+      "short" : "autorité exercant une fonction de régulation",
+      "definition" : "autorité exercant une fonction de régulation",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "GroupeCooperationConventionnelle.autoriteRegulation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs"
+      }
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.documentAdministratif",
+      "path" : "GroupeCooperationConventionnelle.documentAdministratif",
+      "short" : "Document(s) administratif(s) du Groupe GCC",
+      "definition" : "Document(s) administratif(s) du Groupe GCC",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "GroupeCooperationConventionnelle.documentAdministratif",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.evenementAdministratif",
+      "path" : "GroupeCooperationConventionnelle.evenementAdministratif",
+      "short" : "Evénement(s) administratif(s) du Groupe GCC",
+      "definition" : "Evénement(s) administratif(s) du Groupe GCC",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "GroupeCooperationConventionnelle.evenementAdministratif",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.nomGroupeGCC",
+      "path" : "GroupeCooperationConventionnelle.nomGroupeGCC",
+      "short" : "Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest.",
+      "definition" : "Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "GroupeCooperationConventionnelle.nomGroupeGCC",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.typeGroupeGCC",
+      "path" : "GroupeCooperationConventionnelle.typeGroupeGCC",
+      "short" : "Un Groupe GCC est caractérisé par un type de GCC.",
+      "definition" : "Un Groupe GCC est caractérisé par un type de GCC.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "GroupeCooperationConventionnelle.typeGroupeGCC",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs"
+      }
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.PersonneMorale",
+      "path" : "GroupeCooperationConventionnelle.PersonneMorale",
+      "short" : "Lien vers la classe PersonneMorale",
+      "definition" : "Lien vers la classe PersonneMorale",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "GroupeCooperationConventionnelle.PersonneMorale",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee",
+      "path" : "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee",
+      "short" : "Lien vers la classe ActiviteAutoriseeExercee",
+      "definition" : "Lien vers la classe ActiviteAutoriseeExercee",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "GroupeCooperationConventionnelle",
+      "path" : "GroupeCooperationConventionnelle",
+      "short" : "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés.",
+      "definition" : "Le Groupement de Coopération Conventionnelle, ou GCC, se traduit par un groupement qui n'est pas une Personne Morale, sans immatriculation FiNESS, qui fédère des membres de type Personnes Morales ou Entités Géographiques. Les GCC sont utilisés pour décrire les structures de type Groupement Hospitalier Territoriaux et les Dispositifs Intégrés."
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.autoriteRegulation",
+      "path" : "GroupeCooperationConventionnelle.autoriteRegulation",
+      "short" : "autorité exercant une fonction de régulation",
+      "definition" : "autorité exercant une fonction de régulation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r396-autorite?vs"
+      }
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.documentAdministratif",
+      "path" : "GroupeCooperationConventionnelle.documentAdministratif",
+      "short" : "Document(s) administratif(s) du Groupe GCC",
+      "definition" : "Document(s) administratif(s) du Groupe GCC",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.evenementAdministratif",
+      "path" : "GroupeCooperationConventionnelle.evenementAdministratif",
+      "short" : "Evénement(s) administratif(s) du Groupe GCC",
+      "definition" : "Evénement(s) administratif(s) du Groupe GCC",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.nomGroupeGCC",
+      "path" : "GroupeCooperationConventionnelle.nomGroupeGCC",
+      "short" : "Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest.",
+      "definition" : "Nom du groupe de coopération conventionnelle. Exemple : Le GHT de la Haute-Garonne et du Tarn Ouest.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.typeGroupeGCC",
+      "path" : "GroupeCooperationConventionnelle.typeGroupeGCC",
+      "short" : "Un Groupe GCC est caractérisé par un type de GCC.",
+      "definition" : "Un Groupe GCC est caractérisé par un type de GCC.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r371-type-groupe-gcc?vs"
+      }
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.PersonneMorale",
+      "path" : "GroupeCooperationConventionnelle.PersonneMorale",
+      "short" : "Lien vers la classe PersonneMorale",
+      "definition" : "Lien vers la classe PersonneMorale",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"
+      }]
+    },
+    {
+      "id" : "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee",
+      "path" : "GroupeCooperationConventionnelle.ActiviteAutoriseeExercee",
+      "short" : "Lien vers la classe ActiviteAutoriseeExercee",
+      "definition" : "Lien vers la classe ActiviteAutoriseeExercee",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee"
+      }]
+    }]
+  }
+}

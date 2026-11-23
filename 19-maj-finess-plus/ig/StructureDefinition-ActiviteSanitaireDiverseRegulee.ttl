@@ -1,0 +1,752 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSanitaireDiverseRegulee> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ActiviteSanitaireDiverseRegulee"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ActiviteSanitaireDiverseRegulee</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee\" title=\"Activité Autorisée correspondant à la nature ASDR. Ces activités sont une spécialisation de l'activité Autorisée / Exercée.Elle correspondent à toutes les activités sanitaires non gérées par le SI Autorisation\">ActiviteSanitaireDiverseRegulee</a><a name=\"ActiviteSanitaireDiverseRegulee\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\">ActiviteAutoriseeExercee</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Activité Autorisée correspondant à la nature ASDR. Ces activités sont une spécialisation de l'activité Autorisée / Exercée.Elle correspondent à toutes les activités sanitaires non gérées par le SI Autorisation<br/><br/>Éléments définis dans les ancêtres :<a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date début effective de l'autorisation\">dateDebutPeriode</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS\">dateDecision</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est &quot;vivante&quot; ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation.\">dateFin</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité.\">dateFinPeriode</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre\">datePremiereMiseEnOeuvre</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Durée de l'autorisation.\">dureeAutorisation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Evénement(s) administratif(s) survenu(s) dans l'activité\">evenementAdministratif</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Indicateur de suppression de l'autorisation de l'activité Autorisée exercée\">indicateurSuppressionAutorisation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements\">indicateurSuppressionImplantation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées\">natureActivite</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Identifiant fonctionnel de l'autorisation ARHGOS de l'EML.\">numeroAutorisationARHGOS</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement\">typeActiviteSMSSE</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité.\">zoneInterventionAutorisee</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe EntiteGeographiqueExercice\">EntiteGeographiqueExercice</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe GroupeCooperationConventionnelle\">GroupeCooperationConventionnelle</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe PersonneMorale\">PersonneMorale</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe Engagement\">Engagement</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe CapaciteActiviteAutoriseeExercee\">CapaciteActiviteAutoriseeExercee</a></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSanitaireDiverseRegulee.</span><a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee.activite\" title=\"Code définissant l'activité &quot;ASDR&quot; des Activités SMSSE  Régulées.La liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP). synonyme : Discipline Equipement Sociale\">activite</a><a name=\"ActiviteSanitaireDiverseRegulee.activite\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Code définissant l'activité \"ASDR\" des Activités SMSSE  Régulées.La liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP). synonyme : Discipline Equipement Sociale<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSanitaireDiverseRegulee.</span><a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv1\" title=\"Agrégat de niveau 1 de la ressource terminologique des activités ASDR\">agregatActiviteSanitaireDiverseReguleeNiv1</a><a name=\"ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv1\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de niveau 1 de la ressource terminologique des activités ASDR<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSanitaireDiverseRegulee.</span><a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv2\" title=\"Agrégat de niveau 2 de la ressource terminologique des activités ASDR\">agregatActiviteSanitaireDiverseReguleeNiv2</a><a name=\"ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv2\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de niveau 2 de la ressource terminologique des activités ASDR<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSanitaireDiverseRegulee.</span><a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv3\" title=\"Agrégat de niveau 3 de la ressource terminologique des activités ASDR\">agregatActiviteSanitaireDiverseReguleeNiv3</a><a name=\"ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv3\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de niveau 3 de la ressource terminologique des activités ASDR<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSanitaireDiverseRegulee.</span><a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee.agregatPublicNiv1\" title=\"Agrégat de niveau 1 de la ressource terminologique du public concerné\">agregatPublicNiv1</a><a name=\"ActiviteSanitaireDiverseRegulee.agregatPublicNiv1\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de niveau 1 de la ressource terminologique du public concerné<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSanitaireDiverseRegulee.</span><a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee.agregatPublicNiv2\" title=\"Agrégat de niveau 2 de la ressource terminologique du public concerné\">agregatPublicNiv2</a><a name=\"ActiviteSanitaireDiverseRegulee.agregatPublicNiv2\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Agrégat de niveau 2 de la ressource terminologique du public concerné<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSanitaireDiverseRegulee.</span><a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee.modeFonctionnement\" title=\"Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Synonyme : type d'activité\">modeFonctionnement</a><a name=\"ActiviteSanitaireDiverseRegulee.modeFonctionnement\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Synonyme : type d'activité<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r404-mode-fonctionnement-activite-smsse-regulee-all\" title=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r404-mode-fonctionnement-activite-smsse-regulee?vs\" class=\"binding\">Vs Tre R404 Mode Fonctionnement Activite Smsse Regulee All <img src=\"external.png\" alt=\"\"/></a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSanitaireDiverseRegulee.</span><a href=\"StructureDefinition-ActiviteSanitaireDiverseRegulee-definitions.html#ActiviteSanitaireDiverseRegulee.public\" title=\"Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle\">public</a><a name=\"ActiviteSanitaireDiverseRegulee.public\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs\" class=\"binding\">https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSanitaireDiverseRegulee"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0-ballot"] ;
+  fhir:StructureDefinition.name [ fhir:value "ActiviteSanitaireDiverseRegulee"] ;
+  fhir:StructureDefinition.title [ fhir:value "ActiviteSanitaireDiverseRegulee"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-04T15:30:59+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "Activité Autorisée correspondant à la nature ASDR. Ces activités sont une spécialisation de l'activité Autorisée / Exercée.Elle correspondent à toutes les activités sanitaires non gérées par le SI Autorisation"] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSanitaireDiverseRegulee"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee" ;
+     fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "0.1.0-ballot" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Activité Autorisée correspondant à la nature ASDR. Ces activités sont une spécialisation de l'activité Autorisée / Exercée.Elle correspondent à toutes les activités sanitaires non gérées par le SI Autorisation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Activité Autorisée correspondant à la nature ASDR. Ces activités sont une spécialisation de l'activité Autorisée / Exercée.Elle correspondent à toutes les activités sanitaires non gérées par le SI Autorisation" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.dateDebutPeriode" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.dateDebutPeriode" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date début effective de l'autorisation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date début effective de l'autorisation" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.dateDebutPeriode" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.dateDecision" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.dateDecision" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.dateDecision" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.dateFin" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.dateFin" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est \"vivante\" ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est \"vivante\" ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.dateFin" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.dateFinPeriode" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.dateFinPeriode" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.dateFinPeriode" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.datePremiereMiseEnOeuvre" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.datePremiereMiseEnOeuvre" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.datePremiereMiseEnOeuvre" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.dureeAutorisation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.dureeAutorisation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Durée de l'autorisation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Durée de l'autorisation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.dureeAutorisation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.evenementAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.evenementAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Evénement(s) administratif(s) survenu(s) dans l'activité" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Evénement(s) administratif(s) survenu(s) dans l'activité" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.evenementAdministratif" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.indicateurSuppressionAutorisation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.indicateurSuppressionAutorisation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indicateur de suppression de l'autorisation de l'activité Autorisée exercée" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indicateur de suppression de l'autorisation de l'activité Autorisée exercée" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.indicateurSuppressionAutorisation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.indicateurSuppressionImplantation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.indicateurSuppressionImplantation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.indicateurSuppressionImplantation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.natureActivite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.natureActivite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.natureActivite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r374-nature-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r374-nature-activite-smsse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.numeroAutorisationARHGOS" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.numeroAutorisationARHGOS" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifiant fonctionnel de l'autorisation ARHGOS de l'EML." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifiant fonctionnel de l'autorisation ARHGOS de l'EML." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.numeroAutorisationARHGOS" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.typeActiviteSMSSE" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.typeActiviteSMSSE" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.typeActiviteSMSSE" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r392-type-act-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r392-type-act-smsse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.zoneInterventionAutorisee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.zoneInterventionAutorisee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.zoneInterventionAutorisee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Zone" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe EntiteGeographiqueExercice" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.EntiteGeographiqueExercice" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe GroupeCooperationConventionnelle" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.GroupeCooperationConventionnelle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.PersonneMorale" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.PersonneMorale" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe PersonneMorale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe PersonneMorale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.PersonneMorale" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.Engagement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.Engagement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe Engagement" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe Engagement" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.Engagement" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Engagement" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.CapaciteActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.CapaciteActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe CapaciteActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe CapaciteActiviteAutoriseeExercee" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteAutoriseeExercee.CapaciteActiviteAutoriseeExercee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteAutoriseeExercee" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.activite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.activite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code définissant l'activité \"ASDR\" des Activités SMSSE  Régulées.La liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP). synonyme : Discipline Equipement Sociale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Code définissant l'activité \"ASDR\" des Activités SMSSE  Régulées.La liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP). synonyme : Discipline Equipement Sociale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteSanitaireDiverseRegulee.activite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv1" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv1" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 1 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 1 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv1" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv2" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv2" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 2 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 2 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv2" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv3" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv3" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 3 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 3 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv3" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv1" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv1" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 1 de la ressource terminologique du public concerné" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 1 de la ressource terminologique du public concerné" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv1" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv2" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv2" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 2 de la ressource terminologique du public concerné" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 2 de la ressource terminologique du public concerné" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv2" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.modeFonctionnement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.modeFonctionnement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Synonyme : type d'activité" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Synonyme : type d'activité" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteSanitaireDiverseRegulee.modeFonctionnement" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r404-mode-fonctionnement-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r404-mode-fonctionnement-activite-smsse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.public" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.public" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ActiviteSanitaireDiverseRegulee.public" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs>
+         ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Activité Autorisée correspondant à la nature ASDR. Ces activités sont une spécialisation de l'activité Autorisée / Exercée.Elle correspondent à toutes les activités sanitaires non gérées par le SI Autorisation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Activité Autorisée correspondant à la nature ASDR. Ces activités sont une spécialisation de l'activité Autorisée / Exercée.Elle correspondent à toutes les activités sanitaires non gérées par le SI Autorisation" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.activite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.activite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code définissant l'activité \"ASDR\" des Activités SMSSE  Régulées.La liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP). synonyme : Discipline Equipement Sociale" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Code définissant l'activité \"ASDR\" des Activités SMSSE  Régulées.La liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP). synonyme : Discipline Equipement Sociale" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv1" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv1" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 1 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 1 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv2" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv2" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 2 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 2 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv3" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatActiviteSanitaireDiverseReguleeNiv3" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 3 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 3 de la ressource terminologique des activités ASDR" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r347-activite-sanitaire-diverse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv1" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv1" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 1 de la ressource terminologique du public concerné" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 1 de la ressource terminologique du public concerné" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv2" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.agregatPublicNiv2" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Agrégat de niveau 2 de la ressource terminologique du public concerné" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Agrégat de niveau 2 de la ressource terminologique du public concerné" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.modeFonctionnement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.modeFonctionnement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Synonyme : type d'activité" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Synonyme : type d'activité" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r404-mode-fonctionnement-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r404-mode-fonctionnement-activite-smsse-regulee?vs>
+         ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "ActiviteSanitaireDiverseRegulee.public" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ActiviteSanitaireDiverseRegulee.public" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : clientèle, patientèle" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs" ;
+           fhir:link <https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r403-public-activite-smsse-regulee?vs>
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSanitaireDiverseRegulee.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

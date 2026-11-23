@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="UniteLegaleINSEE"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : DéfinitionStructure UniteLegaleINSEE</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément">Nom</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément">Drapeaux</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE" title="Entreprise au sens INSEE identifiée par un numéro SIREN. Une entreprise est une unité économique, juridiquement autonome, organisée pour produire des biens ou des services pour le marché.">UniteLegaleINSEE</a><a name="UniteLegaleINSEE"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="" class="hierarchy xhtCellBorder0">Entreprise au sens INSEE identifiée par un numéro SIREN. Une entreprise est une unité économique, juridiquement autonome, organisée pour produire des biens ou des services pour le marché.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.activitePrincipaleUniteLegale" title="Toute entité juridique se voit attribuer par l'Insee, lors de son inscription au répertoire SIRENE, un code caractérisant son activité principale par référence à la nomenclature d'activités française (NAF rév. 2). Abreviation :  code APEN pour l'EJ.">activitePrincipaleUniteLegale</a><a name="UniteLegaleINSEE.activitePrincipaleUniteLegale"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="" class="hierarchy xhtCellBorder0">Toute entité juridique se voit attribuer par l'Insee, lors de son inscription au répertoire SIRENE, un code caractérisant son activité principale par référence à la nomenclature d'activités française (NAF rév. 2). Abreviation :  code APEN pour l'EJ.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.categorieJuridiqueINSEE" title="La catégorie juridique est un attribut INSEE des unités légales.voir site INSEE https://www.insee.fr/fr/information/2028129">categorieJuridiqueINSEE</a><a name="UniteLegaleINSEE.categorieJuridiqueINSEE"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="" class="hierarchy xhtCellBorder0">La catégorie juridique est un attribut INSEE des unités légales.voir site INSEE https://www.insee.fr/fr/information/2028129</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.dateINSEECessationEntreprise" title="Date (INSEE) de cessation de l'entreprise.">dateINSEECessationEntreprise</a><a name="UniteLegaleINSEE.dateINSEECessationEntreprise"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="" class="hierarchy xhtCellBorder0">Date (INSEE) de cessation de l'entreprise.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.dateINSEECreationEntreprise" title="Date (INSEE) de création de l'entreprise.">dateINSEECreationEntreprise</a><a name="UniteLegaleINSEE.dateINSEECreationEntreprise"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="" class="hierarchy xhtCellBorder0">Date (INSEE) de création de l'entreprise.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.denominationINSEE" title="Raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale.Cette variable est à null pour les personnes physiques.Le répertoire SIREN gère des caractères majuscules non accentués avec caractères spéciaux (- &amp; + @ ! ? * ° . % : ? #).La dénomination peut parfois contenir la mention de la forme de la société (SA, SAS, SARL, etc.).">denominationINSEE</a><a name="UniteLegaleINSEE.denominationINSEE"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale.Cette variable est à null pour les personnes physiques.Le répertoire SIREN gère des caractères majuscules non accentués avec caractères spéciaux (- &amp; + @ ! ? * ° . % : ? #).La dénomination peut parfois contenir la mention de la forme de la société (SA, SAS, SARL, etc.).</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.evenementAdministratif" title="Evénement(s) administratif(s) associé(s) à l'Unite Légale">evenementAdministratif</a><a name="UniteLegaleINSEE.evenementAdministratif"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EvenementStructure.html">EvenementStructure</a></td><td style="" class="hierarchy xhtCellBorder0">Evénement(s) administratif(s) associé(s) à l'Unite Légale<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.siege" title="Reference de l'établissement INSEE principal de la personne morale. Le siège porte les informations géographiques de la personne moraleSi la personne morale ne comporte qu' un seul établissement, celui-ci est aussi le siège.">siege</a><a name="UniteLegaleINSEE.siege"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EtablissementINSEE.html">EtablissementINSEE</a></td><td style="" class="hierarchy xhtCellBorder0">Reference de l'établissement INSEE principal de la personne morale. Le siège porte les informations géographiques de la personne moraleSi la personne morale ne comporte qu' un seul établissement, celui-ci est aussi le siège.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.siren" title="Le numéro Siren est le numéro unique d'identification attribué à chaque entreprise ou organisme par l'INSEE.C'est un simple numéro d'ordre, composé de neuf chiffres:     ** huit chiffres non significatifs (excepté pour les organismes publics où celui-ci commence obligatoirement par 1 ou 2) complétés par une clé de Luhn.Il n'a aucun lien avec les caractéristiques de l'entreprise ou de l'organisme. Il est attribué une seule fois et n'est supprimé du répertoire qu'au moment de la disparition de la personne juridique (décès ou cessation de toute activité pour un entrepreneur individuel, dissolution pour une personne juridique).">siren</a><a name="UniteLegaleINSEE.siren"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Le numéro Siren est le numéro unique d'identification attribué à chaque entreprise ou organisme par l'INSEE.C'est un simple numéro d'ordre, composé de neuf chiffres:     ** huit chiffres non significatifs (excepté pour les organismes publics où celui-ci commence obligatoirement par 1 ou 2) complétés par une clé de Luhn.Il n'a aucun lien avec les caractéristiques de l'entreprise ou de l'organisme. Il est attribué une seule fois et n'est supprimé du répertoire qu'au moment de la disparition de la personne juridique (décès ou cessation de toute activité pour un entrepreneur individuel, dissolution pour une personne juridique).</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">UniteLegaleINSEE.</span><a href="StructureDefinition-UniteLegaleINSEE-definitions.html#UniteLegaleINSEE.PersonneMorale" title="Lien vers la classe PersonneMorale">PersonneMorale</a><a name="UniteLegaleINSEE.PersonneMorale"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-PersonneMorale.html">PersonneMorale</a></td><td style="" class="hierarchy xhtCellBorder0">Lien vers la classe PersonneMorale</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/UniteLegaleINSEE"/>
+  <version value="0.1.0-ballot"/>
+  <name value="UniteLegaleINSEE"/>
+  <title value="UniteLegaleINSEE"/>
+  <status value="draft"/>
+  <date value="2026-11-04T15:30:59+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Entreprise au sens INSEE identifiée par un numéro SIREN. Une entreprise est une unité économique, juridiquement autonome, organisée pour produire des biens ou des services pour le marché."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/UniteLegaleINSEE"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="UniteLegaleINSEE">
+      <path value="UniteLegaleINSEE"/>
+      <short value="Entreprise au sens INSEE identifiée par un numéro SIREN. Une entreprise est une unité économique, juridiquement autonome, organisée pour produire des biens ou des services pour le marché."/>
+      <definition value="Entreprise au sens INSEE identifiée par un numéro SIREN. Une entreprise est une unité économique, juridiquement autonome, organisée pour produire des biens ou des services pour le marché."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="UniteLegaleINSEE.activitePrincipaleUniteLegale">
+      <path value="UniteLegaleINSEE.activitePrincipaleUniteLegale"/>
+      <short value="Toute entité juridique se voit attribuer par l'Insee, lors de son inscription au répertoire SIRENE, un code caractérisant son activité principale par référence à la nomenclature d'activités française (NAF rév. 2). Abreviation :  code APEN pour l'EJ."/>
+      <definition value="Toute entité juridique se voit attribuer par l'Insee, lors de son inscription au répertoire SIRENE, un code caractérisant son activité principale par référence à la nomenclature d'activités française (NAF rév. 2). Abreviation :  code APEN pour l'EJ."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="UniteLegaleINSEE.activitePrincipaleUniteLegale"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.categorieJuridiqueINSEE">
+      <path value="UniteLegaleINSEE.categorieJuridiqueINSEE"/>
+      <short value="La catégorie juridique est un attribut INSEE des unités légales.voir site INSEE https://www.insee.fr/fr/information/2028129"/>
+      <definition value="La catégorie juridique est un attribut INSEE des unités légales.voir site INSEE https://www.insee.fr/fr/information/2028129"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="UniteLegaleINSEE.categorieJuridiqueINSEE"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.dateINSEECessationEntreprise">
+      <path value="UniteLegaleINSEE.dateINSEECessationEntreprise"/>
+      <short value="Date (INSEE) de cessation de l'entreprise."/>
+      <definition value="Date (INSEE) de cessation de l'entreprise."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="UniteLegaleINSEE.dateINSEECessationEntreprise"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.dateINSEECreationEntreprise">
+      <path value="UniteLegaleINSEE.dateINSEECreationEntreprise"/>
+      <short value="Date (INSEE) de création de l'entreprise."/>
+      <definition value="Date (INSEE) de création de l'entreprise."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="UniteLegaleINSEE.dateINSEECreationEntreprise"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.denominationINSEE">
+      <path value="UniteLegaleINSEE.denominationINSEE"/>
+      <short value="Raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale.Cette variable est à null pour les personnes physiques.Le répertoire SIREN gère des caractères majuscules non accentués avec caractères spéciaux (- &amp; + @ ! ? * ° . % : ? #).La dénomination peut parfois contenir la mention de la forme de la société (SA, SAS, SARL, etc.)."/>
+      <definition value="Raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale.Cette variable est à null pour les personnes physiques.Le répertoire SIREN gère des caractères majuscules non accentués avec caractères spéciaux (- &amp; + @ ! ? * ° . % : ? #).La dénomination peut parfois contenir la mention de la forme de la société (SA, SAS, SARL, etc.)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="UniteLegaleINSEE.denominationINSEE"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.evenementAdministratif">
+      <path value="UniteLegaleINSEE.evenementAdministratif"/>
+      <short value="Evénement(s) administratif(s) associé(s) à l'Unite Légale"/>
+      <definition value="Evénement(s) administratif(s) associé(s) à l'Unite Légale"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="UniteLegaleINSEE.evenementAdministratif"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.siege">
+      <path value="UniteLegaleINSEE.siege"/>
+      <short value="Reference de l'établissement INSEE principal de la personne morale. Le siège porte les informations géographiques de la personne moraleSi la personne morale ne comporte qu' un seul établissement, celui-ci est aussi le siège."/>
+      <definition value="Reference de l'établissement INSEE principal de la personne morale. Le siège porte les informations géographiques de la personne moraleSi la personne morale ne comporte qu' un seul établissement, celui-ci est aussi le siège."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="UniteLegaleINSEE.siege"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EtablissementINSEE"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.siren">
+      <path value="UniteLegaleINSEE.siren"/>
+      <short value="Le numéro Siren est le numéro unique d'identification attribué à chaque entreprise ou organisme par l'INSEE.C'est un simple numéro d'ordre, composé de neuf chiffres:     ** huit chiffres non significatifs (excepté pour les organismes publics où celui-ci commence obligatoirement par 1 ou 2) complétés par une clé de Luhn.Il n'a aucun lien avec les caractéristiques de l'entreprise ou de l'organisme. Il est attribué une seule fois et n'est supprimé du répertoire qu'au moment de la disparition de la personne juridique (décès ou cessation de toute activité pour un entrepreneur individuel, dissolution pour une personne juridique)."/>
+      <definition value="Le numéro Siren est le numéro unique d'identification attribué à chaque entreprise ou organisme par l'INSEE.C'est un simple numéro d'ordre, composé de neuf chiffres:     ** huit chiffres non significatifs (excepté pour les organismes publics où celui-ci commence obligatoirement par 1 ou 2) complétés par une clé de Luhn.Il n'a aucun lien avec les caractéristiques de l'entreprise ou de l'organisme. Il est attribué une seule fois et n'est supprimé du répertoire qu'au moment de la disparition de la personne juridique (décès ou cessation de toute activité pour un entrepreneur individuel, dissolution pour une personne juridique)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="UniteLegaleINSEE.siren"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.PersonneMorale">
+      <path value="UniteLegaleINSEE.PersonneMorale"/>
+      <short value="Lien vers la classe PersonneMorale"/>
+      <definition value="Lien vers la classe PersonneMorale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="UniteLegaleINSEE.PersonneMorale"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="UniteLegaleINSEE">
+      <path value="UniteLegaleINSEE"/>
+      <short value="Entreprise au sens INSEE identifiée par un numéro SIREN. Une entreprise est une unité économique, juridiquement autonome, organisée pour produire des biens ou des services pour le marché."/>
+      <definition value="Entreprise au sens INSEE identifiée par un numéro SIREN. Une entreprise est une unité économique, juridiquement autonome, organisée pour produire des biens ou des services pour le marché."/>
+    </element>
+    <element id="UniteLegaleINSEE.activitePrincipaleUniteLegale">
+      <path value="UniteLegaleINSEE.activitePrincipaleUniteLegale"/>
+      <short value="Toute entité juridique se voit attribuer par l'Insee, lors de son inscription au répertoire SIRENE, un code caractérisant son activité principale par référence à la nomenclature d'activités française (NAF rév. 2). Abreviation :  code APEN pour l'EJ."/>
+      <definition value="Toute entité juridique se voit attribuer par l'Insee, lors de son inscription au répertoire SIRENE, un code caractérisant son activité principale par référence à la nomenclature d'activités française (NAF rév. 2). Abreviation :  code APEN pour l'EJ."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.categorieJuridiqueINSEE">
+      <path value="UniteLegaleINSEE.categorieJuridiqueINSEE"/>
+      <short value="La catégorie juridique est un attribut INSEE des unités légales.voir site INSEE https://www.insee.fr/fr/information/2028129"/>
+      <definition value="La catégorie juridique est un attribut INSEE des unités légales.voir site INSEE https://www.insee.fr/fr/information/2028129"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.dateINSEECessationEntreprise">
+      <path value="UniteLegaleINSEE.dateINSEECessationEntreprise"/>
+      <short value="Date (INSEE) de cessation de l'entreprise."/>
+      <definition value="Date (INSEE) de cessation de l'entreprise."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.dateINSEECreationEntreprise">
+      <path value="UniteLegaleINSEE.dateINSEECreationEntreprise"/>
+      <short value="Date (INSEE) de création de l'entreprise."/>
+      <definition value="Date (INSEE) de création de l'entreprise."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.denominationINSEE">
+      <path value="UniteLegaleINSEE.denominationINSEE"/>
+      <short value="Raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale.Cette variable est à null pour les personnes physiques.Le répertoire SIREN gère des caractères majuscules non accentués avec caractères spéciaux (- &amp; + @ ! ? * ° . % : ? #).La dénomination peut parfois contenir la mention de la forme de la société (SA, SAS, SARL, etc.)."/>
+      <definition value="Raison sociale pour les personnes morales. Il s'agit du nom sous lequel est déclarée l'unité légale.Cette variable est à null pour les personnes physiques.Le répertoire SIREN gère des caractères majuscules non accentués avec caractères spéciaux (- &amp; + @ ! ? * ° . % : ? #).La dénomination peut parfois contenir la mention de la forme de la société (SA, SAS, SARL, etc.)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.evenementAdministratif">
+      <path value="UniteLegaleINSEE.evenementAdministratif"/>
+      <short value="Evénement(s) administratif(s) associé(s) à l'Unite Légale"/>
+      <definition value="Evénement(s) administratif(s) associé(s) à l'Unite Légale"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.siege">
+      <path value="UniteLegaleINSEE.siege"/>
+      <short value="Reference de l'établissement INSEE principal de la personne morale. Le siège porte les informations géographiques de la personne moraleSi la personne morale ne comporte qu' un seul établissement, celui-ci est aussi le siège."/>
+      <definition value="Reference de l'établissement INSEE principal de la personne morale. Le siège porte les informations géographiques de la personne moraleSi la personne morale ne comporte qu' un seul établissement, celui-ci est aussi le siège."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EtablissementINSEE"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.siren">
+      <path value="UniteLegaleINSEE.siren"/>
+      <short value="Le numéro Siren est le numéro unique d'identification attribué à chaque entreprise ou organisme par l'INSEE.C'est un simple numéro d'ordre, composé de neuf chiffres:     ** huit chiffres non significatifs (excepté pour les organismes publics où celui-ci commence obligatoirement par 1 ou 2) complétés par une clé de Luhn.Il n'a aucun lien avec les caractéristiques de l'entreprise ou de l'organisme. Il est attribué une seule fois et n'est supprimé du répertoire qu'au moment de la disparition de la personne juridique (décès ou cessation de toute activité pour un entrepreneur individuel, dissolution pour une personne juridique)."/>
+      <definition value="Le numéro Siren est le numéro unique d'identification attribué à chaque entreprise ou organisme par l'INSEE.C'est un simple numéro d'ordre, composé de neuf chiffres:     ** huit chiffres non significatifs (excepté pour les organismes publics où celui-ci commence obligatoirement par 1 ou 2) complétés par une clé de Luhn.Il n'a aucun lien avec les caractéristiques de l'entreprise ou de l'organisme. Il est attribué une seule fois et n'est supprimé du répertoire qu'au moment de la disparition de la personne juridique (décès ou cessation de toute activité pour un entrepreneur individuel, dissolution pour une personne juridique)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="UniteLegaleINSEE.PersonneMorale">
+      <path value="UniteLegaleINSEE.PersonneMorale"/>
+      <short value="Lien vers la classe PersonneMorale"/>
+      <definition value="Lien vers la classe PersonneMorale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

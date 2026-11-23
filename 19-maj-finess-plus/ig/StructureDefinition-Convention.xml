@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Convention"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : DéfinitionStructure Convention</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément">Nom</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément">Drapeaux</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-Convention-definitions.html#Convention" title="Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes.">Convention</a><a name="Convention"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-Engagement.html">Engagement</a></td><td style="" class="hierarchy xhtCellBorder0">Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes.<br/><br/>Éléments définis dans les ancêtres :<a href="StructureDefinition-Engagement.html" title="Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement.">autoriteRegulation</a>, <a href="StructureDefinition-Engagement.html" title="Informations complémentaires sur l'engagement.">commentaire</a>, <a href="StructureDefinition-Engagement.html" title="Date d'effet de l'engagement.">dateEffetEngagement</a>, <a href="StructureDefinition-Engagement.html" title="Date de signature de l'engagement.">dateSignatureEngagement</a>, <a href="StructureDefinition-Engagement.html" title="Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données">documentAdministratif</a>, <a href="StructureDefinition-Engagement.html" title="Durée de validité de l'engagement.">dureeValiditeEngagement</a>, <a href="StructureDefinition-Engagement.html" title="Identifiant de l'engagement.">identifiantEngagement</a>, <a href="StructureDefinition-Engagement.html" title="Sous type de l'engagement.">sousTypeEngagement</a>, <a href="StructureDefinition-Engagement.html" title="Type d'engagement">typeEngagement</a>, <a href="StructureDefinition-Engagement.html" title="Lien vers la classe ActiviteAutoriseeExercee">ActiviteAutoriseeExercee</a>, <a href="StructureDefinition-Engagement.html" title="Lien vers la classe PersonneMorale">PersonneMorale</a>, <a href="StructureDefinition-Engagement.html" title="Lien vers la classe EntiteGeographiqueExercice">EntiteGeographiqueExercice</a></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Convention.</span><a href="StructureDefinition-Convention-definitions.html#Convention.numeroConvention" title="Numéro de la convention.">numeroConvention</a><a name="Convention.numeroConvention"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Numéro de la convention.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Convention.</span><a href="StructureDefinition-Convention-definitions.html#Convention.numeroHabilitationAideSociale" title="Identifiant (numéro) d''Habilitation à l'Aide Sociale">numeroHabilitationAideSociale</a><a name="Convention.numeroHabilitationAideSociale"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Identifiant (numéro) d''Habilitation à l'Aide Sociale</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Convention.</span><a href="StructureDefinition-Convention-definitions.html#Convention.titre" title="Titre de la convention, par exemple &quot;Convention constitutive du groupement hospitalier de territoire des Bouches du Rhône&quot;.">titre</a><a name="Convention.titre"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Titre de la convention, par exemple &quot;Convention constitutive du groupement hospitalier de territoire des Bouches du Rhône&quot;.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Convention.</span><a href="StructureDefinition-Convention-definitions.html#Convention.dateDebutConvention" title="Date de début de la convention.">dateDebutConvention</a><a name="Convention.dateDebutConvention"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="" class="hierarchy xhtCellBorder0">Date de début de la convention.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Convention.</span><a href="StructureDefinition-Convention-definitions.html#Convention.dateFinConvention" title="Date de fin de la convention.">dateFinConvention</a><a name="Convention.dateFinConvention"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="" class="hierarchy xhtCellBorder0">Date de fin de la convention.</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Convention"/>
+  <version value="0.1.0-ballot"/>
+  <name value="Convention"/>
+  <title value="Convention"/>
+  <status value="draft"/>
+  <date value="2026-11-04T15:30:59+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Convention"/>
+  <baseDefinition value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Engagement"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="0.1.0-ballot"/>
+    </extension>
+    <element id="Convention">
+      <path value="Convention"/>
+      <short value="Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes."/>
+      <definition value="Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="Convention.autoriteRegulation">
+      <path value="Convention.autoriteRegulation"/>
+      <short value="Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement."/>
+      <definition value="Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.autoriteRegulation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Autorite"/>
+      </type>
+    </element>
+    <element id="Convention.commentaire">
+      <path value="Convention.commentaire"/>
+      <short value="Informations complémentaires sur l'engagement."/>
+      <definition value="Informations complémentaires sur l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.commentaire"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Convention.dateEffetEngagement">
+      <path value="Convention.dateEffetEngagement"/>
+      <short value="Date d'effet de l'engagement."/>
+      <definition value="Date d'effet de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.dateEffetEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Convention.dateSignatureEngagement">
+      <path value="Convention.dateSignatureEngagement"/>
+      <short value="Date de signature de l'engagement."/>
+      <definition value="Date de signature de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.dateSignatureEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Convention.documentAdministratif">
+      <path value="Convention.documentAdministratif"/>
+      <short value="Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données"/>
+      <definition value="Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Engagement.documentAdministratif"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure"/>
+      </type>
+    </element>
+    <element id="Convention.dureeValiditeEngagement">
+      <path value="Convention.dureeValiditeEngagement"/>
+      <short value="Durée de validité de l'engagement."/>
+      <definition value="Durée de validité de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.dureeValiditeEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="Convention.identifiantEngagement">
+      <path value="Convention.identifiantEngagement"/>
+      <short value="Identifiant de l'engagement."/>
+      <definition value="Identifiant de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.identifiantEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Convention.sousTypeEngagement">
+      <path value="Convention.sousTypeEngagement"/>
+      <short value="Sous type de l'engagement."/>
+      <definition value="Sous type de l'engagement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.sousTypeEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs"/>
+      </binding>
+    </element>
+    <element id="Convention.typeEngagement">
+      <path value="Convention.typeEngagement"/>
+      <short value="Type d'engagement"/>
+      <definition value="Type d'engagement"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.typeEngagement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs"/>
+      </binding>
+    </element>
+    <element id="Convention.ActiviteAutoriseeExercee">
+      <path value="Convention.ActiviteAutoriseeExercee"/>
+      <short value="Lien vers la classe ActiviteAutoriseeExercee"/>
+      <definition value="Lien vers la classe ActiviteAutoriseeExercee"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Engagement.ActiviteAutoriseeExercee"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee"/>
+      </type>
+    </element>
+    <element id="Convention.PersonneMorale">
+      <path value="Convention.PersonneMorale"/>
+      <short value="Lien vers la classe PersonneMorale"/>
+      <definition value="Lien vers la classe PersonneMorale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.PersonneMorale"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"/>
+      </type>
+    </element>
+    <element id="Convention.EntiteGeographiqueExercice">
+      <path value="Convention.EntiteGeographiqueExercice"/>
+      <short value="Lien vers la classe EntiteGeographiqueExercice"/>
+      <definition value="Lien vers la classe EntiteGeographiqueExercice"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Engagement.EntiteGeographiqueExercice"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice"/>
+      </type>
+    </element>
+    <element id="Convention.numeroConvention">
+      <path value="Convention.numeroConvention"/>
+      <short value="Numéro de la convention."/>
+      <definition value="Numéro de la convention."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Convention.numeroConvention"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Convention.numeroHabilitationAideSociale">
+      <path value="Convention.numeroHabilitationAideSociale"/>
+      <short value="Identifiant (numéro) d''Habilitation à l'Aide Sociale"/>
+      <definition value="Identifiant (numéro) d''Habilitation à l'Aide Sociale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Convention.numeroHabilitationAideSociale"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Convention.titre">
+      <path value="Convention.titre"/>
+      <short value="Titre de la convention, par exemple &quot;Convention constitutive du groupement hospitalier de territoire des Bouches du Rhône&quot;."/>
+      <definition value="Titre de la convention, par exemple &quot;Convention constitutive du groupement hospitalier de territoire des Bouches du Rhône&quot;."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Convention.titre"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Convention.dateDebutConvention">
+      <path value="Convention.dateDebutConvention"/>
+      <short value="Date de début de la convention."/>
+      <definition value="Date de début de la convention."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Convention.dateDebutConvention"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Convention.dateFinConvention">
+      <path value="Convention.dateFinConvention"/>
+      <short value="Date de fin de la convention."/>
+      <definition value="Date de fin de la convention."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Convention.dateFinConvention"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Convention">
+      <path value="Convention"/>
+      <short value="Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes."/>
+      <definition value="Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes."/>
+    </element>
+    <element id="Convention.numeroConvention">
+      <path value="Convention.numeroConvention"/>
+      <short value="Numéro de la convention."/>
+      <definition value="Numéro de la convention."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Convention.numeroHabilitationAideSociale">
+      <path value="Convention.numeroHabilitationAideSociale"/>
+      <short value="Identifiant (numéro) d''Habilitation à l'Aide Sociale"/>
+      <definition value="Identifiant (numéro) d''Habilitation à l'Aide Sociale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Convention.titre">
+      <path value="Convention.titre"/>
+      <short value="Titre de la convention, par exemple &quot;Convention constitutive du groupement hospitalier de territoire des Bouches du Rhône&quot;."/>
+      <definition value="Titre de la convention, par exemple &quot;Convention constitutive du groupement hospitalier de territoire des Bouches du Rhône&quot;."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Convention.dateDebutConvention">
+      <path value="Convention.dateDebutConvention"/>
+      <short value="Date de début de la convention."/>
+      <definition value="Date de début de la convention."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="Convention.dateFinConvention">
+      <path value="Convention.dateFinConvention"/>
+      <short value="Date de fin de la convention."/>
+      <definition value="Date de fin de la convention."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

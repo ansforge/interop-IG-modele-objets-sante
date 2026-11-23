@@ -1,0 +1,465 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "ActiviteSoinAutoriseeAMF",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ActiviteSoinAutoriseeAMF</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ActiviteSoinAutoriseeAMF-definitions.html#ActiviteSoinAutoriseeAMF\" title=\"Les Activités de Soin autorisées sont celles qui relèvent, dans le champ sanitaire, des articles L6122-1 et suivants du Code de la Santé Publique.Ces activités sont soumises à autorisation du DG ARS.Les activités codées sous forme AMF sont décrites par un triplet :- activité- modalité (type de soins)- forme (type d'organisation de prise en charge)Une activité AMF est rattachée à une PM-EJ (titulaire de l'autorisation) et à l'EGE de cette PM-EJ où l'autorisation est mise en oeuvre (&quot;implantée&quot;).Les données FINESS concernant les activités AMF sont issues en totalité du SI Autorisations.\">ActiviteSoinAutoriseeAMF</a><a name=\"ActiviteSoinAutoriseeAMF\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\">ActiviteAutoriseeExercee</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Les Activités de Soin autorisées sont celles qui relèvent, dans le champ sanitaire, des articles L6122-1 et suivants du Code de la Santé Publique.Ces activités sont soumises à autorisation du DG ARS.Les activités codées sous forme AMF sont décrites par un triplet :- activité- modalité (type de soins)- forme (type d'organisation de prise en charge)Une activité AMF est rattachée à une PM-EJ (titulaire de l'autorisation) et à l'EGE de cette PM-EJ où l'autorisation est mise en oeuvre (&quot;implantée&quot;).Les données FINESS concernant les activités AMF sont issues en totalité du SI Autorisations.<br/><br/>Éléments définis dans les ancêtres :<a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date début effective de l'autorisation\">dateDebutPeriode</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS\">dateDecision</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est &quot;vivante&quot; ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation.\">dateFin</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité.\">dateFinPeriode</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre\">datePremiereMiseEnOeuvre</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Durée de l'autorisation.\">dureeAutorisation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Evénement(s) administratif(s) survenu(s) dans l'activité\">evenementAdministratif</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Indicateur de suppression de l'autorisation de l'activité Autorisée exercée\">indicateurSuppressionAutorisation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements\">indicateurSuppressionImplantation</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées\">natureActivite</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Identifiant fonctionnel de l'autorisation ARHGOS de l'EML.\">numeroAutorisationARHGOS</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement\">typeActiviteSMSSE</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité.\">zoneInterventionAutorisee</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe EntiteGeographiqueExercice\">EntiteGeographiqueExercice</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe GroupeCooperationConventionnelle\">GroupeCooperationConventionnelle</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe PersonneMorale\">PersonneMorale</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe Engagement\">Engagement</a>, <a href=\"StructureDefinition-ActiviteAutoriseeExercee.html\" title=\"Lien vers la classe CapaciteActiviteAutoriseeExercee\">CapaciteActiviteAutoriseeExercee</a></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSoinAutoriseeAMF.</span><a href=\"StructureDefinition-ActiviteSoinAutoriseeAMF-definitions.html#ActiviteSoinAutoriseeAMF.activite\" title=\"Code définissant l'activité de soins autorisée -AS- (article L.6122-1 du CSP), la liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).\">activite</a><a name=\"ActiviteSoinAutoriseeAMF.activite\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Code définissant l'activité de soins autorisée -AS- (article L.6122-1 du CSP), la liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r274-activite-sanitaire-regulee-all\" title=\"https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs\" class=\"binding\">Vs Tre R274 Activite Sanitaire Regulee All <img src=\"external.png\" alt=\"\"/></a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSoinAutoriseeAMF.</span><a href=\"StructureDefinition-ActiviteSoinAutoriseeAMF-definitions.html#ActiviteSoinAutoriseeAMF.forme\" title=\"Une forme est un type d’organisation de prise en charge (exemples: hospitalisation à temps complet, hospitalisation à domicile, chirurgie ambulatoire, etc.).\">forme</a><a name=\"ActiviteSoinAutoriseeAMF.forme\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Une forme est un type d’organisation de prise en charge (exemples: hospitalisation à temps complet, hospitalisation à domicile, chirurgie ambulatoire, etc.).<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r406-forme-activite-smsse-regulee-all\" title=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r406-forme-activite-smsse-regulee?vs\" class=\"binding\">Vs Tre R406 Forme Activite Smsse Regulee All <img src=\"external.png\" alt=\"\"/></a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">ActiviteSoinAutoriseeAMF.</span><a href=\"StructureDefinition-ActiviteSoinAutoriseeAMF-definitions.html#ActiviteSoinAutoriseeAMF.modalite\" title=\"Les modalités sont des modes d’application ou des types de soins prévus par les textes réglementaires encadrant chaque activité de soins. Ce sont des pratiques thérapeutiques. Une activité de soins peut ou non avoir des modalités (dans ce cas, le code de la modalité est &quot;00&quot;). Les modalités peuvent être communes à plusieurs activités de soins ou spécifiques à une seule.\">modalite</a><a name=\"ActiviteSoinAutoriseeAMF.modalite\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Les modalités sont des modes d’application ou des types de soins prévus par les textes réglementaires encadrant chaque activité de soins. Ce sont des pratiques thérapeutiques. Une activité de soins peut ou non avoir des modalités (dans ce cas, le code de la modalité est &quot;00&quot;). Les modalités peuvent être communes à plusieurs activités de soins ou spécifiques à une seule.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r405-modalite-activite-smsse-regulee-all\" title=\"https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r405-modalite-activite-smsse-regulee?vs\" class=\"binding\">Vs Tre R405 Modalite Activite Smsse Regulee All <img src=\"external.png\" alt=\"\"/></a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoinAutoriseeAMF",
+  "version" : "0.1.0-ballot",
+  "name" : "ActiviteSoinAutoriseeAMF",
+  "title" : "ActiviteSoinAutoriseeAMF",
+  "status" : "draft",
+  "date" : "2026-11-04T15:30:59+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Les Activités de Soin autorisées sont celles qui relèvent, dans le champ sanitaire, des articles L6122-1 et suivants du Code de la Santé Publique.Ces activités sont soumises à autorisation du DG ARS.Les activités codées sous forme AMF sont décrites par un triplet :- activité- modalité (type de soins)- forme (type d'organisation de prise en charge)Une activité AMF est rattachée à une PM-EJ (titulaire de l'autorisation) et à l'EGE de cette PM-EJ où l'autorisation est mise en oeuvre (\"implantée\").Les données FINESS concernant les activités AMF sont issues en totalité du SI Autorisations.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoinAutoriseeAMF",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.1.0-ballot"
+    }],
+    "element" : [{
+      "id" : "ActiviteSoinAutoriseeAMF",
+      "path" : "ActiviteSoinAutoriseeAMF",
+      "short" : "Les Activités de Soin autorisées sont celles qui relèvent, dans le champ sanitaire, des articles L6122-1 et suivants du Code de la Santé Publique.Ces activités sont soumises à autorisation du DG ARS.Les activités codées sous forme AMF sont décrites par un triplet :- activité- modalité (type de soins)- forme (type d'organisation de prise en charge)Une activité AMF est rattachée à une PM-EJ (titulaire de l'autorisation) et à l'EGE de cette PM-EJ où l'autorisation est mise en oeuvre (\"implantée\").Les données FINESS concernant les activités AMF sont issues en totalité du SI Autorisations.",
+      "definition" : "Les Activités de Soin autorisées sont celles qui relèvent, dans le champ sanitaire, des articles L6122-1 et suivants du Code de la Santé Publique.Ces activités sont soumises à autorisation du DG ARS.Les activités codées sous forme AMF sont décrites par un triplet :- activité- modalité (type de soins)- forme (type d'organisation de prise en charge)Une activité AMF est rattachée à une PM-EJ (titulaire de l'autorisation) et à l'EGE de cette PM-EJ où l'autorisation est mise en oeuvre (\"implantée\").Les données FINESS concernant les activités AMF sont issues en totalité du SI Autorisations.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.dateDebutPeriode",
+      "path" : "ActiviteSoinAutoriseeAMF.dateDebutPeriode",
+      "short" : "Date début effective de l'autorisation",
+      "definition" : "Date début effective de l'autorisation",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dateDebutPeriode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.dateDecision",
+      "path" : "ActiviteSoinAutoriseeAMF.dateDecision",
+      "short" : "Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS",
+      "definition" : "Date de décision du Directeur Général de l’ARS (date de l’arrête d’autorisation). Il s’agit donc de la date de délivrance de l’autorisation de l’activité autorisée exercée.Synonyme FINESS : date d’autorisationRemarque : Cette donnée est calculée à partir des événements FINESS",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dateDecision",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.dateFin",
+      "path" : "ActiviteSoinAutoriseeAMF.dateFin",
+      "short" : "Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est \"vivante\" ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation.",
+      "definition" : "Date de fin effective de l'autoriation de cette activité. Elle peut arriver avant la date prévisionnelle si l'ARS retire l'autorisation par exemple où si la structure arrête son activité et renonce à son autorisation. C'est cette date qui indique si l'activité est \"vivante\" ou non. Si elle est vide, l'activité est toujours autorisée.Synonyme  : Date d'échéance de l'autorisation.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dateFin",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.dateFinPeriode",
+      "path" : "ActiviteSoinAutoriseeAMF.dateFinPeriode",
+      "short" : "Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité.",
+      "definition" : "Date de fin prévisionnelle de l'autorisation NB : Une autorisation d'activité réglementée est donnée pour une durée finie (exemple 15 ans pour le médico-social). On enregistre donc la date prévue ou l'autorisation sera échue et où la structure devra obtenir une nouvelle autorisation (ie un renouvellement) pour poursuivre son activité.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dateFinPeriode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.datePremiereMiseEnOeuvre",
+      "path" : "ActiviteSoinAutoriseeAMF.datePremiereMiseEnOeuvre",
+      "short" : "Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre",
+      "definition" : "Date de mise en œuvre. Elle doit être postérieure à la date de l’arrêté d'autorisation. La mise en oeuvre est déclenchée à la réception par l’ARS du courrier du directeur de l’établissement.Synonyme FINESS : date de mise en œuvre",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.datePremiereMiseEnOeuvre",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.dureeAutorisation",
+      "path" : "ActiviteSoinAutoriseeAMF.dureeAutorisation",
+      "short" : "Durée de l'autorisation.",
+      "definition" : "Durée de l'autorisation.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.dureeAutorisation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.evenementAdministratif",
+      "path" : "ActiviteSoinAutoriseeAMF.evenementAdministratif",
+      "short" : "Evénement(s) administratif(s) survenu(s) dans l'activité",
+      "definition" : "Evénement(s) administratif(s) survenu(s) dans l'activité",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.evenementAdministratif",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EvenementStructure"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.indicateurSuppressionAutorisation",
+      "path" : "ActiviteSoinAutoriseeAMF.indicateurSuppressionAutorisation",
+      "short" : "Indicateur de suppression de l'autorisation de l'activité Autorisée exercée",
+      "definition" : "Indicateur de suppression de l'autorisation de l'activité Autorisée exercée",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.indicateurSuppressionAutorisation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.indicateurSuppressionImplantation",
+      "path" : "ActiviteSoinAutoriseeAMF.indicateurSuppressionImplantation",
+      "short" : "Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements",
+      "definition" : "Indicateur de suppression de l’implantation de l'activité autorisée exercée.Donnée propre à FINESS calculée à partir des evenements",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.indicateurSuppressionImplantation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.natureActivite",
+      "path" : "ActiviteSoinAutoriseeAMF.natureActivite",
+      "short" : "Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées",
+      "definition" : "Le Code de la nature de l'activité régulée permet de déterminer la Nature de l'activité parmi les natures actuellement identifiées",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.natureActivite",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r374-nature-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.numeroAutorisationARHGOS",
+      "path" : "ActiviteSoinAutoriseeAMF.numeroAutorisationARHGOS",
+      "short" : "Identifiant fonctionnel de l'autorisation ARHGOS de l'EML.",
+      "definition" : "Identifiant fonctionnel de l'autorisation ARHGOS de l'EML.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.numeroAutorisationARHGOS",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.typeActiviteSMSSE",
+      "path" : "ActiviteSoinAutoriseeAMF.typeActiviteSMSSE",
+      "short" : "Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement",
+      "definition" : "Typologie des Activités Sanitaires, Médico-Sociales, Sociales et d'Enseignement, définie comme le champ des possibles pour définir l'Activité associée à une structure SMSSE.Classe associative matérialisant l'association Activité SMSSE RéguléeAncien  synonyme :  mode de fonctionnement",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.typeActiviteSMSSE",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r392-type-act-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.zoneInterventionAutorisee",
+      "path" : "ActiviteSoinAutoriseeAMF.zoneInterventionAutorisee",
+      "short" : "Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité.",
+      "definition" : "Zone d'intervention de l'Activité Autorisée. Correspond au territoire sur lequel s'exerce un service, une activité.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.zoneInterventionAutorisee",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Zone"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.EntiteGeographiqueExercice",
+      "path" : "ActiviteSoinAutoriseeAMF.EntiteGeographiqueExercice",
+      "short" : "Lien vers la classe EntiteGeographiqueExercice",
+      "definition" : "Lien vers la classe EntiteGeographiqueExercice",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.EntiteGeographiqueExercice",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.GroupeCooperationConventionnelle",
+      "path" : "ActiviteSoinAutoriseeAMF.GroupeCooperationConventionnelle",
+      "short" : "Lien vers la classe GroupeCooperationConventionnelle",
+      "definition" : "Lien vers la classe GroupeCooperationConventionnelle",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.GroupeCooperationConventionnelle",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/GroupeCooperationConventionnelle"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.PersonneMorale",
+      "path" : "ActiviteSoinAutoriseeAMF.PersonneMorale",
+      "short" : "Lien vers la classe PersonneMorale",
+      "definition" : "Lien vers la classe PersonneMorale",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.PersonneMorale",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.Engagement",
+      "path" : "ActiviteSoinAutoriseeAMF.Engagement",
+      "short" : "Lien vers la classe Engagement",
+      "definition" : "Lien vers la classe Engagement",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.Engagement",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Engagement"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.CapaciteActiviteAutoriseeExercee",
+      "path" : "ActiviteSoinAutoriseeAMF.CapaciteActiviteAutoriseeExercee",
+      "short" : "Lien vers la classe CapaciteActiviteAutoriseeExercee",
+      "definition" : "Lien vers la classe CapaciteActiviteAutoriseeExercee",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ActiviteAutoriseeExercee.CapaciteActiviteAutoriseeExercee",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteAutoriseeExercee"
+      }]
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.activite",
+      "path" : "ActiviteSoinAutoriseeAMF.activite",
+      "short" : "Code définissant l'activité de soins autorisée -AS- (article L.6122-1 du CSP), la liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).",
+      "definition" : "Code définissant l'activité de soins autorisée -AS- (article L.6122-1 du CSP), la liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSoinAutoriseeAMF.activite",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.forme",
+      "path" : "ActiviteSoinAutoriseeAMF.forme",
+      "short" : "Une forme est un type d’organisation de prise en charge (exemples: hospitalisation à temps complet, hospitalisation à domicile, chirurgie ambulatoire, etc.).",
+      "definition" : "Une forme est un type d’organisation de prise en charge (exemples: hospitalisation à temps complet, hospitalisation à domicile, chirurgie ambulatoire, etc.).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSoinAutoriseeAMF.forme",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r406-forme-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.modalite",
+      "path" : "ActiviteSoinAutoriseeAMF.modalite",
+      "short" : "Les modalités sont des modes d’application ou des types de soins prévus par les textes réglementaires encadrant chaque activité de soins. Ce sont des pratiques thérapeutiques. Une activité de soins peut ou non avoir des modalités (dans ce cas, le code de la modalité est \"00\"). Les modalités peuvent être communes à plusieurs activités de soins ou spécifiques à une seule.",
+      "definition" : "Les modalités sont des modes d’application ou des types de soins prévus par les textes réglementaires encadrant chaque activité de soins. Ce sont des pratiques thérapeutiques. Une activité de soins peut ou non avoir des modalités (dans ce cas, le code de la modalité est \"00\"). Les modalités peuvent être communes à plusieurs activités de soins ou spécifiques à une seule.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ActiviteSoinAutoriseeAMF.modalite",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r405-modalite-activite-smsse-regulee?vs"
+      }
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "ActiviteSoinAutoriseeAMF",
+      "path" : "ActiviteSoinAutoriseeAMF",
+      "short" : "Les Activités de Soin autorisées sont celles qui relèvent, dans le champ sanitaire, des articles L6122-1 et suivants du Code de la Santé Publique.Ces activités sont soumises à autorisation du DG ARS.Les activités codées sous forme AMF sont décrites par un triplet :- activité- modalité (type de soins)- forme (type d'organisation de prise en charge)Une activité AMF est rattachée à une PM-EJ (titulaire de l'autorisation) et à l'EGE de cette PM-EJ où l'autorisation est mise en oeuvre (\"implantée\").Les données FINESS concernant les activités AMF sont issues en totalité du SI Autorisations.",
+      "definition" : "Les Activités de Soin autorisées sont celles qui relèvent, dans le champ sanitaire, des articles L6122-1 et suivants du Code de la Santé Publique.Ces activités sont soumises à autorisation du DG ARS.Les activités codées sous forme AMF sont décrites par un triplet :- activité- modalité (type de soins)- forme (type d'organisation de prise en charge)Une activité AMF est rattachée à une PM-EJ (titulaire de l'autorisation) et à l'EGE de cette PM-EJ où l'autorisation est mise en oeuvre (\"implantée\").Les données FINESS concernant les activités AMF sont issues en totalité du SI Autorisations."
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.activite",
+      "path" : "ActiviteSoinAutoriseeAMF.activite",
+      "short" : "Code définissant l'activité de soins autorisée -AS- (article L.6122-1 du CSP), la liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).",
+      "definition" : "Code définissant l'activité de soins autorisée -AS- (article L.6122-1 du CSP), la liste des activités de soins soumises à autorisation est fixée par décret en Conseil d'Etat (article L.6122-25 du CSP).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.forme",
+      "path" : "ActiviteSoinAutoriseeAMF.forme",
+      "short" : "Une forme est un type d’organisation de prise en charge (exemples: hospitalisation à temps complet, hospitalisation à domicile, chirurgie ambulatoire, etc.).",
+      "definition" : "Une forme est un type d’organisation de prise en charge (exemples: hospitalisation à temps complet, hospitalisation à domicile, chirurgie ambulatoire, etc.).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r406-forme-activite-smsse-regulee?vs"
+      }
+    },
+    {
+      "id" : "ActiviteSoinAutoriseeAMF.modalite",
+      "path" : "ActiviteSoinAutoriseeAMF.modalite",
+      "short" : "Les modalités sont des modes d’application ou des types de soins prévus par les textes réglementaires encadrant chaque activité de soins. Ce sont des pratiques thérapeutiques. Une activité de soins peut ou non avoir des modalités (dans ce cas, le code de la modalité est \"00\"). Les modalités peuvent être communes à plusieurs activités de soins ou spécifiques à une seule.",
+      "definition" : "Les modalités sont des modes d’application ou des types de soins prévus par les textes réglementaires encadrant chaque activité de soins. Ce sont des pratiques thérapeutiques. Une activité de soins peut ou non avoir des modalités (dans ce cas, le code de la modalité est \"00\"). Les modalités peuvent être communes à plusieurs activités de soins ou spécifiques à une seule.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r405-modalite-activite-smsse-regulee?vs"
+      }
+    }]
+  }
+}

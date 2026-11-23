@@ -1,0 +1,37 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Convention","Convention","","","",0,*,"","","","null {[]} {[]}
+","Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes.","Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Convention.autoriteRegulation","Convention.autoriteRegulation","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Autorite {[]} {[]}
+","Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement.","Il s'agit de l'autorité de régulation qui produit/rédige/publie l'engagement.","","","","","","","","","",,,,,"",,,,"Engagement.autoriteRegulation",0,1,"",""
+"Convention.commentaire","Convention.commentaire","","","",0,1,"","","","string {[]} {[]}
+","Informations complémentaires sur l'engagement.","Informations complémentaires sur l'engagement.","","","","","","","","","",,,,,"",,,,"Engagement.commentaire",0,1,"",""
+"Convention.dateEffetEngagement","Convention.dateEffetEngagement","","","",0,1,"","","","date {[]} {[]}
+","Date d'effet de l'engagement.","Date d'effet de l'engagement.","","","","","","","","","",,,,,"",,,,"Engagement.dateEffetEngagement",0,1,"",""
+"Convention.dateSignatureEngagement","Convention.dateSignatureEngagement","","","",0,1,"","","","date {[]} {[]}
+","Date de signature de l'engagement.","Date de signature de l'engagement.","","","","","","","","","",,,,,"",,,,"Engagement.dateSignatureEngagement",0,1,"",""
+"Convention.documentAdministratif","Convention.documentAdministratif","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DocumentStructure {[]} {[]}
+","Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données","Pièces administrative justificative ou informative justifiant l'Engagement ou apportant des éléments de contexte**Pièces justificatives : arrêté d'autorisation; projet de santé; arrêté d'agrément; convention constitutive; convention tripartite;  extrait Kbis (privés); Décision de renouvellement; Publication RAA; Arrêté modificatif; PV de conformité; CPOM; Convention de subvention label**Pièces informatives : lettre du directeur de l'ET; Do en provenance de l'établissement; remontées après exploitation de questionnaires d'enquêtes; Fichiers de données provenant d'autres systèmes d'information en relation avec FINESS; Signalements des internautes ou des partenaires utilisateurs des données","","","","","","","","","",,,,,"",,,,"Engagement.documentAdministratif",0,*,"",""
+"Convention.dureeValiditeEngagement","Convention.dureeValiditeEngagement","","","",0,1,"","","","Quantity {[]} {[]}
+","Durée de validité de l'engagement.","Durée de validité de l'engagement.","","","","","","","","","",,,,,"",,,,"Engagement.dureeValiditeEngagement",0,1,"",""
+"Convention.identifiantEngagement","Convention.identifiantEngagement","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant de l'engagement.","Identifiant de l'engagement.","","","","","","","","","",,,,,"",,,,"Engagement.identifiantEngagement",0,1,"",""
+"Convention.sousTypeEngagement","Convention.sousTypeEngagement","","","",0,1,"","","","Coding {[]} {[]}
+","Sous type de l'engagement.","Sous type de l'engagement.","","","","","","","","","",,"preferred","","https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs","",,,,"Engagement.sousTypeEngagement",0,1,"",""
+"Convention.typeEngagement","Convention.typeEngagement","","","",0,1,"","","","Coding {[]} {[]}
+","Type d'engagement","Type d'engagement","","","","","","","","","",,"preferred","","https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r395-engagement?vs","",,,,"Engagement.typeEngagement",0,1,"",""
+"Convention.ActiviteAutoriseeExercee","Convention.ActiviteAutoriseeExercee","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteAutoriseeExercee {[]} {[]}
+","Lien vers la classe ActiviteAutoriseeExercee","Lien vers la classe ActiviteAutoriseeExercee","","","","","","","","","",,,,,"",,,,"Engagement.ActiviteAutoriseeExercee",0,*,"",""
+"Convention.PersonneMorale","Convention.PersonneMorale","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonneMorale {[]} {[]}
+","Lien vers la classe PersonneMorale","Lien vers la classe PersonneMorale","","","","","","","","","",,,,,"",,,,"Engagement.PersonneMorale",0,1,"",""
+"Convention.EntiteGeographiqueExercice","Convention.EntiteGeographiqueExercice","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographiqueExercice {[]} {[]}
+","Lien vers la classe EntiteGeographiqueExercice","Lien vers la classe EntiteGeographiqueExercice","","","","","","","","","",,,,,"",,,,"Engagement.EntiteGeographiqueExercice",0,1,"",""
+"Convention.numeroConvention","Convention.numeroConvention","","","",0,1,"","","","Identifier {[]} {[]}
+","Numéro de la convention.","Numéro de la convention.","","","","","","","","","",,,,,"",,,,"Convention.numeroConvention",0,1,"",""
+"Convention.numeroHabilitationAideSociale","Convention.numeroHabilitationAideSociale","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant (numéro) d''Habilitation à l'Aide Sociale","Identifiant (numéro) d''Habilitation à l'Aide Sociale","","","","","","","","","",,,,,"",,,,"Convention.numeroHabilitationAideSociale",0,1,"",""
+"Convention.titre","Convention.titre","","","",0,1,"","","","string {[]} {[]}
+","Titre de la convention, par exemple ""Convention constitutive du groupement hospitalier de territoire des Bouches du Rhône"".","Titre de la convention, par exemple ""Convention constitutive du groupement hospitalier de territoire des Bouches du Rhône"".","","","","","","","","","",,,,,"",,,,"Convention.titre",0,1,"",""
+"Convention.dateDebutConvention","Convention.dateDebutConvention","","","",0,1,"","","","date {[]} {[]}
+","Date de début de la convention.","Date de début de la convention.","","","","","","","","","",,,,,"",,,,"Convention.dateDebutConvention",0,1,"",""
+"Convention.dateFinConvention","Convention.dateFinConvention","","","",0,1,"","","","date {[]} {[]}
+","Date de fin de la convention.","Date de fin de la convention.","","","","","","","","","",,,,,"",,,,"Convention.dateFinConvention",0,1,"",""

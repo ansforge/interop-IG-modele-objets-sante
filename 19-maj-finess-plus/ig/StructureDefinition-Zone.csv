@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Zone","Zone","","","",0,*,"","","","null {[]} {[]}
+","Portion d'un espace quelconque.","Portion d'un espace quelconque.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Zone.nom","Zone.nom","","","",0,1,"","","","string {[]} {[]}
+","Nom de la zone, sous forme de texte.","Nom de la zone, sous forme de texte.","","","","","","","","","",,,,,"",,,,"Zone.nom",0,1,"",""
+"Zone.typeZone","Zone.typeZone","","","",0,*,"","","","Coding {[]} {[]}
+","Type de zone (ex. zone d'intervention d'une équipe de soins, zone d'attraction d'un établissement, etc.).","Type de zone (ex. zone d'intervention d'une équipe de soins, zone d'attraction d'un établissement, etc.).","","","","","","","","","",,,,,"",,,,"Zone.typeZone",0,*,"",""
+"Zone.divisionTerritoriale","Zone.divisionTerritoriale","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DivisionTerritoriale {[]} {[]}
+","Division(s) territoriale(s) (commune, département, etc.) où est située la zone.","Division(s) territoriale(s) (commune, département, etc.) où est située la zone.","","","","","","","","","",,,,,"",,,,"Zone.divisionTerritoriale",0,*,"",""
+"Zone.lieu","Zone.lieu","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu {[]} {[]}
+","Lieu(x) situé(s) dans ou rattaché(s) à cette zone.","Lieu(x) situé(s) dans ou rattaché(s) à cette zone.","","","","","","","","","",,,,,"",,,,"Zone.lieu",0,*,"",""
+"Zone.commentaire","Zone.commentaire","","","",0,*,"","","","string {[]} {[]}
+","Description de la zone.","Description de la zone.","","","","","","","","","",,,,,"",,,,"Zone.commentaire",0,*,"",""

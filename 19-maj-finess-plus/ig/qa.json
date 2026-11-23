@@ -1,0 +1,20 @@
+{
+  "url" : "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos",
+  "name" : "MOS",
+  "title" : "Modèle des Objets de Santé (MOS)",
+  "description" : "",
+  "status" : "draft",
+  "package-id" : "ans.fr.mos",
+  "ig-ver" : "0.1.0-ballot",
+  "date" : "Wed, 04 Nov, 2026 15:30:59 +0000",
+  "dateISO8601" : "2026-11-04T15:30:59+00:00",
+  "errs" : 36,
+  "warnings" : 2312,
+  "hints" : 118,
+  "broken-links" : 1,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 1245419424
+}
